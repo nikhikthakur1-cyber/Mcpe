@@ -55,7 +55,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
 
       - name: Install Node Dependencies
-        run: npm install --include=dev
+        run: npm ci --legacy-peer-deps || npm install --legacy-peer-deps
 
       - name: Build Web Application
         run: npm run build
