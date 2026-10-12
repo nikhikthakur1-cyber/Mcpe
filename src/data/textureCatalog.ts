@@ -1,6 +1,6 @@
 import { TextureSlot } from '../types';
 
-export const TEXTURE_CATALOG: TextureSlot[] = [
+const RAW_TEXTURE_CATALOG: TextureSlot[] = [
   // --- BLOCKS (textures/blocks/) ---
   {
     id: 'block_stone',
@@ -731,14 +731,371 @@ export const TEXTURE_CATALOG: TextureSlot[] = [
     recommendedWidth: 64,
     recommendedHeight: 64,
     sampleColor: '#92400E'
+  },
+
+  // --- BEDROCK 1.26.52.3 & LATEST EXTENSIONS ---
+  // Blocks
+  {
+    id: 'block_pale_oak_log',
+    name: 'Pale Oak Log',
+    category: 'blocks',
+    path: 'textures/blocks/pale_oak_log.png',
+    description: 'Pale Garden tree trunk bark texture.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#D8D4D0'
+  },
+  {
+    id: 'block_pale_oak_planks',
+    name: 'Pale Oak Planks',
+    category: 'blocks',
+    path: 'textures/blocks/pale_oak_planks.png',
+    description: 'Light ashen pale garden wooden planks.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#ECE8E4'
+  },
+  {
+    id: 'block_pale_moss_block',
+    name: 'Pale Moss Block',
+    category: 'blocks',
+    path: 'textures/blocks/pale_moss_block.png',
+    description: 'Pale grey-green carpeted foliage moss from the Pale Garden.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#8C9088'
+  },
+  {
+    id: 'block_pale_hanging_moss',
+    name: 'Pale Hanging Moss',
+    category: 'blocks',
+    path: 'textures/blocks/pale_hanging_moss.png',
+    description: 'Hanging vine moss strands from pale canopy branches.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#7D857A'
+  },
+  {
+    id: 'block_creaking_heart',
+    name: 'Creaking Heart',
+    category: 'blocks',
+    path: 'textures/blocks/creaking_heart.png',
+    description: 'Pulsing amber resin core sustaining Creaking mob constructs.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#F59E0B'
+  },
+  {
+    id: 'block_resin_block',
+    name: 'Resin Block',
+    category: 'blocks',
+    path: 'textures/blocks/resin_block.png',
+    description: 'Translucent hardened amber resin block.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#EA580C'
+  },
+  {
+    id: 'block_resin_bricks',
+    name: 'Resin Bricks',
+    category: 'blocks',
+    path: 'textures/blocks/resin_bricks.png',
+    description: 'Decorative carved amber resin bricks.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#C2410C'
+  },
+  {
+    id: 'block_chiseled_resin_bricks',
+    name: 'Chiseled Resin Bricks',
+    category: 'blocks',
+    path: 'textures/blocks/resin_bricks_chiseled.png',
+    description: 'Carved decorative geometric resin brick relief pattern.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#9A3412'
+  },
+  {
+    id: 'block_chiseled_copper',
+    name: 'Chiseled Copper',
+    category: 'blocks',
+    path: 'textures/blocks/chiseled_copper.png',
+    description: 'Carved metallic copper block with cut geometric motifs.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#C86B49'
+  },
+  {
+    id: 'block_copper_grate',
+    name: 'Copper Grate',
+    category: 'blocks',
+    path: 'textures/blocks/copper_grate.png',
+    description: 'Ventilated copper lattice see-through grate.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#B85D3B'
+  },
+  {
+    id: 'block_copper_door_bottom',
+    name: 'Copper Door (Bottom)',
+    category: 'blocks',
+    path: 'textures/blocks/copper_door_lower.png',
+    description: 'Lower panel of oxidizable copper entrance door.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#B85D3B'
+  },
+  {
+    id: 'block_copper_trapdoor',
+    name: 'Copper Trapdoor',
+    category: 'blocks',
+    path: 'textures/blocks/copper_trapdoor.png',
+    description: 'Oxidizable hinged copper ventilation trapdoor.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#B85D3B'
+  },
+  {
+    id: 'block_tuff_bricks',
+    name: 'Tuff Bricks',
+    category: 'blocks',
+    path: 'textures/blocks/tuff_bricks.png',
+    description: 'Cut polished tuff volcanic brick masonry.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#434A48'
+  },
+  {
+    id: 'block_chiseled_tuff',
+    name: 'Chiseled Tuff',
+    category: 'blocks',
+    path: 'textures/blocks/chiseled_tuff.png',
+    description: 'Decorative chiseled tuff block with relief motif.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#39403E'
+  },
+
+  // Items
+  {
+    id: 'item_trial_key',
+    name: 'Trial Key',
+    category: 'items',
+    path: 'textures/items/trial_key.png',
+    description: 'Copper-handled dungeon key for standard Trial Chamber vaults.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#F97316'
+  },
+  {
+    id: 'item_ominous_trial_key',
+    name: 'Ominous Trial Key',
+    category: 'items',
+    path: 'textures/items/ominous_trial_key.png',
+    description: 'Hardened ominous trial key with glowing cyan gem inlay.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#06B6D4'
+  },
+  {
+    id: 'item_ominous_bottle',
+    name: 'Ominous Bottle',
+    category: 'items',
+    path: 'textures/items/ominous_bottle.png',
+    description: 'Skull-embossed potion vial granting Bad Omen effect.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#8B5CF6'
+  },
+  {
+    id: 'item_resin_clump',
+    name: 'Resin Clump',
+    category: 'items',
+    path: 'textures/items/resin_clump.png',
+    description: 'Organic sap clump harvested from activated Creaking Hearts.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#F59E0B'
+  },
+  {
+    id: 'item_resin_brick',
+    name: 'Resin Brick',
+    category: 'items',
+    path: 'textures/items/resin_brick.png',
+    description: 'Smelted durable orange-amber building ingot.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#EA580C'
+  },
+  {
+    id: 'item_flow_armor_trim_smithing_template',
+    name: 'Flow Armor Trim Template',
+    category: 'items',
+    path: 'textures/items/flow_armor_trim_smithing_template.png',
+    description: 'Wind-swirled armor smithing template from Trial Chambers.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#38BDF8'
+  },
+  {
+    id: 'item_bolt_armor_trim_smithing_template',
+    name: 'Bolt Armor Trim Template',
+    category: 'items',
+    path: 'textures/items/bolt_armor_trim_smithing_template.png',
+    description: 'Copper lightning jagged armor smithing template.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#FB923C'
+  },
+  {
+    id: 'item_flow_pottery_sherd',
+    name: 'Flow Pottery Sherd',
+    category: 'items',
+    path: 'textures/items/flow_pottery_sherd.png',
+    description: 'Trial Chamber breeze flow motif terracotta vessel fragment.',
+    recommendedWidth: 16,
+    recommendedHeight: 16,
+    sampleColor: '#B45309'
+  },
+
+  // Entities
+  {
+    id: 'entity_creaking',
+    name: 'Creaking',
+    category: 'entity',
+    path: 'textures/entity/creaking/creaking.png',
+    description: 'Pale Garden arboreal nocturnal golem UV texture map.',
+    recommendedWidth: 64,
+    recommendedHeight: 64,
+    sampleColor: '#475569'
+  },
+  {
+    id: 'entity_bogged',
+    name: 'Bogged',
+    category: 'entity',
+    path: 'textures/entity/skeleton/bogged.png',
+    description: 'Poison-arrow shooting mossy swamp skeleton variant.',
+    recommendedWidth: 64,
+    recommendedHeight: 32,
+    sampleColor: '#4D7C0F'
+  },
+  {
+    id: 'entity_wolf_armor',
+    name: 'Wolf Armor (Entity Model)',
+    category: 'entity',
+    path: 'textures/entity/wolf/wolf_armor.png',
+    description: 'Tamed canine protective armadillo plate model layer.',
+    recommendedWidth: 64,
+    recommendedHeight: 32,
+    sampleColor: '#78350F'
+  },
+
+  // Interface / HUD
+  {
+    id: 'ui_trial_chambers_banner',
+    name: 'Trial Chambers Ominous HUD',
+    category: 'ui',
+    path: 'textures/ui/trial_chambers_banner.png',
+    description: 'Ominous event status overlay and counter icon.',
+    recommendedWidth: 32,
+    recommendedHeight: 32,
+    sampleColor: '#6366F1'
   }
 ];
+
+import { COMPREHENSIVE_TEXTURE_CATALOG } from './vanillaCatalogDb';
+import RAW_VANILLA_INDEX from './vanillaTextureIndex.json';
+
+// Deduplicate existing entries with the comprehensive catalog and full downloaded index by both path and id
+const seenPaths = new Set<string>();
+const seenIds = new Set<string>();
+const MERGED_CATALOG: TextureSlot[] = [];
+
+function addUniqueItem(item: TextureSlot) {
+  if (!seenPaths.has(item.path) && !seenIds.has(item.id)) {
+    seenPaths.add(item.path);
+    seenIds.add(item.id);
+    MERGED_CATALOG.push(item);
+  }
+}
+
+for (const item of RAW_TEXTURE_CATALOG) {
+  addUniqueItem(item);
+}
+
+for (const item of COMPREHENSIVE_TEXTURE_CATALOG) {
+  addUniqueItem(item);
+}
+
+for (const item of (RAW_VANILLA_INDEX as TextureSlot[])) {
+  addUniqueItem(item);
+}
+
+// Strict Minecraft Bedrock Creative Inventory & Equipment Order Sorting
+const ARMOR_ORDER = ['leather', 'chainmail', 'iron', 'gold', 'diamond', 'netherite'];
+const PIECE_ORDER = ['helmet', 'chestplate', 'leggings', 'boots', 'layer_1', 'layer_2'];
+const FACE_ORDER = ['top', 'bottom', 'front', 'side'];
+
+function getBedrockSortPriority(item: TextureSlot): number {
+  const path = item.path.toLowerCase();
+
+  // 1. Armor Sets (Strict material & slot ordering)
+  for (let aIdx = 0; aIdx < ARMOR_ORDER.length; aIdx++) {
+    const armor = ARMOR_ORDER[aIdx];
+    if (path.includes(armor)) {
+      for (let pIdx = 0; pIdx < PIECE_ORDER.length; pIdx++) {
+        const piece = PIECE_ORDER[pIdx];
+        if (path.includes(piece)) {
+          return 1000 + aIdx * 100 + pIdx;
+        }
+      }
+      return 1000 + aIdx * 100 + 50;
+    }
+  }
+
+  // 2. Weapons & Tools
+  if (path.includes('sword')) return 2000;
+  if (path.includes('axe') && !path.includes('pickaxe')) return 2010;
+  if (path.includes('pickaxe')) return 2020;
+  if (path.includes('shovel')) return 2030;
+  if (path.includes('hoe')) return 2040;
+  if (path.includes('bow')) return 2050;
+  if (path.includes('crossbow')) return 2060;
+  if (path.includes('mace')) return 2070;
+  if (path.includes('trident')) return 2080;
+
+  // 3. Multi-Face Blocks (Top -> Bottom -> Front -> Side)
+  for (let fIdx = 0; fIdx < FACE_ORDER.length; fIdx++) {
+    const face = FACE_ORDER[fIdx];
+    if (path.includes(`_${face}`)) {
+      return 3000 + fIdx;
+    }
+  }
+
+  // 4. Default categories
+  if (item.category === 'blocks') return 4000;
+  if (item.category === 'items') return 5000;
+  if (item.category === 'entity') return 6000;
+  if (item.category === 'ui') return 7000;
+
+  return 8000;
+}
+
+MERGED_CATALOG.sort((a, b) => {
+  const priorityA = getBedrockSortPriority(a);
+  const priorityB = getBedrockSortPriority(b);
+  if (priorityA !== priorityB) return priorityA - priorityB;
+  return a.name.localeCompare(b.name);
+});
+
+export const TEXTURE_CATALOG: TextureSlot[] = MERGED_CATALOG;
 
 export const CATEGORY_LABELS: Record<string, string> = {
   all: 'All Textures',
   blocks: 'Blocks',
   items: 'Items',
   entity: 'Entities',
-  ui: 'Interface',
-  environment: 'Environment'
+  ui: 'UI & Packed UI',
+  environment: 'Environment',
+  particle: 'Particles & Canvas'
 };

@@ -11,6 +11,8 @@ import {
   Eye,
   Plus,
   Upload,
+  PanelLeftClose,
+  PanelLeftOpen,
 } from 'lucide-react';
 import { ProjectFile } from '../../types';
 
@@ -20,6 +22,9 @@ interface FileTreeProps {
   onDeleteFile: (path: string) => void;
   onUploadCustomFile: (path: string, file: File) => Promise<void>;
   onEditJsonFile?: (path: string) => void;
+  onScaffoldStandardStructure?: () => void;
+  isCollapsed?: boolean;
+  onToggleCollapse?: () => void;
 }
 
 interface TreeNode {
@@ -36,6 +41,9 @@ export const FileTree: React.FC<FileTreeProps> = ({
   onDeleteFile,
   onUploadCustomFile,
   onEditJsonFile,
+  onScaffoldStandardStructure,
+  isCollapsed,
+  onToggleCollapse,
 }) => {
   const [expandedFolders, setExpandedFolders] = useState<Record<string, boolean>>({
     '': true,
@@ -262,20 +270,42 @@ export const FileTree: React.FC<FileTreeProps> = ({
   return (
     <div className="flex flex-col h-full bg-[#111822] border-r border-[#1E293B] select-none">
       {/* Explorer Header */}
-      <div className="p-3 bg-[#141C26] border-b border-[#1E293B] flex items-center justify-between">
+      <div className="p-3 bg-[#141C26] border-b border-[#1E293B] flex items-center justify-between gap-2">
         <div className="flex items-center gap-2">
+          {onToggleCollapse && (
+            <button
+              onClick={onToggleCollapse}
+              title={isCollapsed ? 'Expand Sidebar' : 'Collapse Sidebar'}
+              className="p-1 text-slate-400 hover:text-slate-100 hover:bg-[#1E293B] rounded transition-colors"
+            >
+              {isCollapsed ? <PanelLeftOpen className="w-4 h-4" /> : <PanelLeftClose className="w-4 h-4" />}
+            </button>
+          )}
           <span className="text-xs font-semibold text-slate-200">Pack Explorer</span>
           <span className="text-[10px] font-mono text-slate-400">({totalFiles} files)</span>
         </div>
 
-        <button
-          onClick={() => setIsAddingFile(true)}
-          title="Add File to Resource Pack"
-          className="flex items-center gap-1 text-[11px] text-slate-300 hover:text-emerald-400 px-2 py-1 bg-[#0B0F14] hover:bg-[#1E293B] border border-[#1E293B] rounded transition-colors"
-        >
-          <Plus className="w-3 h-3" />
-          <span>Add File</span>
-        </button>
+        <div className="flex items-center gap-1.5">
+          {onScaffoldStandardStructure && (
+            <button
+              onClick={onScaffoldStandardStructure}
+              title="Scaffold Bedrock Pro Folder Structure (textures/blocks, items, entity, ui, environment)"
+              className="flex items-center gap-1 text-[11px] text-sky-300 hover:text-sky-200 px-2 py-1 bg-sky-950/60 hover:bg-sky-900/60 border border-sky-800/60 rounded transition-colors"
+            >
+              <Folder className="w-3 h-3" />
+              <span>Pro Folders</span>
+            </button>
+          )}
+
+          <button
+            onClick={() => setIsAddingFile(true)}
+            title="Add File to Resource Pack"
+            className="flex items-center gap-1 text-[11px] text-slate-300 hover:text-emerald-400 px-2 py-1 bg-[#0B0F14] hover:bg-[#1E293B] border border-[#1E293B] rounded transition-colors"
+          >
+            <Plus className="w-3 h-3" />
+            <span>Add File</span>
+          </button>
+        </div>
       </div>
 
       {/* New File Modal / Inline form */}

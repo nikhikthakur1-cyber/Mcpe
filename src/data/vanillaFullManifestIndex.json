@@ -1,0 +1,2407 @@
+[
+  {
+    "path": "en_US.lang",
+    "size": 816616,
+    "type": "lang"
+  },
+  {
+    "path": "fogs/bamboo_jungle_fog_setting.json",
+    "size": 1097,
+    "type": "json"
+  },
+  {
+    "path": "fogs/bamboo_jungle_hills_fog_setting.json",
+    "size": 1105,
+    "type": "json"
+  },
+  {
+    "path": "fogs/basalt_deltas_fog_setting.json",
+    "size": 952,
+    "type": "json"
+  },
+  {
+    "path": "fogs/beach_fog_setting.json",
+    "size": 1091,
+    "type": "json"
+  },
+  {
+    "path": "fogs/birch_forest_fog_setting.json",
+    "size": 651,
+    "type": "json"
+  },
+  {
+    "path": "fogs/birch_forest_hills_fog_setting.json",
+    "size": 657,
+    "type": "json"
+  },
+  {
+    "path": "fogs/cherry_grove_fog_setting.json",
+    "size": 651,
+    "type": "json"
+  },
+  {
+    "path": "fogs/cold_beach_fog_setting.json",
+    "size": 649,
+    "type": "json"
+  },
+  {
+    "path": "fogs/cold_ocean_fog_setting.json",
+    "size": 649,
+    "type": "json"
+  },
+  {
+    "path": "fogs/cold_taiga_fog_setting.json",
+    "size": 1096,
+    "type": "json"
+  },
+  {
+    "path": "fogs/cold_taiga_hills_fog_setting.json",
+    "size": 1102,
+    "type": "json"
+  },
+  {
+    "path": "fogs/cold_taiga_mutated_fog_setting.json",
+    "size": 1104,
+    "type": "json"
+  },
+  {
+    "path": "fogs/crimson_forest_fog_setting.json",
+    "size": 953,
+    "type": "json"
+  },
+  {
+    "path": "fogs/dappled_forest_fog_setting.json",
+    "size": 652,
+    "type": "json"
+  },
+  {
+    "path": "fogs/deep_cold_ocean_fog_setting.json",
+    "size": 654,
+    "type": "json"
+  },
+  {
+    "path": "fogs/deep_frozen_ocean_fog_setting.json",
+    "size": 1100,
+    "type": "json"
+  },
+  {
+    "path": "fogs/deep_lukewarm_ocean_fog_setting.json",
+    "size": 1105,
+    "type": "json"
+  },
+  {
+    "path": "fogs/deep_ocean_fog_setting.json",
+    "size": 649,
+    "type": "json"
+  },
+  {
+    "path": "fogs/deep_warm_ocean_fog_setting.json",
+    "size": 1101,
+    "type": "json"
+  },
+  {
+    "path": "fogs/default_fog_setting.json",
+    "size": 1250,
+    "type": "json"
+  },
+  {
+    "path": "fogs/desert_fog_setting.json",
+    "size": 1089,
+    "type": "json"
+  },
+  {
+    "path": "fogs/desert_hills_fog_setting.json",
+    "size": 1095,
+    "type": "json"
+  },
+  {
+    "path": "fogs/dry_fog_setting.json",
+    "size": 1690,
+    "type": "json"
+  },
+  {
+    "path": "fogs/extreme_hills_edge_fog_setting.json",
+    "size": 657,
+    "type": "json"
+  },
+  {
+    "path": "fogs/extreme_hills_fog_setting.json",
+    "size": 652,
+    "type": "json"
+  },
+  {
+    "path": "fogs/extreme_hills_mutated_fog_setting.json",
+    "size": 660,
+    "type": "json"
+  },
+  {
+    "path": "fogs/extreme_hills_plus_trees_fog_setting.json",
+    "size": 1110,
+    "type": "json"
+  },
+  {
+    "path": "fogs/extreme_hills_plus_trees_mutated_fog_setting.json",
+    "size": 1118,
+    "type": "json"
+  },
+  {
+    "path": "fogs/flower_forest_fog_setting.json",
+    "size": 1096,
+    "type": "json"
+  },
+  {
+    "path": "fogs/forest_fog_setting.json",
+    "size": 645,
+    "type": "json"
+  },
+  {
+    "path": "fogs/forest_hills_fog_setting.json",
+    "size": 651,
+    "type": "json"
+  },
+  {
+    "path": "fogs/frozen_ocean_fog_setting.json",
+    "size": 1095,
+    "type": "json"
+  },
+  {
+    "path": "fogs/frozen_river_fog_setting.json",
+    "size": 1095,
+    "type": "json"
+  },
+  {
+    "path": "fogs/hell_fog_setting.json",
+    "size": 943,
+    "type": "json"
+  },
+  {
+    "path": "fogs/humid_fog_setting.json",
+    "size": 1695,
+    "type": "json"
+  },
+  {
+    "path": "fogs/ice_mountains_fog_setting.json",
+    "size": 1096,
+    "type": "json"
+  },
+  {
+    "path": "fogs/ice_plains_fog_setting.json",
+    "size": 1093,
+    "type": "json"
+  },
+  {
+    "path": "fogs/ice_plains_spikes_fog_setting.json",
+    "size": 1103,
+    "type": "json"
+  },
+  {
+    "path": "fogs/jungle_edge_fog_setting.json",
+    "size": 1097,
+    "type": "json"
+  },
+  {
+    "path": "fogs/jungle_fog_setting.json",
+    "size": 1092,
+    "type": "json"
+  },
+  {
+    "path": "fogs/jungle_hills_fog_setting.json",
+    "size": 1098,
+    "type": "json"
+  },
+  {
+    "path": "fogs/jungle_mutated_fog_setting.json",
+    "size": 1100,
+    "type": "json"
+  },
+  {
+    "path": "fogs/lukewarm_ocean_fog_setting.json",
+    "size": 1100,
+    "type": "json"
+  },
+  {
+    "path": "fogs/lush_caves_fog_setting.json",
+    "size": 1700,
+    "type": "json"
+  },
+  {
+    "path": "fogs/mangrove_swamp_fog_setting.json",
+    "size": 1098,
+    "type": "json"
+  },
+  {
+    "path": "fogs/mega_spruce_taiga_fog_setting.json",
+    "size": 656,
+    "type": "json"
+  },
+  {
+    "path": "fogs/mega_spruse_taiga_mutated_fog_setting.json",
+    "size": 664,
+    "type": "json"
+  },
+  {
+    "path": "fogs/mega_taiga_fog_setting.json",
+    "size": 1096,
+    "type": "json"
+  },
+  {
+    "path": "fogs/mega_taiga_hills_fog_setting.json",
+    "size": 1102,
+    "type": "json"
+  },
+  {
+    "path": "fogs/mega_taiga_mutated_fog_setting.json",
+    "size": 657,
+    "type": "json"
+  },
+  {
+    "path": "fogs/mesa_bryce_fog_setting.json",
+    "size": 1093,
+    "type": "json"
+  },
+  {
+    "path": "fogs/mesa_fog_setting.json",
+    "size": 1087,
+    "type": "json"
+  },
+  {
+    "path": "fogs/mesa_mutated_fog_setting.json",
+    "size": 651,
+    "type": "json"
+  },
+  {
+    "path": "fogs/mesa_plateau_fog_setting.json",
+    "size": 1095,
+    "type": "json"
+  },
+  {
+    "path": "fogs/mesa_plateau_stone_fog_setting.json",
+    "size": 1101,
+    "type": "json"
+  },
+  {
+    "path": "fogs/mushroom_island_fog_setting.json",
+    "size": 1107,
+    "type": "json"
+  },
+  {
+    "path": "fogs/mushroom_island_shore_fog_setting.json",
+    "size": 1113,
+    "type": "json"
+  },
+  {
+    "path": "fogs/ocean_fog_setting.json",
+    "size": 644,
+    "type": "json"
+  },
+  {
+    "path": "fogs/pale_garden_fog_setting.json",
+    "size": 1399,
+    "type": "json"
+  },
+  {
+    "path": "fogs/plains_fog_setting.json",
+    "size": 643,
+    "type": "json"
+  },
+  {
+    "path": "fogs/powder_snow_fog_setting.json",
+    "size": 322,
+    "type": "json"
+  },
+  {
+    "path": "fogs/river_fog_setting.json",
+    "size": 642,
+    "type": "json"
+  },
+  {
+    "path": "fogs/roofed_forest_fog_setting.json",
+    "size": 1100,
+    "type": "json"
+  },
+  {
+    "path": "fogs/roofed_forest_mutated_fog_setting.json",
+    "size": 1758,
+    "type": "json"
+  },
+  {
+    "path": "fogs/savanna_fog_setting.json",
+    "size": 646,
+    "type": "json"
+  },
+  {
+    "path": "fogs/savanna_mutated_fog_setting.json",
+    "size": 654,
+    "type": "json"
+  },
+  {
+    "path": "fogs/savanna_plateau_fog_setting.json",
+    "size": 654,
+    "type": "json"
+  },
+  {
+    "path": "fogs/semi_humid_fog_setting.json",
+    "size": 1700,
+    "type": "json"
+  },
+  {
+    "path": "fogs/soulsand_valley_fog_setting.json",
+    "size": 954,
+    "type": "json"
+  },
+  {
+    "path": "fogs/stone_beach_fog_setting.json",
+    "size": 650,
+    "type": "json"
+  },
+  {
+    "path": "fogs/sulfur_cave_fog_setting.json",
+    "size": 1400,
+    "type": "json"
+  },
+  {
+    "path": "fogs/sunflower_plains_fog_setting.json",
+    "size": 1097,
+    "type": "json"
+  },
+  {
+    "path": "fogs/swampland_fog_setting.json",
+    "size": 1140,
+    "type": "json"
+  },
+  {
+    "path": "fogs/swampland_mutated_fog_setting.json",
+    "size": 1148,
+    "type": "json"
+  },
+  {
+    "path": "fogs/taiga_fog_setting.json",
+    "size": 1091,
+    "type": "json"
+  },
+  {
+    "path": "fogs/taiga_hills_fog_setting.json",
+    "size": 1097,
+    "type": "json"
+  },
+  {
+    "path": "fogs/taiga_mutated_fog_setting.json",
+    "size": 1099,
+    "type": "json"
+  },
+  {
+    "path": "fogs/the_end_fog_setting.json",
+    "size": 1241,
+    "type": "json"
+  },
+  {
+    "path": "fogs/warm_ocean_fog_setting.json",
+    "size": 1096,
+    "type": "json"
+  },
+  {
+    "path": "fogs/warped_forest_fog_setting.json",
+    "size": 952,
+    "type": "json"
+  },
+  {
+    "path": "particles/arrowspell.json",
+    "size": 2661,
+    "type": "json"
+  },
+  {
+    "path": "particles/balloon_gas.json",
+    "size": 2876,
+    "type": "json"
+  },
+  {
+    "path": "particles/basic_bubble.json",
+    "size": 2153,
+    "type": "json"
+  },
+  {
+    "path": "particles/basic_bubble_manual.json",
+    "size": 1726,
+    "type": "json"
+  },
+  {
+    "path": "particles/basic_crit.json",
+    "size": 2615,
+    "type": "json"
+  },
+  {
+    "path": "particles/basic_flame.json",
+    "size": 1401,
+    "type": "json"
+  },
+  {
+    "path": "particles/basic_portal.json",
+    "size": 2060,
+    "type": "json"
+  },
+  {
+    "path": "particles/basic_smoke.json",
+    "size": 2229,
+    "type": "json"
+  },
+  {
+    "path": "particles/biome_tinted_leaves_particle.json",
+    "size": 2509,
+    "type": "json"
+  },
+  {
+    "path": "particles/bleach.json",
+    "size": 1416,
+    "type": "json"
+  },
+  {
+    "path": "particles/block_destruct.json",
+    "size": 2695,
+    "type": "json"
+  },
+  {
+    "path": "particles/block_slide.json",
+    "size": 2693,
+    "type": "json"
+  },
+  {
+    "path": "particles/blue_flame.json",
+    "size": 1401,
+    "type": "json"
+  },
+  {
+    "path": "particles/breaking_item_icon.json",
+    "size": 2973,
+    "type": "json"
+  },
+  {
+    "path": "particles/breaking_item_terrain.json",
+    "size": 2955,
+    "type": "json"
+  },
+  {
+    "path": "particles/breeze_ground_particle.json",
+    "size": 2687,
+    "type": "json"
+  },
+  {
+    "path": "particles/breeze_wind_explosion.json",
+    "size": 1756,
+    "type": "json"
+  },
+  {
+    "path": "particles/bubble_column_bubble.json",
+    "size": 2213,
+    "type": "json"
+  },
+  {
+    "path": "particles/bubble_column_down.json",
+    "size": 2035,
+    "type": "json"
+  },
+  {
+    "path": "particles/bubble_column_up.json",
+    "size": 1878,
+    "type": "json"
+  },
+  {
+    "path": "particles/camera_shoot_explosion.json",
+    "size": 1931,
+    "type": "json"
+  },
+  {
+    "path": "particles/campfire_smoke.json",
+    "size": 1859,
+    "type": "json"
+  },
+  {
+    "path": "particles/campfire_smoke_tall.json",
+    "size": 1864,
+    "type": "json"
+  },
+  {
+    "path": "particles/candle_flame.json",
+    "size": 1421,
+    "type": "json"
+  },
+  {
+    "path": "particles/cauldron_bubble.json",
+    "size": 1871,
+    "type": "json"
+  },
+  {
+    "path": "particles/cauldron_splash.json",
+    "size": 2246,
+    "type": "json"
+  },
+  {
+    "path": "particles/cauldronspell.json",
+    "size": 2791,
+    "type": "json"
+  },
+  {
+    "path": "particles/cherry_leaves_particle.json",
+    "size": 2764,
+    "type": "json"
+  },
+  {
+    "path": "particles/colored_flame.json",
+    "size": 1706,
+    "type": "json"
+  },
+  {
+    "path": "particles/conduit.json",
+    "size": 2019,
+    "type": "json"
+  },
+  {
+    "path": "particles/conduit_absorb.json",
+    "size": 2026,
+    "type": "json"
+  },
+  {
+    "path": "particles/conduit_attack.json",
+    "size": 2166,
+    "type": "json"
+  },
+  {
+    "path": "particles/creaking_crumble_body.json",
+    "size": 2047,
+    "type": "json"
+  },
+  {
+    "path": "particles/creaking_crumble_head.json",
+    "size": 2055,
+    "type": "json"
+  },
+  {
+    "path": "particles/creaking_heart_trail.json",
+    "size": 1662,
+    "type": "json"
+  },
+  {
+    "path": "particles/critical_hit.json",
+    "size": 2811,
+    "type": "json"
+  },
+  {
+    "path": "particles/crop_growth.json",
+    "size": 1666,
+    "type": "json"
+  },
+  {
+    "path": "particles/crop_growth_area.json",
+    "size": 1671,
+    "type": "json"
+  },
+  {
+    "path": "particles/dolphin_move_particle.json",
+    "size": 2338,
+    "type": "json"
+  },
+  {
+    "path": "particles/dragon_breath_fire.json",
+    "size": 2549,
+    "type": "json"
+  },
+  {
+    "path": "particles/dragon_breath_lingering.json",
+    "size": 2287,
+    "type": "json"
+  },
+  {
+    "path": "particles/dragon_breath_trail.json",
+    "size": 2010,
+    "type": "json"
+  },
+  {
+    "path": "particles/dragon_death_explosion.json",
+    "size": 2133,
+    "type": "json"
+  },
+  {
+    "path": "particles/dragon_destroy_block.json",
+    "size": 1929,
+    "type": "json"
+  },
+  {
+    "path": "particles/dragon_dying_explosion.json",
+    "size": 1931,
+    "type": "json"
+  },
+  {
+    "path": "particles/dripstone_lava_drip.json",
+    "size": 2529,
+    "type": "json"
+  },
+  {
+    "path": "particles/dripstone_water_drip.json",
+    "size": 2626,
+    "type": "json"
+  },
+  {
+    "path": "particles/dust_plume.json",
+    "size": 2411,
+    "type": "json"
+  },
+  {
+    "path": "particles/electric_spark.json",
+    "size": 2054,
+    "type": "json"
+  },
+  {
+    "path": "particles/enchanting_table_particle.json",
+    "size": 2160,
+    "type": "json"
+  },
+  {
+    "path": "particles/end_chest.json",
+    "size": 2992,
+    "type": "json"
+  },
+  {
+    "path": "particles/endrod.json",
+    "size": 2748,
+    "type": "json"
+  },
+  {
+    "path": "particles/evaporation_elephant_toothpaste.json",
+    "size": 2719,
+    "type": "json"
+  },
+  {
+    "path": "particles/evocation_fang.json",
+    "size": 2478,
+    "type": "json"
+  },
+  {
+    "path": "particles/evoker_spell.json",
+    "size": 2436,
+    "type": "json"
+  },
+  {
+    "path": "particles/explosion_cauldron.json",
+    "size": 2746,
+    "type": "json"
+  },
+  {
+    "path": "particles/explosion_death.json",
+    "size": 2868,
+    "type": "json"
+  },
+  {
+    "path": "particles/explosion_egg_destroy.json",
+    "size": 2740,
+    "type": "json"
+  },
+  {
+    "path": "particles/explosion_eyeofender_death.json",
+    "size": 2842,
+    "type": "json"
+  },
+  {
+    "path": "particles/explosion_labtable_fire.json",
+    "size": 2708,
+    "type": "json"
+  },
+  {
+    "path": "particles/explosion_level.json",
+    "size": 2851,
+    "type": "json"
+  },
+  {
+    "path": "particles/explosion_manual.json",
+    "size": 2741,
+    "type": "json"
+  },
+  {
+    "path": "particles/eye_of_ender_bubble.json",
+    "size": 1962,
+    "type": "json"
+  },
+  {
+    "path": "particles/eyeblossom_close.json",
+    "size": 1710,
+    "type": "json"
+  },
+  {
+    "path": "particles/eyeblossom_open.json",
+    "size": 1711,
+    "type": "json"
+  },
+  {
+    "path": "particles/falling_border_dust.json",
+    "size": 2379,
+    "type": "json"
+  },
+  {
+    "path": "particles/falling_dust.json",
+    "size": 2357,
+    "type": "json"
+  },
+  {
+    "path": "particles/falling_dust_concrete_powder.json",
+    "size": 2399,
+    "type": "json"
+  },
+  {
+    "path": "particles/falling_dust_dragon_egg.json",
+    "size": 2326,
+    "type": "json"
+  },
+  {
+    "path": "particles/falling_dust_gravel.json",
+    "size": 2334,
+    "type": "json"
+  },
+  {
+    "path": "particles/falling_dust_red_sand.json",
+    "size": 2336,
+    "type": "json"
+  },
+  {
+    "path": "particles/falling_dust_sand.json",
+    "size": 2339,
+    "type": "json"
+  },
+  {
+    "path": "particles/falling_dust_scaffolding.json",
+    "size": 2339,
+    "type": "json"
+  },
+  {
+    "path": "particles/falling_dust_top_snow.json",
+    "size": 2324,
+    "type": "json"
+  },
+  {
+    "path": "particles/firefly_particle.json",
+    "size": 2645,
+    "type": "json"
+  },
+  {
+    "path": "particles/fish_hook.json",
+    "size": 1952,
+    "type": "json"
+  },
+  {
+    "path": "particles/fish_pos.json",
+    "size": 1951,
+    "type": "json"
+  },
+  {
+    "path": "particles/geyser_base.particle.json",
+    "size": 1921,
+    "type": "json"
+  },
+  {
+    "path": "particles/geyser_plume.particle.json",
+    "size": 2539,
+    "type": "json"
+  },
+  {
+    "path": "particles/geyser_poof.particle.json",
+    "size": 1687,
+    "type": "json"
+  },
+  {
+    "path": "particles/glow.json",
+    "size": 2046,
+    "type": "json"
+  },
+  {
+    "path": "particles/green_flame.json",
+    "size": 1402,
+    "type": "json"
+  },
+  {
+    "path": "particles/guardian_attack.json",
+    "size": 1871,
+    "type": "json"
+  },
+  {
+    "path": "particles/guardian_water_move.json",
+    "size": 1900,
+    "type": "json"
+  },
+  {
+    "path": "particles/heart.json",
+    "size": 1523,
+    "type": "json"
+  },
+  {
+    "path": "particles/honey_drip.json",
+    "size": 2691,
+    "type": "json"
+  },
+  {
+    "path": "particles/huge_explosion_lab_misc.json",
+    "size": 2137,
+    "type": "json"
+  },
+  {
+    "path": "particles/huge_explosion_level.json",
+    "size": 2128,
+    "type": "json"
+  },
+  {
+    "path": "particles/ice_evaporation.json",
+    "size": 2578,
+    "type": "json"
+  },
+  {
+    "path": "particles/infested_ambient.json",
+    "size": 1993,
+    "type": "json"
+  },
+  {
+    "path": "particles/infested_emitter.json",
+    "size": 2029,
+    "type": "json"
+  },
+  {
+    "path": "particles/ink.json",
+    "size": 2957,
+    "type": "json"
+  },
+  {
+    "path": "particles/knockback_roar.json",
+    "size": 2426,
+    "type": "json"
+  },
+  {
+    "path": "particles/lab_table_heatblock_dust.json",
+    "size": 2114,
+    "type": "json"
+  },
+  {
+    "path": "particles/lab_table_misc_mystical.json",
+    "size": 2009,
+    "type": "json"
+  },
+  {
+    "path": "particles/large_explosion_level.json",
+    "size": 1924,
+    "type": "json"
+  },
+  {
+    "path": "particles/lava_drip.json",
+    "size": 2308,
+    "type": "json"
+  },
+  {
+    "path": "particles/lava_particle.json",
+    "size": 2573,
+    "type": "json"
+  },
+  {
+    "path": "particles/llama_spit.json",
+    "size": 2594,
+    "type": "json"
+  },
+  {
+    "path": "particles/magic_critical_hit.json",
+    "size": 2388,
+    "type": "json"
+  },
+  {
+    "path": "particles/magnesium_salts.json",
+    "size": 2713,
+    "type": "json"
+  },
+  {
+    "path": "particles/mob_block_spawn.json",
+    "size": 3184,
+    "type": "json"
+  },
+  {
+    "path": "particles/mob_portal.json",
+    "size": 2248,
+    "type": "json"
+  },
+  {
+    "path": "particles/mobflame.json",
+    "size": 1811,
+    "type": "json"
+  },
+  {
+    "path": "particles/mobflame_single.json",
+    "size": 1658,
+    "type": "json"
+  },
+  {
+    "path": "particles/mobspell.json",
+    "size": 2720,
+    "type": "json"
+  },
+  {
+    "path": "particles/mobspell_ambient.json",
+    "size": 2669,
+    "type": "json"
+  },
+  {
+    "path": "particles/mobspell_lingering.json",
+    "size": 2838,
+    "type": "json"
+  },
+  {
+    "path": "particles/mycelium_dust.json",
+    "size": 2007,
+    "type": "json"
+  },
+  {
+    "path": "particles/nautilus_bubbles.json",
+    "size": 2357,
+    "type": "json"
+  },
+  {
+    "path": "particles/nectar_drip.json",
+    "size": 2262,
+    "type": "json"
+  },
+  {
+    "path": "particles/note.json",
+    "size": 1821,
+    "type": "json"
+  },
+  {
+    "path": "particles/noxious_gas_particle.json",
+    "size": 1940,
+    "type": "json"
+  },
+  {
+    "path": "particles/obsidian_glow_dust.json",
+    "size": 2366,
+    "type": "json"
+  },
+  {
+    "path": "particles/obsidian_tear.json",
+    "size": 2266,
+    "type": "json"
+  },
+  {
+    "path": "particles/ominous_spawning_particle.json",
+    "size": 2241,
+    "type": "json"
+  },
+  {
+    "path": "particles/oozing_ambient.json",
+    "size": 1774,
+    "type": "json"
+  },
+  {
+    "path": "particles/oozing_emitter.json",
+    "size": 1774,
+    "type": "json"
+  },
+  {
+    "path": "particles/orange_poplar_leaves_particle.json",
+    "size": 3529,
+    "type": "json"
+  },
+  {
+    "path": "particles/pale_oak_leaves_particle.json",
+    "size": 2794,
+    "type": "json"
+  },
+  {
+    "path": "particles/pause_mob_growth.json",
+    "size": 1309,
+    "type": "json"
+  },
+  {
+    "path": "particles/phantom_trail.json",
+    "size": 2033,
+    "type": "json"
+  },
+  {
+    "path": "particles/portal_directional.json",
+    "size": 2292,
+    "type": "json"
+  },
+  {
+    "path": "particles/portal_east_west.json",
+    "size": 2636,
+    "type": "json"
+  },
+  {
+    "path": "particles/portal_north_south.json",
+    "size": 2638,
+    "type": "json"
+  },
+  {
+    "path": "particles/portal_reverse.json",
+    "size": 2893,
+    "type": "json"
+  },
+  {
+    "path": "particles/raid_omen_ambient.json",
+    "size": 1995,
+    "type": "json"
+  },
+  {
+    "path": "particles/raid_omen_emitter.json",
+    "size": 2031,
+    "type": "json"
+  },
+  {
+    "path": "particles/rain_splash.json",
+    "size": 1995,
+    "type": "json"
+  },
+  {
+    "path": "particles/red_poplar_leaves_particle.json",
+    "size": 3523,
+    "type": "json"
+  },
+  {
+    "path": "particles/redstone_ore_dust.json",
+    "size": 2359,
+    "type": "json"
+  },
+  {
+    "path": "particles/redstone_repeater_dust.json",
+    "size": 2370,
+    "type": "json"
+  },
+  {
+    "path": "particles/redstone_torch_dust.json",
+    "size": 2367,
+    "type": "json"
+  },
+  {
+    "path": "particles/redstone_wire_dust.json",
+    "size": 2360,
+    "type": "json"
+  },
+  {
+    "path": "particles/reset_mob_growth.json",
+    "size": 1307,
+    "type": "json"
+  },
+  {
+    "path": "particles/rising_border_dust.json",
+    "size": 2375,
+    "type": "json"
+  },
+  {
+    "path": "particles/sculk_charge.json",
+    "size": 2224,
+    "type": "json"
+  },
+  {
+    "path": "particles/sculk_charge_pop.json",
+    "size": 2182,
+    "type": "json"
+  },
+  {
+    "path": "particles/sculk_sensor_redstone_particle.json",
+    "size": 2769,
+    "type": "json"
+  },
+  {
+    "path": "particles/sculk_soul.json",
+    "size": 2348,
+    "type": "json"
+  },
+  {
+    "path": "particles/shriek.json",
+    "size": 1407,
+    "type": "json"
+  },
+  {
+    "path": "particles/shulker_bullet.json",
+    "size": 2755,
+    "type": "json"
+  },
+  {
+    "path": "particles/silverfish_grief.json",
+    "size": 2908,
+    "type": "json"
+  },
+  {
+    "path": "particles/small_flame.json",
+    "size": 2331,
+    "type": "json"
+  },
+  {
+    "path": "particles/small_soul_fire_flame.json",
+    "size": 2333,
+    "type": "json"
+  },
+  {
+    "path": "particles/smash_ground_particle.json",
+    "size": 3550,
+    "type": "json"
+  },
+  {
+    "path": "particles/smash_ground_particle_center.json",
+    "size": 3457,
+    "type": "json"
+  },
+  {
+    "path": "particles/sneeze.json",
+    "size": 1848,
+    "type": "json"
+  },
+  {
+    "path": "particles/snowflake.json",
+    "size": 2224,
+    "type": "json"
+  },
+  {
+    "path": "particles/sonic_explosion.json",
+    "size": 2228,
+    "type": "json"
+  },
+  {
+    "path": "particles/soul.json",
+    "size": 2048,
+    "type": "json"
+  },
+  {
+    "path": "particles/sparkler.json",
+    "size": 2627,
+    "type": "json"
+  },
+  {
+    "path": "particles/splashpotionspell.json",
+    "size": 3584,
+    "type": "json"
+  },
+  {
+    "path": "particles/sponge_absorb_bubble.json",
+    "size": 1962,
+    "type": "json"
+  },
+  {
+    "path": "particles/spore_blossom_ambient_block_actor.json",
+    "size": 1985,
+    "type": "json"
+  },
+  {
+    "path": "particles/spore_blossom_shower.json",
+    "size": 2595,
+    "type": "json"
+  },
+  {
+    "path": "particles/squid_flee.json",
+    "size": 1866,
+    "type": "json"
+  },
+  {
+    "path": "particles/squid_ink_bubble.json",
+    "size": 2271,
+    "type": "json"
+  },
+  {
+    "path": "particles/squid_move.json",
+    "size": 2228,
+    "type": "json"
+  },
+  {
+    "path": "particles/stunned.json",
+    "size": 2467,
+    "type": "json"
+  },
+  {
+    "path": "particles/sulfur_bubble_particle.json",
+    "size": 2472,
+    "type": "json"
+  },
+  {
+    "path": "particles/sulfur_cube_particle.json",
+    "size": 1835,
+    "type": "json"
+  },
+  {
+    "path": "particles/totem.json",
+    "size": 2844,
+    "type": "json"
+  },
+  {
+    "path": "particles/totem_manual.json",
+    "size": 2786,
+    "type": "json"
+  },
+  {
+    "path": "particles/trial_omen_ambient.json",
+    "size": 1997,
+    "type": "json"
+  },
+  {
+    "path": "particles/trial_omen_emitter.json",
+    "size": 2033,
+    "type": "json"
+  },
+  {
+    "path": "particles/trial_omen_single.json",
+    "size": 2303,
+    "type": "json"
+  },
+  {
+    "path": "particles/trial_spawner_detection.particle.json",
+    "size": 2988,
+    "type": "json"
+  },
+  {
+    "path": "particles/trial_spawner_detection_ominous.particle.json",
+    "size": 3004,
+    "type": "json"
+  },
+  {
+    "path": "particles/underwater_torch_bubble.json",
+    "size": 1959,
+    "type": "json"
+  },
+  {
+    "path": "particles/vault_connection.json",
+    "size": 2091,
+    "type": "json"
+  },
+  {
+    "path": "particles/vibration_signal.json",
+    "size": 2486,
+    "type": "json"
+  },
+  {
+    "path": "particles/villager_angry.json",
+    "size": 1424,
+    "type": "json"
+  },
+  {
+    "path": "particles/villager_happy.json",
+    "size": 1599,
+    "type": "json"
+  },
+  {
+    "path": "particles/warden_dig.particle.json",
+    "size": 2715,
+    "type": "json"
+  },
+  {
+    "path": "particles/water_drip.json",
+    "size": 2511,
+    "type": "json"
+  },
+  {
+    "path": "particles/water_evaporation_actor.json",
+    "size": 2951,
+    "type": "json"
+  },
+  {
+    "path": "particles/water_evaporation_bucket.json",
+    "size": 2720,
+    "type": "json"
+  },
+  {
+    "path": "particles/water_evaporation_manual.json",
+    "size": 2590,
+    "type": "json"
+  },
+  {
+    "path": "particles/water_splash.json",
+    "size": 2282,
+    "type": "json"
+  },
+  {
+    "path": "particles/water_splash_manual.json",
+    "size": 2115,
+    "type": "json"
+  },
+  {
+    "path": "particles/water_wake.json",
+    "size": 1739,
+    "type": "json"
+  },
+  {
+    "path": "particles/wax.json",
+    "size": 2220,
+    "type": "json"
+  },
+  {
+    "path": "particles/weaving_ambient.json",
+    "size": 1770,
+    "type": "json"
+  },
+  {
+    "path": "particles/weaving_emitter.json",
+    "size": 1770,
+    "type": "json"
+  },
+  {
+    "path": "particles/white_smoke.json",
+    "size": 2288,
+    "type": "json"
+  },
+  {
+    "path": "particles/wind_charged_ambient.json",
+    "size": 1537,
+    "type": "json"
+  },
+  {
+    "path": "particles/wind_charged_emitter.json",
+    "size": 1537,
+    "type": "json"
+  },
+  {
+    "path": "particles/wind_explosion.json",
+    "size": 1748,
+    "type": "json"
+  },
+  {
+    "path": "particles/witchspell.json",
+    "size": 2897,
+    "type": "json"
+  },
+  {
+    "path": "particles/wither_boss_invulnerable.json",
+    "size": 2617,
+    "type": "json"
+  },
+  {
+    "path": "particles/yellow_poplar_leaves_particle.json",
+    "size": 3529,
+    "type": "json"
+  },
+  {
+    "path": "sounds.json",
+    "size": 357066,
+    "type": "json"
+  },
+  {
+    "path": "ui/_global_variables.json",
+    "size": 20210,
+    "type": "json"
+  },
+  {
+    "path": "ui/_ui_defs.json",
+    "size": 7547,
+    "type": "json"
+  },
+  {
+    "path": "ui/achievement_screen.json",
+    "size": 843,
+    "type": "json"
+  },
+  {
+    "path": "ui/add_external_server_screen.json",
+    "size": 8018,
+    "type": "json"
+  },
+  {
+    "path": "ui/adhoc_inprogess_screen.json",
+    "size": 2180,
+    "type": "json"
+  },
+  {
+    "path": "ui/adhoc_screen.json",
+    "size": 3331,
+    "type": "json"
+  },
+  {
+    "path": "ui/anvil_screen.json",
+    "size": 11893,
+    "type": "json"
+  },
+  {
+    "path": "ui/anvil_screen_pocket.json",
+    "size": 8695,
+    "type": "json"
+  },
+  {
+    "path": "ui/authentication_modals.json",
+    "size": 5028,
+    "type": "json"
+  },
+  {
+    "path": "ui/authentication_screen.json",
+    "size": 40584,
+    "type": "json"
+  },
+  {
+    "path": "ui/auto_save_info_screen.json",
+    "size": 4484,
+    "type": "json"
+  },
+  {
+    "path": "ui/beacon_screen.json",
+    "size": 18434,
+    "type": "json"
+  },
+  {
+    "path": "ui/beacon_screen_pocket.json",
+    "size": 24702,
+    "type": "json"
+  },
+  {
+    "path": "ui/beta_feedback_qr.json",
+    "size": 4595,
+    "type": "json"
+  },
+  {
+    "path": "ui/blast_furnace_screen.json",
+    "size": 91,
+    "type": "json"
+  },
+  {
+    "path": "ui/book_screen.json",
+    "size": 32555,
+    "type": "json"
+  },
+  {
+    "path": "ui/brewing_stand_screen.json",
+    "size": 9483,
+    "type": "json"
+  },
+  {
+    "path": "ui/brewing_stand_screen_pocket.json",
+    "size": 11340,
+    "type": "json"
+  },
+  {
+    "path": "ui/bundle_purchase_warning_screen.json",
+    "size": 10183,
+    "type": "json"
+  },
+  {
+    "path": "ui/cartography_screen.json",
+    "size": 11967,
+    "type": "json"
+  },
+  {
+    "path": "ui/cartography_screen_pocket.json",
+    "size": 13850,
+    "type": "json"
+  },
+  {
+    "path": "ui/chalkboard_screen.json",
+    "size": 2899,
+    "type": "json"
+  },
+  {
+    "path": "ui/chat_screen.json",
+    "size": 29440,
+    "type": "json"
+  },
+  {
+    "path": "ui/chat_settings_menu_screen.json",
+    "size": 14676,
+    "type": "json"
+  },
+  {
+    "path": "ui/chest_screen.json",
+    "size": 8642,
+    "type": "json"
+  },
+  {
+    "path": "ui/choose_realm_screen.json",
+    "size": 21569,
+    "type": "json"
+  },
+  {
+    "path": "ui/coin_purchase_screen.json",
+    "size": 57152,
+    "type": "json"
+  },
+  {
+    "path": "ui/command_block_screen.json",
+    "size": 37370,
+    "type": "json"
+  },
+  {
+    "path": "ui/confirm_delete_account_screen.json",
+    "size": 9333,
+    "type": "json"
+  },
+  {
+    "path": "ui/content_log.json",
+    "size": 2583,
+    "type": "json"
+  },
+  {
+    "path": "ui/content_log_history_screen.json",
+    "size": 6809,
+    "type": "json"
+  },
+  {
+    "path": "ui/crafter_screen_pocket.json",
+    "size": 15136,
+    "type": "json"
+  },
+  {
+    "path": "ui/create_world_upsell_screen.json",
+    "size": 16978,
+    "type": "json"
+  },
+  {
+    "path": "ui/credits_screen.json",
+    "size": 4028,
+    "type": "json"
+  },
+  {
+    "path": "ui/csb_purchase_error_screen.json",
+    "size": 3385,
+    "type": "json"
+  },
+  {
+    "path": "ui/csb_screen.json",
+    "size": 18160,
+    "type": "json"
+  },
+  {
+    "path": "ui/csb_sections/content_section.json",
+    "size": 12658,
+    "type": "json"
+  },
+  {
+    "path": "ui/csb_sections/csb_banner.json",
+    "size": 18614,
+    "type": "json"
+  },
+  {
+    "path": "ui/csb_sections/csb_buy_now_screen.json",
+    "size": 12242,
+    "type": "json"
+  },
+  {
+    "path": "ui/csb_sections/csb_common.json",
+    "size": 6604,
+    "type": "json"
+  },
+  {
+    "path": "ui/csb_sections/csb_purchase_amazondevicewarning_screen.json",
+    "size": 2685,
+    "type": "json"
+  },
+  {
+    "path": "ui/csb_sections/csb_purchase_warning_screen.json",
+    "size": 2795,
+    "type": "json"
+  },
+  {
+    "path": "ui/csb_sections/csb_subscription_panel.json",
+    "size": 9254,
+    "type": "json"
+  },
+  {
+    "path": "ui/csb_sections/csb_upsell_dialog.json",
+    "size": 19665,
+    "type": "json"
+  },
+  {
+    "path": "ui/csb_sections/csb_welcome_screen.json",
+    "size": 2025,
+    "type": "json"
+  },
+  {
+    "path": "ui/csb_sections/faq_section.json",
+    "size": 10490,
+    "type": "json"
+  },
+  {
+    "path": "ui/csb_sections/landing_section.json",
+    "size": 13483,
+    "type": "json"
+  },
+  {
+    "path": "ui/custom_templates_screen.json",
+    "size": 11090,
+    "type": "json"
+  },
+  {
+    "path": "ui/data_driven_container_screen.json",
+    "size": 6421,
+    "type": "json"
+  },
+  {
+    "path": "ui/day_one_experience_intro_screen.json",
+    "size": 16726,
+    "type": "json"
+  },
+  {
+    "path": "ui/day_one_experience_screen.json",
+    "size": 21135,
+    "type": "json"
+  },
+  {
+    "path": "ui/death_screen.json",
+    "size": 5327,
+    "type": "json"
+  },
+  {
+    "path": "ui/debug_screen.json",
+    "size": 1281,
+    "type": "json"
+  },
+  {
+    "path": "ui/dev_console_screen.json",
+    "size": 7279,
+    "type": "json"
+  },
+  {
+    "path": "ui/disconnect_screen.json",
+    "size": 8105,
+    "type": "json"
+  },
+  {
+    "path": "ui/display_logged_error_screen.json",
+    "size": 9790,
+    "type": "json"
+  },
+  {
+    "path": "ui/edu_discovery_dialog.json",
+    "size": 2450,
+    "type": "json"
+  },
+  {
+    "path": "ui/edu_featured.json",
+    "size": 1168,
+    "type": "json"
+  },
+  {
+    "path": "ui/edu_pause_screen_pause_button.json",
+    "size": 353,
+    "type": "json"
+  },
+  {
+    "path": "ui/emote_wheel_screen.json",
+    "size": 9641,
+    "type": "json"
+  },
+  {
+    "path": "ui/enchanting_screen.json",
+    "size": 12644,
+    "type": "json"
+  },
+  {
+    "path": "ui/enchanting_screen_pocket.json",
+    "size": 17616,
+    "type": "json"
+  },
+  {
+    "path": "ui/encyclopedia_screen.json",
+    "size": 122940,
+    "type": "json"
+  },
+  {
+    "path": "ui/expanded_skin_pack_screen.json",
+    "size": 24152,
+    "type": "json"
+  },
+  {
+    "path": "ui/feed_common.json",
+    "size": 18618,
+    "type": "json"
+  },
+  {
+    "path": "ui/file_upload_screen.json",
+    "size": 10969,
+    "type": "json"
+  },
+  {
+    "path": "ui/furnace_screen.json",
+    "size": 63573,
+    "type": "json"
+  },
+  {
+    "path": "ui/furnace_screen_pocket.json",
+    "size": 22494,
+    "type": "json"
+  },
+  {
+    "path": "ui/game_tip_screen.json",
+    "size": 6347,
+    "type": "json"
+  },
+  {
+    "path": "ui/gamepad_disconnected.json",
+    "size": 2326,
+    "type": "json"
+  },
+  {
+    "path": "ui/gamepad_layout_screen.json",
+    "size": 15954,
+    "type": "json"
+  },
+  {
+    "path": "ui/gameplay_common.json",
+    "size": 28808,
+    "type": "json"
+  },
+  {
+    "path": "ui/gamma_calibration_screen.json",
+    "size": 6213,
+    "type": "json"
+  },
+  {
+    "path": "ui/global_pause_screen.json",
+    "size": 1398,
+    "type": "json"
+  },
+  {
+    "path": "ui/grindstone_screen.json",
+    "size": 7888,
+    "type": "json"
+  },
+  {
+    "path": "ui/grindstone_screen_pocket.json",
+    "size": 6678,
+    "type": "json"
+  },
+  {
+    "path": "ui/horse_screen.json",
+    "size": 8628,
+    "type": "json"
+  },
+  {
+    "path": "ui/horse_screen_pocket.json",
+    "size": 18396,
+    "type": "json"
+  },
+  {
+    "path": "ui/host_options_screen.json",
+    "size": 21824,
+    "type": "json"
+  },
+  {
+    "path": "ui/how_to_play_common.json",
+    "size": 17562,
+    "type": "json"
+  },
+  {
+    "path": "ui/how_to_play_screen.json",
+    "size": 49338,
+    "type": "json"
+  },
+  {
+    "path": "ui/hud_crosshair_overlay.json",
+    "size": 516,
+    "type": "json"
+  },
+  {
+    "path": "ui/hud_screen.json",
+    "size": 118620,
+    "type": "json"
+  },
+  {
+    "path": "ui/immersive_reader.json",
+    "size": 6543,
+    "type": "json"
+  },
+  {
+    "path": "ui/in_bed_screen.json",
+    "size": 3288,
+    "type": "json"
+  },
+  {
+    "path": "ui/inventory_screen.json",
+    "size": 84539,
+    "type": "json"
+  },
+  {
+    "path": "ui/inventory_screen_pocket.json",
+    "size": 47497,
+    "type": "json"
+  },
+  {
+    "path": "ui/invite_screen.json",
+    "size": 60750,
+    "type": "json"
+  },
+  {
+    "path": "ui/jigsaw_editor_screen.json",
+    "size": 10057,
+    "type": "json"
+  },
+  {
+    "path": "ui/late_join_pregame_screen.json",
+    "size": 2416,
+    "type": "json"
+  },
+  {
+    "path": "ui/library_modal_screen.json",
+    "size": 6698,
+    "type": "json"
+  },
+  {
+    "path": "ui/local_world_picker_screen.json",
+    "size": 1729,
+    "type": "json"
+  },
+  {
+    "path": "ui/loom_screen.json",
+    "size": 28551,
+    "type": "json"
+  },
+  {
+    "path": "ui/loom_screen_pocket.json",
+    "size": 14019,
+    "type": "json"
+  },
+  {
+    "path": "ui/manifest_validation_screen.json",
+    "size": 35591,
+    "type": "json"
+  },
+  {
+    "path": "ui/marketplace_sdl/sdl_content_navigation.json",
+    "size": 12084,
+    "type": "json"
+  },
+  {
+    "path": "ui/marketplace_sdl/sdl_dropdowns.json",
+    "size": 4630,
+    "type": "json"
+  },
+  {
+    "path": "ui/marketplace_sdl/sdl_image_row.json",
+    "size": 6547,
+    "type": "json"
+  },
+  {
+    "path": "ui/marketplace_sdl/sdl_label.json",
+    "size": 3910,
+    "type": "json"
+  },
+  {
+    "path": "ui/marketplace_sdl/sdl_text_row.json",
+    "size": 11247,
+    "type": "json"
+  },
+  {
+    "path": "ui/mob_effect_screen.json",
+    "size": 6371,
+    "type": "json"
+  },
+  {
+    "path": "ui/non_xbl_user_management_screen.json",
+    "size": 8862,
+    "type": "json"
+  },
+  {
+    "path": "ui/npc_interact_screen.json",
+    "size": 46878,
+    "type": "json"
+  },
+  {
+    "path": "ui/online_safety_screen.json",
+    "size": 8579,
+    "type": "json"
+  },
+  {
+    "path": "ui/pack_settings_screen.json",
+    "size": 5700,
+    "type": "json"
+  },
+  {
+    "path": "ui/panorama_screen.json",
+    "size": 5279,
+    "type": "json"
+  },
+  {
+    "path": "ui/patch_notes_screen.json",
+    "size": 14325,
+    "type": "json"
+  },
+  {
+    "path": "ui/pause_screen.json",
+    "size": 76390,
+    "type": "json"
+  },
+  {
+    "path": "ui/pdp_screen.json",
+    "size": 245727,
+    "type": "json"
+  },
+  {
+    "path": "ui/pdp_screenshots_section.json",
+    "size": 6902,
+    "type": "json"
+  },
+  {
+    "path": "ui/perf_turtle.json",
+    "size": 1539,
+    "type": "json"
+  },
+  {
+    "path": "ui/permissions_screen.json",
+    "size": 29167,
+    "type": "json"
+  },
+  {
+    "path": "ui/persona_SDL.json",
+    "size": 207401,
+    "type": "json"
+  },
+  {
+    "path": "ui/persona_cast_character_screen.json",
+    "size": 32762,
+    "type": "json"
+  },
+  {
+    "path": "ui/persona_common.json",
+    "size": 28040,
+    "type": "json"
+  },
+  {
+    "path": "ui/persona_popups.json",
+    "size": 50429,
+    "type": "json"
+  },
+  {
+    "path": "ui/play_screen.json",
+    "size": 246577,
+    "type": "json"
+  },
+  {
+    "path": "ui/pocket_containers.json",
+    "size": 7855,
+    "type": "json"
+  },
+  {
+    "path": "ui/popup_dialog.json",
+    "size": 27268,
+    "type": "json"
+  },
+  {
+    "path": "ui/portfolio_screen.json",
+    "size": 26550,
+    "type": "json"
+  },
+  {
+    "path": "ui/progress_screen.json",
+    "size": 72699,
+    "type": "json"
+  },
+  {
+    "path": "ui/rating_prompt.json",
+    "size": 3631,
+    "type": "json"
+  },
+  {
+    "path": "ui/realmsPlus_sections/realmsPlus_purchase_warning_screen.json",
+    "size": 4894,
+    "type": "json"
+  },
+  {
+    "path": "ui/realms_allowlist.json",
+    "size": 53266,
+    "type": "json"
+  },
+  {
+    "path": "ui/realms_common.json",
+    "size": 11904,
+    "type": "json"
+  },
+  {
+    "path": "ui/realms_create.json",
+    "size": 17272,
+    "type": "json"
+  },
+  {
+    "path": "ui/realms_invite_link_settings_screen.json",
+    "size": 15063,
+    "type": "json"
+  },
+  {
+    "path": "ui/realms_pending_invitations.json",
+    "size": 15765,
+    "type": "json"
+  },
+  {
+    "path": "ui/realms_plus_ended_screen.json",
+    "size": 4562,
+    "type": "json"
+  },
+  {
+    "path": "ui/realms_settings_screen.json",
+    "size": 122506,
+    "type": "json"
+  },
+  {
+    "path": "ui/realms_slots_screen.json",
+    "size": 24774,
+    "type": "json"
+  },
+  {
+    "path": "ui/realms_stories_transition_screen.json",
+    "size": 348,
+    "type": "json"
+  },
+  {
+    "path": "ui/redstone_screen.json",
+    "size": 17305,
+    "type": "json"
+  },
+  {
+    "path": "ui/resource_packs_screen.json",
+    "size": 122453,
+    "type": "json"
+  },
+  {
+    "path": "ui/safe_zone_screen.json",
+    "size": 9410,
+    "type": "json"
+  },
+  {
+    "path": "ui/scoreboards.json",
+    "size": 14637,
+    "type": "json"
+  },
+  {
+    "path": "ui/screenshot_screen.json",
+    "size": 1201,
+    "type": "json"
+  },
+  {
+    "path": "ui/select_world_screen.json",
+    "size": 14042,
+    "type": "json"
+  },
+  {
+    "path": "ui/server_form.json",
+    "size": 19955,
+    "type": "json"
+  },
+  {
+    "path": "ui/settings_screen.json",
+    "size": 35982,
+    "type": "json"
+  },
+  {
+    "path": "ui/settings_sections/controls_section.json",
+    "size": 55071,
+    "type": "json"
+  },
+  {
+    "path": "ui/settings_sections/general_section.json",
+    "size": 393882,
+    "type": "json"
+  },
+  {
+    "path": "ui/settings_sections/realms_world_section.json",
+    "size": 21925,
+    "type": "json"
+  },
+  {
+    "path": "ui/settings_sections/settings_common.json",
+    "size": 80106,
+    "type": "json"
+  },
+  {
+    "path": "ui/settings_sections/social_section.json",
+    "size": 7614,
+    "type": "json"
+  },
+  {
+    "path": "ui/settings_sections/world_section.json",
+    "size": 123383,
+    "type": "json"
+  },
+  {
+    "path": "ui/sidebar_navigation.json",
+    "size": 45509,
+    "type": "json"
+  },
+  {
+    "path": "ui/sign_screen.json",
+    "size": 4012,
+    "type": "json"
+  },
+  {
+    "path": "ui/simple_inprogress_screen.json",
+    "size": 2478,
+    "type": "json"
+  },
+  {
+    "path": "ui/skin_pack_pdp.json",
+    "size": 20438,
+    "type": "json"
+  },
+  {
+    "path": "ui/smithing_table_2_screen.json",
+    "size": 18486,
+    "type": "json"
+  },
+  {
+    "path": "ui/smithing_table_2_screen_pocket.json",
+    "size": 17052,
+    "type": "json"
+  },
+  {
+    "path": "ui/smithing_table_screen.json",
+    "size": 9976,
+    "type": "json"
+  },
+  {
+    "path": "ui/smithing_table_screen_pocket.json",
+    "size": 8010,
+    "type": "json"
+  },
+  {
+    "path": "ui/smoker_screen.json",
+    "size": 77,
+    "type": "json"
+  },
+  {
+    "path": "ui/start_screen.json",
+    "size": 82562,
+    "type": "json"
+  },
+  {
+    "path": "ui/stonecutter_screen.json",
+    "size": 26968,
+    "type": "json"
+  },
+  {
+    "path": "ui/stonecutter_screen_pocket.json",
+    "size": 14008,
+    "type": "json"
+  },
+  {
+    "path": "ui/storage_management.json",
+    "size": 96900,
+    "type": "json"
+  },
+  {
+    "path": "ui/storage_management_popup.json",
+    "size": 11331,
+    "type": "json"
+  },
+  {
+    "path": "ui/storage_migration_common.json",
+    "size": 12762,
+    "type": "json"
+  },
+  {
+    "path": "ui/storage_migration_generic_screen.json",
+    "size": 5066,
+    "type": "json"
+  },
+  {
+    "path": "ui/store_common.json",
+    "size": 393512,
+    "type": "json"
+  },
+  {
+    "path": "ui/store_data_driven_screen.json",
+    "size": 33241,
+    "type": "json"
+  },
+  {
+    "path": "ui/store_filter_menu_screen.json",
+    "size": 30089,
+    "type": "json"
+  },
+  {
+    "path": "ui/store_inventory_screen.json",
+    "size": 50331,
+    "type": "json"
+  },
+  {
+    "path": "ui/store_item_list_screen.json",
+    "size": 25843,
+    "type": "json"
+  },
+  {
+    "path": "ui/store_progress_screen.json",
+    "size": 2841,
+    "type": "json"
+  },
+  {
+    "path": "ui/store_promo_timeline_screen.json",
+    "size": 140137,
+    "type": "json"
+  },
+  {
+    "path": "ui/store_sales_item_list_screen.json",
+    "size": 5328,
+    "type": "json"
+  },
+  {
+    "path": "ui/store_search_screen.json",
+    "size": 7730,
+    "type": "json"
+  },
+  {
+    "path": "ui/store_sort_menu_screen.json",
+    "size": 8475,
+    "type": "json"
+  },
+  {
+    "path": "ui/structure_editor_screen.json",
+    "size": 57023,
+    "type": "json"
+  },
+  {
+    "path": "ui/submit_feedback_screen.json",
+    "size": 4101,
+    "type": "json"
+  },
+  {
+    "path": "ui/tabbed_upsell_screen.json",
+    "size": 20161,
+    "type": "json"
+  },
+  {
+    "path": "ui/test_anims_screen.json",
+    "size": 9286,
+    "type": "json"
+  },
+  {
+    "path": "ui/thanks_for_testing_screen.json",
+    "size": 20651,
+    "type": "json"
+  },
+  {
+    "path": "ui/third_party_store_screen.json",
+    "size": 549,
+    "type": "json"
+  },
+  {
+    "path": "ui/toast_screen.json",
+    "size": 59021,
+    "type": "json"
+  },
+  {
+    "path": "ui/token_faq_screen.json",
+    "size": 6022,
+    "type": "json"
+  },
+  {
+    "path": "ui/trade_2_screen.json",
+    "size": 48570,
+    "type": "json"
+  },
+  {
+    "path": "ui/trade_2_screen_pocket.json",
+    "size": 14792,
+    "type": "json"
+  },
+  {
+    "path": "ui/trade_screen.json",
+    "size": 16138,
+    "type": "json"
+  },
+  {
+    "path": "ui/trade_screen_pocket.json",
+    "size": 11089,
+    "type": "json"
+  },
+  {
+    "path": "ui/trial_upsell_screen.json",
+    "size": 5805,
+    "type": "json"
+  },
+  {
+    "path": "ui/ugc_viewer_screen.json",
+    "size": 6670,
+    "type": "json"
+  },
+  {
+    "path": "ui/ui_art_assets_common.json",
+    "size": 6731,
+    "type": "json"
+  },
+  {
+    "path": "ui/ui_common.json",
+    "size": 243795,
+    "type": "json"
+  },
+  {
+    "path": "ui/ui_common_classic.json",
+    "size": 3030,
+    "type": "json"
+  },
+  {
+    "path": "ui/ui_edu_common.json",
+    "size": 68229,
+    "type": "json"
+  },
+  {
+    "path": "ui/ui_friendsbutton.json",
+    "size": 14851,
+    "type": "json"
+  },
+  {
+    "path": "ui/ui_iconbutton.json",
+    "size": 2423,
+    "type": "json"
+  },
+  {
+    "path": "ui/ui_purchase_common.json",
+    "size": 10992,
+    "type": "json"
+  },
+  {
+    "path": "ui/ui_template_buttons.json",
+    "size": 76484,
+    "type": "json"
+  },
+  {
+    "path": "ui/ui_template_dialogs.json",
+    "size": 14238,
+    "type": "json"
+  },
+  {
+    "path": "ui/ui_template_tabs.json",
+    "size": 16954,
+    "type": "json"
+  },
+  {
+    "path": "ui/ui_template_toggles.json",
+    "size": 47106,
+    "type": "json"
+  },
+  {
+    "path": "ui/update_dimensions.json",
+    "size": 6711,
+    "type": "json"
+  },
+  {
+    "path": "ui/update_version.json",
+    "size": 3839,
+    "type": "json"
+  },
+  {
+    "path": "ui/win10_trial_conversion_screen.json",
+    "size": 12902,
+    "type": "json"
+  },
+  {
+    "path": "ui/world_conversion_complete_screen.json",
+    "size": 9592,
+    "type": "json"
+  },
+  {
+    "path": "ui/world_recovery_screen.json",
+    "size": 2600,
+    "type": "json"
+  },
+  {
+    "path": "ui/world_templates_screen.json",
+    "size": 38965,
+    "type": "json"
+  },
+  {
+    "path": "ui/xbl_console_qr_signin.json",
+    "size": 11748,
+    "type": "json"
+  },
+  {
+    "path": "ui/xbl_console_signin.json",
+    "size": 4433,
+    "type": "json"
+  },
+  {
+    "path": "ui/xbl_console_signin_succeeded.json",
+    "size": 6955,
+    "type": "json"
+  },
+  {
+    "path": "ui/xbl_immediate_signin.json",
+    "size": 981,
+    "type": "json"
+  }
+]

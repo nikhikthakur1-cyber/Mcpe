@@ -72,7 +72,7 @@ export interface ValidationIssue {
   fixAction?: 'navigate_manifest' | 'navigate_textures' | 'navigate_explorer' | 'regenerate_uuid';
 }
 
-export type ActiveTab = 'textures' | 'explorer' | 'manifest' | 'tree' | 'validation';
+export type ActiveTab = 'textures' | 'explorer' | 'samples' | 'manifest' | 'tree' | 'validation';
 
 export interface TextureReference {
   rawReference: string; // e.g. "textures/blocks/stone" or "textures/blocks/stone.png"

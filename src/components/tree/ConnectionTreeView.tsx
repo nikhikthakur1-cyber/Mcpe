@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import {
   FileCode2,
   FileImage,
@@ -12,9 +12,12 @@ import {
   Layers,
   RefreshCw,
   Search,
+  PlusCircle,
+  BookOpen,
 } from 'lucide-react';
 import { ConnectionGraph, ProjectFile } from '../../types';
 import { CanvasPixelPreview } from '../textures/CanvasPixelPreview';
+import { getVanillaTextureUrl } from '../../utils/vanillaTextureGenerator';
 
 interface ConnectionTreeViewProps {
   graph: ConnectionGraph;
@@ -22,6 +25,8 @@ interface ConnectionTreeViewProps {
   onOpenJsonEditor: (filePath: string) => void;
   onSelectTexture: (filePath: string) => void;
   onRefreshGraph: () => void;
+  onOpenCreateAssetWizard?: () => void;
+  onOpenFormatGuide?: () => void;
 }
 
 export const ConnectionTreeView: React.FC<ConnectionTreeViewProps> = ({
@@ -30,25 +35,27 @@ export const ConnectionTreeView: React.FC<ConnectionTreeViewProps> = ({
   onOpenJsonEditor,
   onSelectTexture,
   onRefreshGraph,
+  onOpenCreateAssetWizard,
+  onOpenFormatGuide,
 }) => {
   const [expandedNodes, setExpandedNodes] = useState<Record<string, boolean>>({
     'manifest.json': true,
     'textures/terrain_texture.json': true,
     'textures/item_texture.json': true,
-    unreferenced: true,
+    unreferenced: false, // collapsed by default to prevent initial load freeze
   });
 
   const [searchQuery, setSearchQuery] = useState('');
   const [inspectedTexturePath, setInspectedTexturePath] = useState<string | null>(null);
 
-  const toggleNode = (key: string) => {
+  const toggleNode = useCallback((key: string) => {
     setExpandedNodes((prev) => ({
       ...prev,
       [key]: !prev[key],
     }));
-  };
+  }, []);
 
-  // Filtered JSON nodes based on search query
+  // Filtered JSON nodes based on search query - memoized for zero latency
   const filteredJsonNodes = useMemo(() => {
     if (!searchQuery.trim()) return graph.jsonNodes;
     const query = searchQuery.toLowerCase().trim();
@@ -96,7 +103,7 @@ export const ConnectionTreeView: React.FC<ConnectionTreeViewProps> = ({
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             {/* Real-time search filter */}
             <div className="relative">
               <Search className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-500" />
@@ -105,9 +112,33 @@ export const ConnectionTreeView: React.FC<ConnectionTreeViewProps> = ({
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Filter links or paths..."
-                className="pl-8 pr-3 py-1 bg-[#0B0F14] border border-[#1E293B] rounded-md text-xs text-slate-200 placeholder-slate-500 outline-none focus:border-emerald-500 w-44 md:w-56"
+                className="pl-8 pr-3 py-1 bg-[#0B0F14] border border-[#1E293B] rounded-md text-xs text-slate-200 placeholder-slate-500 outline-none focus:border-emerald-500 w-36 md:w-48"
               />
             </div>
+
+            {/* "+ New Custom Asset / JSON" Wizard Trigger */}
+            {onOpenCreateAssetWizard && (
+              <button
+                onClick={onOpenCreateAssetWizard}
+                className="px-2.5 py-1 text-xs font-semibold bg-emerald-600 hover:bg-emerald-500 text-white rounded flex items-center gap-1.5 transition-colors shadow-sm"
+                title="Create a new custom JSON and texture mapping"
+              >
+                <PlusCircle className="w-3.5 h-3.5" />
+                <span>+ Custom Asset</span>
+              </button>
+            )}
+
+            {/* Bedrock Format Specs Guide */}
+            {onOpenFormatGuide && (
+              <button
+                onClick={onOpenFormatGuide}
+                className="px-2 py-1 text-xs font-medium text-slate-300 hover:text-white bg-[#161F29] border border-[#1E293B] hover:border-slate-600 rounded flex items-center gap-1.5 transition-colors"
+                title="View Bedrock v1.26.52.3 Format Guide"
+              >
+                <BookOpen className="w-3.5 h-3.5 text-sky-400" />
+                <span className="hidden sm:inline">Format Guide</span>
+              </button>
+            )}
 
             <button
               onClick={onRefreshGraph}
@@ -202,7 +233,7 @@ export const ConnectionTreeView: React.FC<ConnectionTreeViewProps> = ({
                     </div>
                   </div>
 
-                  {/* Connected Texture Children */}
+                  {/* Connected Texture Children (Rendered lazily on expansion) */}
                   {isExpanded && (
                     <div className="p-2 md:p-3 bg-[#0E141D] divide-y divide-[#1A2433]">
                       {jsonNode.references.length > 0 ? (
@@ -344,8 +375,21 @@ export const ConnectionTreeView: React.FC<ConnectionTreeViewProps> = ({
                 <CanvasPixelPreview imageData={inspectedFile.data} />
               </div>
               <div className="p-2.5 bg-[#111822] rounded border border-[#1E293B] text-xs font-mono space-y-1">
-                <span className="text-slate-400 block text-[10px]">FILE PATH</span>
+                <span className="text-slate-400 block text-[10px]">CUSTOM FILE PATH</span>
                 <span className="text-slate-200 text-xs block break-all">{inspectedFile.path}</span>
+              </div>
+            </div>
+          ) : inspectedTexturePath ? (
+            <div className="h-full flex flex-col">
+              <div className="flex-1 min-h-[160px] md:min-h-[260px] mb-2">
+                <CanvasPixelPreview imageUrl={getVanillaTextureUrl(inspectedTexturePath)} />
+              </div>
+              <div className="p-2.5 bg-[#111822] rounded border border-[#1E293B] text-xs font-mono space-y-1">
+                <div className="flex items-center justify-between">
+                  <span className="text-slate-400 block text-[10px]">VANILLA REFERENCE</span>
+                  <span className="text-[10px] text-amber-400/80 font-mono">Default Bedrock Asset</span>
+                </div>
+                <span className="text-slate-200 text-xs block break-all">{inspectedTexturePath}</span>
               </div>
             </div>
           ) : (

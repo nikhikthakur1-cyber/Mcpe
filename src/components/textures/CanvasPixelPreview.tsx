@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { ZoomIn, ZoomOut, Maximize2, RotateCcw } from 'lucide-react';
 
 interface CanvasPixelPreviewProps {
-  imageData: Uint8Array | null;
+  imageData?: Uint8Array | null;
+  imageUrl?: string | null;
   mimeType?: string;
   recommendedDimensions?: { width: number; height: number };
   sampleColor?: string;
@@ -10,6 +11,7 @@ interface CanvasPixelPreviewProps {
 
 export const CanvasPixelPreview: React.FC<CanvasPixelPreviewProps> = ({
   imageData,
+  imageUrl,
   recommendedDimensions,
   sampleColor = '#334155',
 }) => {
@@ -20,16 +22,25 @@ export const CanvasPixelPreview: React.FC<CanvasPixelPreviewProps> = ({
   const [hoveredPixel, setHoveredPixel] = useState<{ x: number; y: number; r: number; g: number; b: number; a: number } | null>(null);
 
   useEffect(() => {
-    if (!imageData || imageData.length === 0) {
+    let activeUrl: string | null = null;
+    let isBlobUrl = false;
+
+    if (imageData && imageData.length > 0) {
+      const blob = new Blob([imageData as BlobPart], { type: 'image/png' });
+      activeUrl = URL.createObjectURL(blob);
+      isBlobUrl = true;
+    } else if (imageUrl) {
+      activeUrl = imageUrl;
+      isBlobUrl = false;
+    } else {
       setNaturalDimensions(null);
       setHasAlpha(false);
       setHoveredPixel(null);
       return;
     }
 
-    const blob = new Blob([imageData as BlobPart], { type: 'image/png' });
-    const url = URL.createObjectURL(blob);
     const img = new Image();
+    img.crossOrigin = 'anonymous';
 
     img.onload = () => {
       setNaturalDimensions({ width: img.naturalWidth, height: img.naturalHeight });
@@ -61,15 +72,25 @@ export const CanvasPixelPreview: React.FC<CanvasPixelPreviewProps> = ({
         // Ignore CORS/security issue if any
       }
 
-      URL.revokeObjectURL(url);
+      if (isBlobUrl && activeUrl) {
+        URL.revokeObjectURL(activeUrl);
+      }
     };
 
-    img.src = url;
+    img.onerror = () => {
+      if (isBlobUrl && activeUrl) {
+        URL.revokeObjectURL(activeUrl);
+      }
+    };
+
+    img.src = activeUrl;
 
     return () => {
-      URL.revokeObjectURL(url);
+      if (isBlobUrl && activeUrl) {
+        URL.revokeObjectURL(activeUrl);
+      }
     };
-  }, [imageData]);
+  }, [imageData, imageUrl]);
 
   const handleCanvasMouseMove = (e: React.MouseEvent<HTMLCanvasElement>) => {
     const canvas = canvasRef.current;
@@ -152,7 +173,7 @@ export const CanvasPixelPreview: React.FC<CanvasPixelPreviewProps> = ({
 
       {/* Canvas Viewport with Alpha Checkerboard */}
       <div className="flex-1 overflow-auto flex items-center justify-center p-6 bg-[#090D12] relative">
-        {imageData && imageData.length > 0 ? (
+        {(imageData && imageData.length > 0) || naturalDimensions ? (
           <div
             className="relative border border-[#2A374A] shadow-2xl rounded-sm"
             style={{

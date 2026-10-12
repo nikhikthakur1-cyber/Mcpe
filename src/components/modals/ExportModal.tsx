@@ -156,8 +156,11 @@ export const ExportModal: React.FC<ExportModalProps> = ({
                 <div className="grid grid-cols-2 gap-2 text-slate-400 font-mono">
                   <div>Pack: <strong className="text-slate-200">{manifest.header.name}</strong></div>
                   <div>Format: <strong className="text-emerald-400">format_version: 2</strong></div>
-                  <div>Engine: <strong className="text-slate-200">v{manifest.header.min_engine_version?.join('.') || '1.20.0'}</strong></div>
-                  <div>Total Files: <strong className="text-slate-200">{totalFiles} items</strong></div>
+                  <div>Engine: <strong className="text-slate-200">v{manifest.header.min_engine_version?.join('.') || '1.26.52'}</strong></div>
+                  <div>Files to Package: <strong className="text-emerald-400">{totalFiles} items</strong></div>
+                </div>
+                <div className="text-[10px] text-emerald-400/90 bg-emerald-500/10 p-2 rounded border border-emerald-500/20 font-sans">
+                  ✓ Selective Packaging: Only customized textures and your project files are bundled. Vanilla reference textures are excluded to keep your download light and fast.
                 </div>
               </div>
 

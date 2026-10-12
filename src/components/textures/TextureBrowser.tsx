@@ -5,6 +5,7 @@ import { TEXTURE_CATALOG, CATEGORY_LABELS } from '../../data/textureCatalog';
 import { TextureCard } from './TextureCard';
 import { CanvasPixelPreview } from './CanvasPixelPreview';
 import { TextureInspector } from './TextureInspector';
+import { getVanillaTextureUrl } from '../../utils/vanillaTextureGenerator';
 
 interface TextureBrowserProps {
   customSlots: Record<string, string>; // slotId -> filePath
@@ -29,14 +30,17 @@ export const TextureBrowser: React.FC<TextureBrowserProps> = ({
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
-  const [showCustomOnly, setShowCustomOnly] = useState<boolean>(false);
+  // View mode: 'all' shows all vanilla defaults + customized, 'custom' shows only customized
+  const [viewMode, setViewMode] = useState<'all' | 'custom'>('all');
+  // Card density mode: 'comfortable' vs 'compact'
+  const [cardSize, setCardSize] = useState<'comfortable' | 'compact'>('comfortable');
   const [displayCount, setDisplayCount] = useState<number>(PAGE_CHUNK);
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState<boolean>(false);
 
   // Reset pagination limit on filter change
   useEffect(() => {
     setDisplayCount(PAGE_CHUNK);
-  }, [searchQuery, selectedCategory, showCustomOnly]);
+  }, [searchQuery, selectedCategory, viewMode]);
 
   // Filter slots
   const filteredSlots = useMemo(() => {
@@ -46,7 +50,9 @@ export const TextureBrowser: React.FC<TextureBrowserProps> = ({
       }
 
       const isCustom = Boolean(customSlots[slot.id]);
-      if (showCustomOnly && !isCustom) {
+      // When 'custom' is selected, show ONLY customized textures
+      // When 'all' is selected (default), show all vanilla textures (plus customized replacements)
+      if (viewMode === 'custom' && !isCustom) {
         return false;
       }
 
@@ -63,7 +69,7 @@ export const TextureBrowser: React.FC<TextureBrowserProps> = ({
 
       return true;
     });
-  }, [searchQuery, selectedCategory, showCustomOnly, customSlots]);
+  }, [searchQuery, selectedCategory, viewMode, customSlots]);
 
   // Windowed visible slots
   const visibleSlots = useMemo(() => {
@@ -89,39 +95,39 @@ export const TextureBrowser: React.FC<TextureBrowserProps> = ({
       {/* Main Center Area: Catalog browser + Pixel Preview */}
       <div className="flex-1 flex flex-col h-full overflow-hidden">
         {/* Search & Filter Toolbar */}
-        <div className="p-3 md:p-4 bg-[#111822] border-b border-[#1E293B] flex flex-wrap items-center justify-between gap-3 md:gap-4 shrink-0">
+        <div className="p-3 md:p-4 bg-[#0F1622] border-b border-[#1E293B] flex flex-wrap items-center justify-between gap-3 md:gap-4 shrink-0 shadow-sm">
           {/* Search bar */}
-          <div className="relative flex-1 min-w-[200px] max-w-md">
+          <div className="relative flex-1 min-w-[220px] max-w-md">
             <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search textures (e.g. diamond, stone, crafter)..."
-              className="w-full pl-9 pr-4 py-2 md:py-1.5 bg-[#0B0F14] border border-[#1E293B] focus:border-emerald-500 rounded-md text-xs text-slate-100 placeholder-slate-500 outline-none transition-colors"
+              placeholder="Search 4,880 textures (e.g. crafter, pale oak, mace, gui)..."
+              className="w-full pl-9 pr-8 py-2 bg-[#090D14] border border-[#223044] focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400/20 rounded-lg text-xs text-slate-100 placeholder-slate-500 outline-none transition-all shadow-inner font-sans"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
-                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] text-slate-500 hover:text-slate-300"
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs text-slate-400 hover:text-slate-200"
               >
-                Clear
+                ✕
               </button>
             )}
           </div>
 
           {/* Category Tabs */}
-          <div className="flex items-center gap-1 overflow-x-auto max-w-full p-1 bg-[#0B0F14] rounded-lg border border-[#1E293B] scrollbar-none">
+          <div className="flex items-center gap-1 overflow-x-auto max-w-full p-1 bg-[#090D14] rounded-xl border border-[#1E293B] scrollbar-none shadow-inner">
             {Object.entries(CATEGORY_LABELS).map(([key, label]) => {
               const isActive = selectedCategory === key;
               return (
                 <button
                   key={key}
                   onClick={() => setSelectedCategory(key)}
-                  className={`px-2.5 py-1.5 text-xs font-medium rounded transition-colors whitespace-nowrap min-h-[32px] ${
+                  className={`px-3 py-1.5 text-xs font-medium rounded-lg transition-all whitespace-nowrap min-h-[30px] ${
                     isActive
-                      ? 'bg-[#1E293B] text-emerald-400 shadow-sm'
-                      : 'text-slate-400 hover:text-slate-200'
+                      ? 'bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 font-semibold shadow-xs'
+                      : 'text-slate-400 hover:text-slate-200 hover:bg-[#141C26]'
                   }`}
                 >
                   {label}
@@ -130,38 +136,86 @@ export const TextureBrowser: React.FC<TextureBrowserProps> = ({
             })}
           </div>
 
-          {/* Customized filter toggle */}
-          <button
-            onClick={() => setShowCustomOnly((prev) => !prev)}
-            className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-md border transition-colors whitespace-nowrap min-h-[36px] ${
-              showCustomOnly
-                ? 'bg-emerald-500/10 border-emerald-500/40 text-emerald-400'
-                : 'bg-[#0B0F14] border-[#1E293B] text-slate-400 hover:text-slate-200'
-            }`}
-          >
-            <CheckCircle2 className="w-3.5 h-3.5" />
-            <span>Customized ({customizedCount})</span>
-          </button>
+          {/* Mode Switcher: All Textures vs Customized + Compact Toggle */}
+          <div className="flex items-center gap-2">
+            <div className="flex items-center p-1 bg-[#090D14] rounded-xl border border-[#1E293B] shadow-inner">
+              <button
+                onClick={() => setCardSize('comfortable')}
+                className={`px-2.5 py-1 text-[11px] font-medium rounded-lg transition-all ${
+                  cardSize === 'comfortable'
+                    ? 'bg-[#1E293B] text-slate-100 font-semibold'
+                    : 'text-slate-400 hover:text-slate-200'
+                }`}
+                title="Comfortable card view"
+              >
+                Standard
+              </button>
+              <button
+                onClick={() => setCardSize('compact')}
+                className={`px-2.5 py-1 text-[11px] font-medium rounded-lg transition-all ${
+                  cardSize === 'compact'
+                    ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-semibold'
+                    : 'text-slate-400 hover:text-slate-200'
+                }`}
+                title="Compact card view for mobile/tablet density"
+              >
+                Compact List
+              </button>
+            </div>
+
+            <div className="flex items-center p-1 bg-[#090D14] rounded-xl border border-[#1E293B] shadow-inner">
+              <button
+                onClick={() => setViewMode('all')}
+                className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-lg transition-all whitespace-nowrap min-h-[30px] ${
+                  viewMode === 'all'
+                    ? 'bg-sky-500/20 border border-sky-500/40 text-sky-300 font-semibold shadow-xs'
+                    : 'text-slate-400 hover:text-slate-200 hover:bg-[#141C26]'
+                }`}
+                title="Show all Minecraft Bedrock 1.26.52.3 vanilla default textures"
+              >
+                <span>All ({TEXTURE_CATALOG.length})</span>
+              </button>
+
+              <button
+                onClick={() => setViewMode('custom')}
+                className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-lg transition-all whitespace-nowrap min-h-[30px] ${
+                  viewMode === 'custom'
+                    ? 'bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 font-semibold shadow-xs'
+                    : 'text-slate-400 hover:text-slate-200 hover:bg-[#141C26]'
+                }`}
+                title="Show only your customized textures that will be packaged into .mcpack"
+              >
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                <span>Custom ({customizedCount})</span>
+              </button>
+            </div>
+          </div>
         </div>
 
         {/* Content Area */}
         <div className="flex-1 flex overflow-hidden relative">
           {/* Left Grid: Texture Cards */}
           <div className="flex-1 overflow-y-auto p-3 md:p-4 pb-20 lg:pb-4">
-            <div className="flex items-center justify-between mb-3 text-xs text-slate-400">
-              <span>
-                Showing <strong className="text-slate-200">{Math.min(visibleSlots.length, filteredSlots.length)}</strong> of {filteredSlots.length} texture slots
-              </span>
-              {selectedCategory !== 'all' && (
-                <span className="text-slate-500 hidden sm:inline">
-                  Category: <span className="text-slate-300 capitalize">{selectedCategory}</span>
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-3 text-xs text-slate-400">
+              <div className="flex flex-wrap items-center gap-2 min-w-0">
+                <span className="truncate">
+                  Showing <strong className="text-slate-200">{Math.min(visibleSlots.length, filteredSlots.length)}</strong> of {filteredSlots.length} game textures
                 </span>
-              )}
+                <span className="text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 font-mono hidden sm:inline">
+                  {customizedCount} custom
+                </span>
+              </div>
             </div>
 
             {filteredSlots.length > 0 ? (
               <>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-3">
+                <div
+                  className={`grid gap-1.5 sm:gap-2 md:gap-3 ${
+                    cardSize === 'compact'
+                      ? 'grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8'
+                      : 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6'
+                  }`}
+                >
                   {visibleSlots.map((slot) => {
                     const isSelected = selectedSlot?.id === slot.id;
                     const isCustomized = Boolean(customSlots[slot.id]);
@@ -175,20 +229,31 @@ export const TextureBrowser: React.FC<TextureBrowserProps> = ({
                         isCustomized={isCustomized}
                         customImageData={customFile?.data}
                         onSelect={handleCardSelect}
+                        isCompact={cardSize === 'compact'}
                       />
                     );
                   })}
                 </div>
 
-                {/* Load More Button for Large Packs */}
+                {/* Infinite Scroll Automatic Load Trigger */}
                 {visibleSlots.length < filteredSlots.length && (
-                  <div className="pt-6 pb-2 text-center">
-                    <button
-                      onClick={() => setDisplayCount((c) => c + PAGE_CHUNK)}
-                      className="px-5 py-2.5 bg-[#161F29] hover:bg-[#1E293B] text-slate-200 font-semibold text-xs border border-[#1E293B] rounded-lg transition-colors"
-                    >
-                      Load More Textures ({filteredSlots.length - visibleSlots.length} remaining)
-                    </button>
+                  <div
+                    ref={(node) => {
+                      if (!node) return;
+                      const observer = new IntersectionObserver(
+                        (entries) => {
+                          if (entries[0].isIntersecting) {
+                            setDisplayCount((c) => Math.min(filteredSlots.length, c + PAGE_CHUNK));
+                          }
+                        },
+                        { threshold: 0.1 }
+                      );
+                      observer.observe(node);
+                    }}
+                    className="py-8 flex flex-col items-center justify-center gap-2 text-slate-500 font-mono text-xs"
+                  >
+                    <div className="w-5 h-5 border-2 border-emerald-400 border-t-transparent rounded-full animate-spin"></div>
+                    <span>Dynamically loading textures ({filteredSlots.length - visibleSlots.length} remaining)...</span>
                   </div>
                 )}
               </>
@@ -197,50 +262,26 @@ export const TextureBrowser: React.FC<TextureBrowserProps> = ({
                 <Filter className="w-8 h-8 text-slate-600 mb-2" />
                 <p className="text-sm font-semibold text-slate-300">No texture slots found</p>
                 <p className="text-xs text-slate-500 mt-1 max-w-sm">
-                  {showCustomOnly
+                  {viewMode === 'custom'
                     ? 'You have not uploaded any custom textures yet in this category.'
                     : 'Try searching with a different keyword or selecting "All Textures".'}
                 </p>
-                {showCustomOnly && (
+                {viewMode === 'custom' && (
                   <button
-                    onClick={() => setShowCustomOnly(false)}
-                    className="mt-3 px-3 py-1.5 text-xs font-medium text-emerald-400 hover:text-emerald-300 bg-emerald-500/10 rounded border border-emerald-500/30"
+                    onClick={() => setViewMode('all')}
+                    className="mt-3 px-3 py-1.5 text-xs font-medium text-sky-400 hover:text-sky-300 bg-sky-500/10 rounded border border-sky-500/30 transition-colors"
                   >
-                    Show all vanilla slots
+                    Switch to All Textures (Show All Vanilla Defaults)
                   </button>
                 )}
               </div>
             )}
           </div>
-
-          {/* Desktop Right Side Split Preview (Visible on large screens >= 1024px) */}
-          {selectedSlot && (
-            <div className="hidden lg:flex w-80 xl:w-96 border-l border-[#1E293B] p-4 flex-col h-full bg-[#0E141E] shrink-0">
-              <div className="mb-2 flex items-center justify-between">
-                <span className="text-xs font-semibold text-slate-200 truncate">
-                  {selectedSlot.name} Preview
-                </span>
-                <span className="text-[11px] font-mono text-slate-500 truncate ml-2">
-                  {selectedSlot.path}
-                </span>
-              </div>
-              <div className="flex-1 min-h-[300px]">
-                <CanvasPixelPreview
-                  imageData={activeCustomFile ? activeCustomFile.data : null}
-                  recommendedDimensions={{
-                    width: selectedSlot.recommendedWidth,
-                    height: selectedSlot.recommendedHeight,
-                  }}
-                  sampleColor={selectedSlot.sampleColor}
-                />
-              </div>
-            </div>
-          )}
         </div>
       </div>
 
-      {/* Desktop Far Right: Texture Inspector Panel (Hidden on screens < 1024px) */}
-      <div className="hidden lg:block shrink-0">
+      {/* Desktop Right Side: Texture Inspector Panel with Live Pixel Canvas & Comparison */}
+      <div className="hidden lg:block shrink-0 h-full border-l border-[#1E293B]">
         <TextureInspector
           selectedSlot={selectedSlot}
           customFile={activeCustomFile}
@@ -297,6 +338,7 @@ export const TextureBrowser: React.FC<TextureBrowserProps> = ({
               <div className="h-60 border border-[#1E293B] rounded-lg overflow-hidden">
                 <CanvasPixelPreview
                   imageData={activeCustomFile ? activeCustomFile.data : null}
+                  imageUrl={activeCustomFile ? null : getVanillaTextureUrl(selectedSlot.path)}
                   recommendedDimensions={{
                     width: selectedSlot.recommendedWidth,
                     height: selectedSlot.recommendedHeight,

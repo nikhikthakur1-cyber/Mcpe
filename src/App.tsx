@@ -18,6 +18,7 @@ import { ManifestEditor } from './components/manifest/ManifestEditor';
 import { ValidationPanel } from './components/validation/ValidationPanel';
 import { ConnectionTreeView } from './components/tree/ConnectionTreeView';
 import { UniversalJsonEditor } from './components/json/UniversalJsonEditor';
+import { VanillaSamplesExplorer } from './components/samples/VanillaSamplesExplorer';
 
 import { NewProjectModal } from './components/modals/NewProjectModal';
 import { ImportModal } from './components/modals/ImportModal';
@@ -25,6 +26,13 @@ import { ExportModal } from './components/modals/ExportModal';
 import { PackIconModal } from './components/modals/PackIconModal';
 import { FileContentModal } from './components/explorer/FileContentModal';
 import { VersionAuditModal } from './components/audit/VersionAuditModal';
+import { CreateAssetWizardModal } from './components/modals/CreateAssetWizardModal';
+import { BedrockFormatGuideModal } from './components/modals/BedrockFormatGuideModal';
+import { ZipAssetManagerModal } from './components/modals/ZipAssetManagerModal';
+import { MissingZipAlertModal } from './components/modals/MissingZipAlertModal';
+import { MinecraftSplashScreen } from './components/layout/MinecraftSplashScreen';
+import { zipAssetService, ZipAssetLoaderState } from './services/zipAssetService';
+import { generatePlaceholderTexturePng } from './utils/placeholderTextureGenerator';
 
 export default function App() {
   const [project, setProject] = useState<ProjectData | null>(null);
@@ -44,6 +52,13 @@ export default function App() {
   const [isExportModalOpen, setIsExportModalOpen] = useState(false);
   const [isIconModalOpen, setIsIconModalOpen] = useState(false);
   const [isVersionAuditOpen, setIsVersionAuditOpen] = useState(false);
+  const [isCreateAssetWizardOpen, setIsCreateAssetWizardOpen] = useState(false);
+  const [isFormatGuideOpen, setIsFormatGuideOpen] = useState(false);
+  const [isZipModalOpen, setIsZipModalOpen] = useState(false);
+  const [zipState, setZipState] = useState<ZipAssetLoaderState>(zipAssetService.getState());
+  const [isZipSkipped, setIsZipSkipped] = useState(false);
+  const [isTreeCollapsed, setIsTreeCollapsed] = useState(false);
+  const [showSplash, setShowSplash] = useState(true);
 
   const showToast = useCallback((msg: string) => {
     setToastMessage(msg);
@@ -52,8 +67,27 @@ export default function App() {
     }, 3000);
   }, []);
 
-  // Initialize or load from IndexedDB
+  // Subscribe to Zip Asset Service state changes
   useEffect(() => {
+    const unsubscribe = zipAssetService.subscribe((s) => {
+      setZipState(s);
+    });
+    return unsubscribe;
+  }, []);
+
+  // Auto dismiss splash screen when extraction is 100% complete
+  useEffect(() => {
+    if (zipState.isLoaded && !zipState.isPreloading && zipState.extractionProgress >= 100) {
+      const timer = setTimeout(() => setShowSplash(false), 600);
+      return () => clearTimeout(timer);
+    }
+  }, [zipState.isLoaded, zipState.isPreloading, zipState.extractionProgress]);
+
+  // Initialize or load from IndexedDB + Load Vanilla Assets ZIP
+  useEffect(() => {
+    // 1. Asynchronously initialize ZIP Asset Reader in background
+    zipAssetService.loadZipFromUrl('/vanilla_assets.zip').catch(() => {});
+
     const initApp = async () => {
       try {
         const saved = await loadProjectFromStorage();
@@ -457,6 +491,12 @@ export default function App() {
       'textures/entity',
       'textures/ui',
       'textures/environment',
+      'textures/particle',
+      'textures/colormap',
+      'ui',
+      'particles',
+      'fogs',
+      'texts',
     ];
     let addedCount = 0;
     for (const folder of standardFolders) {
@@ -465,13 +505,49 @@ export default function App() {
         updatedFiles[readmePath] = {
           path: readmePath,
           name: 'README.txt',
-          data: new TextEncoder().encode(`Minecraft Bedrock ${folder} asset directory`),
+          data: new TextEncoder().encode(`Minecraft Bedrock Edition ${folder} directory`),
           mimeType: 'text/plain',
           updatedAt: Date.now(),
         };
         addedCount++;
       }
     }
+
+    // Also scaffold standard terrain_texture.json and item_texture.json if missing
+    if (!updatedFiles['textures/terrain_texture.json']) {
+      const defaultTerrainJson = {
+        resource_pack_name: project.name || 'BedrockPack',
+        texture_name: 'atlas.terrain',
+        padding: 8,
+        num_mip_levels: 4,
+        texture_data: {},
+      };
+      updatedFiles['textures/terrain_texture.json'] = {
+        path: 'textures/terrain_texture.json',
+        name: 'terrain_texture.json',
+        data: new TextEncoder().encode(JSON.stringify(defaultTerrainJson, null, 2)),
+        mimeType: 'application/json',
+        updatedAt: Date.now(),
+      };
+      addedCount++;
+    }
+
+    if (!updatedFiles['textures/item_texture.json']) {
+      const defaultItemJson = {
+        resource_pack_name: project.name || 'BedrockPack',
+        texture_name: 'atlas.items',
+        texture_data: {},
+      };
+      updatedFiles['textures/item_texture.json'] = {
+        path: 'textures/item_texture.json',
+        name: 'item_texture.json',
+        data: new TextEncoder().encode(JSON.stringify(defaultItemJson, null, 2)),
+        mimeType: 'application/json',
+        updatedAt: Date.now(),
+      };
+      addedCount++;
+    }
+
     const updated = {
       ...project,
       files: updatedFiles,
@@ -479,7 +555,99 @@ export default function App() {
     };
     setProject(updated);
     setIsDirty(true);
-    showToast(`Scaffolded ${addedCount} standard Bedrock directories`);
+    showToast(`Scaffolded ${addedCount} standard Bedrock folders & registry JSON files!`);
+  };
+
+  const handleCreateCustomAsset = async ({
+    assetType,
+    name,
+    texturePath,
+    jsonPath,
+    initialJsonContent,
+  }: {
+    assetType: 'block' | 'item' | 'flipbook' | 'entity';
+    name: string;
+    texturePath: string;
+    jsonPath: string;
+    initialJsonContent?: string;
+  }) => {
+    if (!project) return;
+    const updatedFiles = { ...project.files };
+
+    // 1. Generate placeholder PNG texture
+    const textureFilename = texturePath.split('/').pop() || `${name}.png`;
+    const textureData = await generatePlaceholderTexturePng(
+      name,
+      assetType === 'flipbook' ? 16 : assetType === 'entity' ? 64 : 16,
+      assetType === 'flipbook' ? 64 : assetType === 'entity' ? 64 : 16,
+      assetType === 'item' ? '#38bdf8' : '#10b981'
+    );
+
+    updatedFiles[texturePath] = {
+      path: texturePath,
+      name: textureFilename,
+      data: textureData,
+      mimeType: 'image/png',
+      isCustom: true,
+      updatedAt: Date.now(),
+    };
+
+    // 2. Register / update the target JSON definition
+    const existingJsonFile = updatedFiles[jsonPath];
+    if (existingJsonFile) {
+      try {
+        const text = new TextDecoder('utf-8').decode(existingJsonFile.data);
+        const parsed = JSON.parse(text);
+        const textureRefPath = texturePath.replace(/\.png$/, '');
+
+        if (jsonPath.includes('terrain_texture.json') || jsonPath.includes('item_texture.json')) {
+          if (!parsed.texture_data) parsed.texture_data = {};
+          parsed.texture_data[name] = { textures: textureRefPath };
+        } else if (jsonPath.includes('flipbook_textures.json') && Array.isArray(parsed)) {
+          parsed.push({
+            flipbook_texture: textureRefPath,
+            atlas_tile: name,
+            ticks_per_frame: 4,
+            blend_frames: true,
+          });
+        }
+        const updatedJsonStr = JSON.stringify(parsed, null, 2);
+        updatedFiles[jsonPath] = {
+          ...existingJsonFile,
+          data: new TextEncoder().encode(updatedJsonStr),
+          updatedAt: Date.now(),
+        };
+      } catch {
+        // Fallback: create fresh if parse fails
+        if (initialJsonContent) {
+          updatedFiles[jsonPath] = {
+            path: jsonPath,
+            name: jsonPath.split('/').pop() || 'definition.json',
+            data: new TextEncoder().encode(initialJsonContent),
+            mimeType: 'application/json',
+            updatedAt: Date.now(),
+          };
+        }
+      }
+    } else if (initialJsonContent) {
+      updatedFiles[jsonPath] = {
+        path: jsonPath,
+        name: jsonPath.split('/').pop() || 'definition.json',
+        data: new TextEncoder().encode(initialJsonContent),
+        mimeType: 'application/json',
+        updatedAt: Date.now(),
+      };
+    }
+
+    const updatedProject: ProjectData = {
+      ...project,
+      files: updatedFiles,
+      updatedAt: Date.now(),
+    };
+
+    setProject(updatedProject);
+    setIsDirty(true);
+    showToast(`Created custom asset ${name} & updated ${jsonPath}`);
   };
 
   const handleSelectSlotFromAudit = (slotPath: string) => {
@@ -517,6 +685,7 @@ export default function App() {
         onSave={handleSaveProject}
         onExport={() => setIsExportModalOpen(true)}
         onOpenAudit={() => setIsVersionAuditOpen(true)}
+        onOpenZipModal={() => setIsZipModalOpen(true)}
         isDirty={isDirty}
         validationIssues={validationIssues}
         customTexturesCount={customTexturesCount}
@@ -548,14 +717,17 @@ export default function App() {
             )}
 
             {activeTab === 'explorer' && (
-              <div className="flex h-full w-full">
-                <div className="w-80 h-full">
+              <div className="flex h-full w-full overflow-hidden">
+                <div className={`h-full transition-all duration-200 shrink-0 ${isTreeCollapsed ? 'w-12' : 'w-72 md:w-80'}`}>
                   <FileTree
                     files={project.files}
                     onSelectFile={setInspectedFile}
                     onDeleteFile={handleDeleteFile}
                     onUploadCustomFile={handleUploadCustomFile}
                     onEditJsonFile={handleOpenJsonEditor}
+                    onScaffoldStandardStructure={handleScaffoldFolders}
+                    isCollapsed={isTreeCollapsed}
+                    onToggleCollapse={() => setIsTreeCollapsed(!isTreeCollapsed)}
                   />
                 </div>
                 <div className="flex-1 bg-[#090D12] p-6 flex flex-col items-center justify-center text-center">
@@ -565,6 +737,12 @@ export default function App() {
                       Inspect and manage every root and subdirectory asset packaged inside your Bedrock resource pack.
                     </p>
                     <div className="flex items-center justify-center gap-2 pt-2">
+                      <button
+                        onClick={handleScaffoldFolders}
+                        className="px-3 py-1.5 bg-sky-500/10 hover:bg-sky-500/20 text-xs font-semibold rounded text-sky-400 border border-sky-500/30 transition-colors"
+                      >
+                        Scaffold Pro Folders
+                      </button>
                       <button
                         onClick={() => setIsIconModalOpen(true)}
                         className="px-3 py-1.5 bg-[#1E293B] hover:bg-slate-700 text-xs font-semibold rounded text-slate-200 transition-colors"
@@ -582,6 +760,43 @@ export default function App() {
                 </div>
               </div>
             )}
+
+            {activeTab === 'samples' && (
+              <VanillaSamplesExplorer
+                onCopyPath={(p) => showToast(`Copied sample path: ${p}`)}
+                onImportSampleFile={async (samplePath) => {
+                  try {
+                    const res = await fetch(`/vanilla_samples/${samplePath}`);
+                    if (!res.ok) throw new Error('Failed to download vanilla sample');
+                    const arrayBuf = await res.arrayBuffer();
+                    const uint8 = new Uint8Array(arrayBuf);
+                    const fileName = samplePath.split('/').pop() || 'sample.json';
+                    const mime = samplePath.endsWith('.json') ? 'application/json' : samplePath.endsWith('.lang') ? 'text/plain' : 'application/octet-stream';
+                    
+                    const updatedFiles = { ...project.files };
+                    updatedFiles[samplePath] = {
+                      path: samplePath,
+                      name: fileName,
+                      data: uint8,
+                      mimeType: mime,
+                      updatedAt: Date.now(),
+                    };
+                    const updated = {
+                      ...project,
+                      files: updatedFiles,
+                      updatedAt: Date.now(),
+                    };
+                    setProject(updated);
+                    setIsDirty(true);
+                    showToast(`Imported ${fileName} into pack!`);
+                  } catch (err: unknown) {
+                    showToast(err instanceof Error ? err.message : 'Error importing sample');
+                  }
+                }}
+              />
+            )}
+
+
 
             {activeTab === 'manifest' && (
               <ManifestEditor
@@ -603,6 +818,8 @@ export default function App() {
                     showToast('Connection graph updated');
                   }
                 }}
+                onOpenCreateAssetWizard={() => setIsCreateAssetWizardOpen(true)}
+                onOpenFormatGuide={() => setIsFormatGuideOpen(true)}
               />
             )}
 
@@ -670,6 +887,44 @@ export default function App() {
         onScaffoldFolders={handleScaffoldFolders}
         onSelectSlotFromAudit={handleSelectSlotFromAudit}
       />
+
+      <CreateAssetWizardModal
+        isOpen={isCreateAssetWizardOpen}
+        onClose={() => setIsCreateAssetWizardOpen(false)}
+        onCreateAsset={handleCreateCustomAsset}
+      />
+
+      <BedrockFormatGuideModal
+        isOpen={isFormatGuideOpen}
+        onClose={() => setIsFormatGuideOpen(false)}
+      />
+
+      <ZipAssetManagerModal
+        isOpen={isZipModalOpen}
+        onClose={() => setIsZipModalOpen(false)}
+        onShowToast={showToast}
+      />
+
+      <MissingZipAlertModal
+        isOpen={Boolean(zipState.error && !isZipSkipped)}
+        errorMessage={zipState.error}
+        onSkip={() => {
+          setIsZipSkipped(true);
+          showToast('Proceeding with procedural synthetic fallbacks');
+        }}
+        onRetry={() => {
+          setIsZipSkipped(false);
+          zipAssetService.loadZipFromUrl('/vanilla_assets.zip');
+        }}
+      />
+
+      {/* Startup Minecraft Preloader Splash Screen */}
+      {showSplash && (
+        <MinecraftSplashScreen
+          zipState={zipState}
+          onSkip={() => setShowSplash(false)}
+        />
+      )}
 
       {/* Floating Toast Notification */}
       {toastMessage && (

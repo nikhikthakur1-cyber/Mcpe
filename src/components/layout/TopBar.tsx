@@ -9,6 +9,8 @@ import {
   FileCode2,
   AlertCircle,
   ShieldCheck,
+  Volume2,
+  Package,
 } from 'lucide-react';
 import { ActiveTab, ValidationIssue } from '../../types';
 
@@ -21,6 +23,7 @@ interface TopBarProps {
   onSave: () => void;
   onExport: () => void;
   onOpenAudit: () => void;
+  onOpenZipModal: () => void;
   isDirty: boolean;
   validationIssues: ValidationIssue[];
   customTexturesCount: number;
@@ -35,6 +38,7 @@ export const TopBar: React.FC<TopBarProps> = ({
   onSave,
   onExport,
   onOpenAudit,
+  onOpenZipModal,
   isDirty,
   validationIssues,
   customTexturesCount,
@@ -43,23 +47,25 @@ export const TopBar: React.FC<TopBarProps> = ({
   const warningCount = validationIssues.filter((i) => i.severity === 'warning').length;
 
   return (
-    <header className="h-14 bg-[#111820] border-b border-[#1E293B] px-2 md:px-4 flex items-center justify-between gap-2 md:gap-6 shrink-0 select-none overflow-x-hidden">
+    <header className="h-14 bg-[#0D1219]/95 backdrop-blur-md border-b border-[#1E293B] px-3 md:px-5 flex items-center justify-between gap-3 md:gap-6 shrink-0 select-none overflow-x-hidden">
       {/* Zone 1: Brand Title and Pack Breadcrumb */}
-      <div className="flex items-center gap-2 md:gap-3 min-w-0 shrink">
-        <div className="flex items-center gap-1.5 md:gap-2">
-          <div className="w-7 h-7 rounded bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold text-xs md:text-sm tracking-wider shrink-0">
-            B
+      <div className="flex items-center gap-2.5 md:gap-3.5 min-w-0 shrink">
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-500/20 to-teal-500/10 border border-emerald-500/40 flex items-center justify-center text-emerald-400 font-extrabold text-xs md:text-sm tracking-wider shrink-0 shadow-[0_0_12px_rgba(16,185,129,0.15)]">
+            ⛏
           </div>
-          <span className="text-xs md:text-sm font-semibold tracking-tight text-slate-100 whitespace-nowrap hidden sm:inline">
-            Bedrock Texture Studio
-          </span>
-          <span className="text-xs font-semibold tracking-tight text-slate-100 whitespace-nowrap sm:hidden">
-            Studio
-          </span>
+          <div className="flex flex-col">
+            <span className="text-xs md:text-sm font-bold tracking-tight text-white whitespace-nowrap">
+              Bedrock Studio
+            </span>
+            <span className="text-[10px] text-emerald-400 font-mono -mt-0.5 hidden sm:inline">
+              Resource Pack Engine
+            </span>
+          </div>
         </div>
         <span className="text-slate-600 font-light hidden sm:inline">/</span>
         <span
-          className="text-xs text-slate-400 font-medium truncate max-w-[100px] md:max-w-[200px]"
+          className="text-xs text-slate-300 font-mono bg-[#141C26] px-2.5 py-1 rounded-md border border-[#1E293B] truncate max-w-[120px] md:max-w-[220px]"
           title={packName}
         >
           {packName || 'Untitled Pack'}
@@ -67,72 +73,88 @@ export const TopBar: React.FC<TopBarProps> = ({
       </div>
 
       {/* Zone 2: Navigation Links (Desktop + Tablet) */}
-      <nav className="hidden lg:flex items-center gap-1 bg-[#0B0F14] p-1 rounded-lg border border-[#1E293B]">
+      <nav className="hidden md:flex items-center gap-1 bg-[#070A0E] p-1 rounded-xl border border-[#1E293B]/80 shadow-inner overflow-x-auto">
         <button
           onClick={() => onTabChange('textures')}
-          className={`flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md transition-colors whitespace-nowrap ${
+          className={`flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-lg transition-all whitespace-nowrap ${
             activeTab === 'textures'
-              ? 'bg-[#1E293B] text-emerald-400 shadow-sm'
-              : 'text-slate-400 hover:text-slate-200'
+              ? 'bg-gradient-to-r from-emerald-500/20 to-emerald-500/10 border border-emerald-500/40 text-emerald-300 shadow-sm'
+              : 'text-slate-400 hover:text-slate-200 hover:bg-[#141C26]'
           }`}
         >
-          <Layers className="w-3.5 h-3.5" />
+          <Layers className="w-3.5 h-3.5 text-emerald-400" />
           <span>Textures</span>
-          {customTexturesCount > 0 && (
-            <span className="text-[10px] text-emerald-400 font-mono">
-              ({customTexturesCount})
+          {customTexturesCount > 0 ? (
+            <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-emerald-500/20 text-emerald-300 font-mono border border-emerald-500/30">
+              {customTexturesCount}
+            </span>
+          ) : (
+            <span className="text-[10px] text-slate-500 font-mono hidden xl:inline">
+              (4,880)
             </span>
           )}
         </button>
 
         <button
           onClick={() => onTabChange('explorer')}
-          className={`flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md transition-colors whitespace-nowrap ${
+          className={`flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-lg transition-all whitespace-nowrap ${
             activeTab === 'explorer'
-              ? 'bg-[#1E293B] text-emerald-400 shadow-sm'
-              : 'text-slate-400 hover:text-slate-200'
+              ? 'bg-gradient-to-r from-sky-500/20 to-sky-500/10 border border-sky-500/40 text-sky-300 shadow-sm'
+              : 'text-slate-400 hover:text-slate-200 hover:bg-[#141C26]'
           }`}
         >
-          <FolderTree className="w-3.5 h-3.5" />
+          <FolderTree className="w-3.5 h-3.5 text-sky-400" />
           <span>Explorer</span>
         </button>
 
         <button
-          onClick={() => onTabChange('manifest')}
-          className={`flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md transition-colors whitespace-nowrap ${
-            activeTab === 'manifest'
-              ? 'bg-[#1E293B] text-emerald-400 shadow-sm'
-              : 'text-slate-400 hover:text-slate-200'
+          onClick={() => onTabChange('samples')}
+          className={`flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-lg transition-all whitespace-nowrap ${
+            activeTab === 'samples'
+              ? 'bg-gradient-to-r from-cyan-500/20 to-cyan-500/10 border border-cyan-500/40 text-cyan-300 shadow-sm'
+              : 'text-slate-400 hover:text-slate-200 hover:bg-[#141C26]'
           }`}
         >
-          <FileCode2 className="w-3.5 h-3.5" />
+          <Layers className="w-3.5 h-3.5 text-cyan-400" />
+          <span>Samples</span>
+        </button>
+
+        <button
+          onClick={() => onTabChange('manifest')}
+          className={`flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-lg transition-all whitespace-nowrap ${
+            activeTab === 'manifest'
+              ? 'bg-gradient-to-r from-amber-500/20 to-amber-500/10 border border-amber-500/40 text-amber-300 shadow-sm'
+              : 'text-slate-400 hover:text-slate-200 hover:bg-[#141C26]'
+          }`}
+        >
+          <FileCode2 className="w-3.5 h-3.5 text-amber-400" />
           <span>Manifest</span>
         </button>
 
         <button
           onClick={() => onTabChange('tree')}
-          className={`flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md transition-colors whitespace-nowrap ${
+          className={`flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-lg transition-all whitespace-nowrap ${
             activeTab === 'tree'
-              ? 'bg-[#1E293B] text-emerald-400 shadow-sm'
-              : 'text-slate-400 hover:text-slate-200'
+              ? 'bg-gradient-to-r from-purple-500/20 to-purple-500/10 border border-purple-500/40 text-purple-300 shadow-sm'
+              : 'text-slate-400 hover:text-slate-200 hover:bg-[#141C26]'
           }`}
         >
-          <Layers className="w-3.5 h-3.5" />
-          <span>Connection Tree</span>
+          <Layers className="w-3.5 h-3.5 text-purple-400" />
+          <span>Tree</span>
         </button>
 
         <button
           onClick={() => onTabChange('validation')}
-          className={`flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md transition-colors whitespace-nowrap ${
+          className={`flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-lg transition-all whitespace-nowrap ${
             activeTab === 'validation'
-              ? 'bg-[#1E293B] text-emerald-400 shadow-sm'
-              : 'text-slate-400 hover:text-slate-200'
+              ? 'bg-gradient-to-r from-rose-500/20 to-rose-500/10 border border-rose-500/40 text-rose-300 shadow-sm'
+              : 'text-slate-400 hover:text-slate-200 hover:bg-[#141C26]'
           }`}
         >
           <AlertCircle
             className={`w-3.5 h-3.5 ${
               errorCount > 0
-                ? 'text-red-400'
+                ? 'text-red-400 animate-pulse'
                 : warningCount > 0
                 ? 'text-amber-400'
                 : 'text-slate-400'
@@ -151,9 +173,9 @@ export const TopBar: React.FC<TopBarProps> = ({
         </button>
       </nav>
 
-      {/* Mobile Tab Selector (Compact on screens < 1024px) */}
-      <div className="flex lg:hidden items-center bg-[#0B0F14] p-1 rounded-lg border border-[#1E293B]">
-        {(['textures', 'explorer', 'manifest', 'tree', 'validation'] as ActiveTab[]).map(
+      {/* Mobile Tab Selector (Compact on screens < 768px) */}
+      <div className="flex md:hidden items-center bg-[#0B0F14] p-1 rounded-lg border border-[#1E293B]">
+        {(['textures', 'explorer', 'samples', 'manifest', 'tree', 'validation'] as ActiveTab[]).map(
           (tab) => {
             const isActive = activeTab === tab;
             return (
@@ -184,6 +206,15 @@ export const TopBar: React.FC<TopBarProps> = ({
 
       {/* Zone 3: Project Actions */}
       <div className="flex items-center gap-1.5 md:gap-2 shrink-0">
+        <button
+          onClick={onOpenZipModal}
+          title="ZIP Assets Reader & Manager"
+          className="flex items-center gap-1.5 px-2 md:px-2.5 py-1.5 text-xs font-medium text-emerald-300 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 rounded-md transition-colors whitespace-nowrap min-h-[36px]"
+        >
+          <Package className="w-3.5 h-3.5 text-emerald-400" />
+          <span className="hidden sm:inline">ZIP Assets</span>
+        </button>
+
         <button
           onClick={onOpenAudit}
           title="MCPE Version & Folder Auditor"

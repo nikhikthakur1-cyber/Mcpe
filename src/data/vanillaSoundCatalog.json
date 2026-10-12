@@ -1,0 +1,6503 @@
+[
+  {
+    "id": "block.amethyst_block",
+    "name": "amethyst block",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.amethyst_cluster",
+    "name": "amethyst cluster",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.ancient_debris",
+    "name": "ancient debris",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.anvil",
+    "name": "anvil",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.azalea",
+    "name": "azalea",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.azalea_leaves",
+    "name": "azalea leaves",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.bamboo",
+    "name": "bamboo",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.bamboo_sapling",
+    "name": "bamboo sapling",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.bamboo_wood",
+    "name": "bamboo wood",
+    "category": "blocks",
+    "events": [
+      "break",
+      "button.click_off",
+      "button.click_on",
+      "default",
+      "door.close",
+      "door.open",
+      "fence_gate.close",
+      "fence_gate.open",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on",
+      "pressure_plate.click_off",
+      "pressure_plate.click_on",
+      "trapdoor.close",
+      "trapdoor.open"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.bamboo_wood_hanging_sign",
+    "name": "bamboo wood hanging sign",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.basalt",
+    "name": "basalt",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.big_dripleaf",
+    "name": "big dripleaf",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.bone_block",
+    "name": "bone block",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.cactus_flower",
+    "name": "cactus flower",
+    "category": "blocks",
+    "events": [
+      "break",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.calcite",
+    "name": "calcite",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.candle",
+    "name": "candle",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.cave_vines",
+    "name": "cave vines",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.chain",
+    "name": "chain",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.cherry_leaves",
+    "name": "cherry leaves",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.cherry_wood",
+    "name": "cherry wood",
+    "category": "blocks",
+    "events": [
+      "break",
+      "button.click_off",
+      "button.click_on",
+      "default",
+      "door.close",
+      "door.open",
+      "fence_gate.close",
+      "fence_gate.open",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on",
+      "pressure_plate.click_off",
+      "pressure_plate.click_on",
+      "trapdoor.close",
+      "trapdoor.open"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.cherry_wood_hanging_sign",
+    "name": "cherry wood hanging sign",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.chiseled_bookshelf",
+    "name": "chiseled bookshelf",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "insert",
+      "insert_enchanted",
+      "pickup",
+      "pickup_enchanted",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.cinnabar",
+    "name": "cinnabar",
+    "category": "blocks",
+    "events": [
+      "break",
+      "hit",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.cloth",
+    "name": "cloth",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.comparator",
+    "name": "comparator",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.copper",
+    "name": "copper",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "door.close",
+      "door.open",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on",
+      "trapdoor.close",
+      "trapdoor.open"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.copper_bulb",
+    "name": "copper bulb",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.copper_chest",
+    "name": "copper chest",
+    "category": "blocks",
+    "events": [
+      "chest.closed",
+      "chest.open"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.copper_chest_oxidized",
+    "name": "copper chest oxidized",
+    "category": "blocks",
+    "events": [
+      "chest.closed",
+      "chest.open"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.copper_chest_weathered",
+    "name": "copper chest weathered",
+    "category": "blocks",
+    "events": [
+      "chest.closed",
+      "chest.open"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.copper_golem_statue",
+    "name": "copper golem statue",
+    "category": "blocks",
+    "events": [
+      "activate",
+      "break",
+      "hit",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.copper_grate",
+    "name": "copper grate",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.coral",
+    "name": "coral",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.creaking_heart",
+    "name": "creaking heart",
+    "category": "blocks",
+    "events": [
+      "ambient",
+      "break",
+      "creaking_heart_spawn",
+      "default",
+      "hit",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.deadbush",
+    "name": "deadbush",
+    "category": "blocks",
+    "events": [
+      "ambient"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.decorated_pot",
+    "name": "decorated pot",
+    "category": "blocks",
+    "events": [
+      "break_pot",
+      "default",
+      "fall",
+      "hit",
+      "place",
+      "shatter_pot",
+      "step"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.deepslate",
+    "name": "deepslate",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.deepslate_bricks",
+    "name": "deepslate bricks",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.dirt_with_roots",
+    "name": "dirt with roots",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.dried_ghast",
+    "name": "dried ghast",
+    "category": "blocks",
+    "events": [
+      "ambient",
+      "ambient.in.water",
+      "break",
+      "default",
+      "hit",
+      "place",
+      "place_in_water",
+      "state_change"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.dripstone_block",
+    "name": "dripstone block",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.eyeblossom",
+    "name": "eyeblossom",
+    "category": "blocks",
+    "events": [
+      "ambient",
+      "close",
+      "close_long",
+      "default",
+      "open",
+      "open_long"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.firefly_bush",
+    "name": "firefly bush",
+    "category": "blocks",
+    "events": [
+      "ambient"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.frog_spawn",
+    "name": "frog spawn",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.froglight",
+    "name": "froglight",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.fungus",
+    "name": "fungus",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 0.9,
+    "volume": 0.85,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.glass",
+    "name": "glass",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.glow_lichen",
+    "name": "glow lichen",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.grass",
+    "name": "grass",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.gravel",
+    "name": "gravel",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.hanging_roots",
+    "name": "hanging roots",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.hanging_sign",
+    "name": "hanging sign",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.heavy_core",
+    "name": "heavy core",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.honey_block",
+    "name": "honey block",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.iron",
+    "name": "iron",
+    "category": "blocks",
+    "events": [
+      "break",
+      "button.click_off",
+      "button.click_on",
+      "default",
+      "door.close",
+      "door.open",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on",
+      "trapdoor.close",
+      "trapdoor.open"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.itemframe",
+    "name": "itemframe",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.ladder",
+    "name": "ladder",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.lantern",
+    "name": "lantern",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.large_amethyst_bud",
+    "name": "large amethyst bud",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.leaf_litter",
+    "name": "leaf litter",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.lever",
+    "name": "lever",
+    "category": "blocks",
+    "events": [
+      "break",
+      "button.click_off",
+      "button.click_on",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.lodestone",
+    "name": "lodestone",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.mangrove_roots",
+    "name": "mangrove roots",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.medium_amethyst_bud",
+    "name": "medium amethyst bud",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.metal",
+    "name": "metal",
+    "category": "blocks",
+    "events": [
+      "break",
+      "button.click_off",
+      "button.click_on",
+      "default",
+      "door.close",
+      "door.open",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on",
+      "trapdoor.close",
+      "trapdoor.open"
+    ],
+    "pitch": 1.5,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.mob_spawner",
+    "name": "mob spawner",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.moss_block",
+    "name": "moss block",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.moss_carpet",
+    "name": "moss carpet",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1.1,
+    "volume": 0.9,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.mud",
+    "name": "mud",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.mud_bricks",
+    "name": "mud bricks",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.muddy_mangrove_roots",
+    "name": "muddy mangrove roots",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.nether_brick",
+    "name": "nether brick",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.nether_gold_ore",
+    "name": "nether gold ore",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.nether_sprouts",
+    "name": "nether sprouts",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1.5,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.nether_wart",
+    "name": "nether wart",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.nether_wood",
+    "name": "nether wood",
+    "category": "blocks",
+    "events": [
+      "break",
+      "button.click_off",
+      "button.click_on",
+      "default",
+      "door.close",
+      "door.open",
+      "fence_gate.close",
+      "fence_gate.open",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on",
+      "pressure_plate.click_off",
+      "pressure_plate.click_on",
+      "trapdoor.close",
+      "trapdoor.open"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.nether_wood_hanging_sign",
+    "name": "nether wood hanging sign",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.netherite",
+    "name": "netherite",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.netherrack",
+    "name": "netherrack",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.normal",
+    "name": "normal",
+    "category": "blocks",
+    "events": [
+      "break",
+      "brush",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.nylium",
+    "name": "nylium",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.packed_mud",
+    "name": "packed mud",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.pale_hanging_moss",
+    "name": "pale hanging moss",
+    "category": "blocks",
+    "events": [
+      "ambient"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.pink_petals",
+    "name": "pink petals",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.pointed_dripstone",
+    "name": "pointed dripstone",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.polished_tuff",
+    "name": "polished tuff",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1.2,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.poplar_leaves",
+    "name": "poplar leaves",
+    "category": "blocks",
+    "events": [
+      "ambient",
+      "break",
+      "default",
+      "hit",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.potent_sulfur",
+    "name": "potent sulfur",
+    "category": "blocks",
+    "events": [
+      "ambient",
+      "break",
+      "hit",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.powder_snow",
+    "name": "powder snow",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.red_shrub",
+    "name": "red shrub",
+    "category": "blocks",
+    "events": [
+      "break",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.resin",
+    "name": "resin",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.resin_brick",
+    "name": "resin brick",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.roots",
+    "name": "roots",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.sand",
+    "name": "sand",
+    "category": "blocks",
+    "events": [
+      "ambient",
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.scaffolding",
+    "name": "scaffolding",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.sculk",
+    "name": "sculk",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.sculk_catalyst",
+    "name": "sculk catalyst",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.sculk_sensor",
+    "name": "sculk sensor",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.sculk_shrieker",
+    "name": "sculk shrieker",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.sculk_vein",
+    "name": "sculk vein",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.shelf",
+    "name": "shelf",
+    "category": "blocks",
+    "events": [
+      "activate",
+      "break",
+      "deactivate",
+      "multi_swap",
+      "place_item",
+      "single_swap"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.shelf_mushroom",
+    "name": "shelf mushroom",
+    "category": "blocks",
+    "events": [
+      "break",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.shroomlight",
+    "name": "shroomlight",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.slime",
+    "name": "slime",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.small_amethyst_bud",
+    "name": "small amethyst bud",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.snow",
+    "name": "snow",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.soul_sand",
+    "name": "soul sand",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.soul_soil",
+    "name": "soul soil",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.sponge",
+    "name": "sponge",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.spore_blossom",
+    "name": "spore blossom",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.stem",
+    "name": "stem",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.stone",
+    "name": "stone",
+    "category": "blocks",
+    "events": [
+      "break",
+      "button.click_off",
+      "button.click_on",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on",
+      "pressure_plate.click_off",
+      "pressure_plate.click_on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.straw_bed",
+    "name": "straw bed",
+    "category": "blocks",
+    "events": [
+      "break",
+      "hit",
+      "place",
+      "straw_bed.break_leave"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.sulfur",
+    "name": "sulfur",
+    "category": "blocks",
+    "events": [
+      "break",
+      "hit",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.sulfur_spike",
+    "name": "sulfur spike",
+    "category": "blocks",
+    "events": [
+      "break",
+      "hit",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.suspicious_gravel",
+    "name": "suspicious gravel",
+    "category": "blocks",
+    "events": [
+      "break",
+      "brush",
+      "brush_completed",
+      "fall",
+      "hit",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.suspicious_sand",
+    "name": "suspicious sand",
+    "category": "blocks",
+    "events": [
+      "break",
+      "brush",
+      "brush_completed",
+      "fall",
+      "hit",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.sweet_berry_bush",
+    "name": "sweet berry bush",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.terracotta",
+    "name": "terracotta",
+    "category": "blocks",
+    "events": [
+      "ambient"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.trial_spawner",
+    "name": "trial spawner",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.tuff",
+    "name": "tuff",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.tuff_bricks",
+    "name": "tuff bricks",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.turtle_egg",
+    "name": "turtle egg",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 0.9,
+    "volume": 0.85,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.vault",
+    "name": "vault",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.vines",
+    "name": "vines",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.web",
+    "name": "web",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.weeping_vines",
+    "name": "weeping vines",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.wet_sponge",
+    "name": "wet sponge",
+    "category": "blocks",
+    "events": [
+      "break",
+      "default",
+      "hit",
+      "item.use.on",
+      "place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "block.wood",
+    "name": "wood",
+    "category": "blocks",
+    "events": [
+      "break",
+      "button.click_off",
+      "button.click_on",
+      "default",
+      "door.close",
+      "door.open",
+      "fence_gate.close",
+      "fence_gate.open",
+      "hit",
+      "item.use.on",
+      "place",
+      "power.off",
+      "power.on",
+      "pressure_plate.click_off",
+      "pressure_plate.click_on",
+      "trapdoor.close",
+      "trapdoor.open"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.basalt_deltas.additions",
+    "name": "ambient.basalt deltas.additions",
+    "category": "events",
+    "events": [
+      "ambient.basalt_deltas.additions"
+    ],
+    "pitch": [
+      1,
+      1.1
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.basalt_deltas.loop",
+    "name": "ambient.basalt deltas.loop",
+    "category": "events",
+    "events": [
+      "ambient.basalt_deltas.loop"
+    ],
+    "pitch": 1,
+    "volume": 0.58,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.basalt_deltas.mood",
+    "name": "ambient.basalt deltas.mood",
+    "category": "events",
+    "events": [
+      "ambient.basalt_deltas.mood"
+    ],
+    "pitch": [
+      0.5,
+      1.2
+    ],
+    "volume": 0.8,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.candle",
+    "name": "ambient.candle",
+    "category": "events",
+    "events": [
+      "ambient.candle"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.cave",
+    "name": "ambient.cave",
+    "category": "events",
+    "events": [
+      "ambient.cave"
+    ],
+    "pitch": [
+      0.8,
+      1
+    ],
+    "volume": 0.7,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.crimson_forest.additions",
+    "name": "ambient.crimson forest.additions",
+    "category": "events",
+    "events": [
+      "ambient.crimson_forest.additions"
+    ],
+    "pitch": [
+      1,
+      1.1
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.crimson_forest.loop",
+    "name": "ambient.crimson forest.loop",
+    "category": "events",
+    "events": [
+      "ambient.crimson_forest.loop"
+    ],
+    "pitch": 1,
+    "volume": 0.9,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.crimson_forest.mood",
+    "name": "ambient.crimson forest.mood",
+    "category": "events",
+    "events": [
+      "ambient.crimson_forest.mood"
+    ],
+    "pitch": [
+      0.5,
+      1.2
+    ],
+    "volume": 0.8,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.nether_wastes.additions",
+    "name": "ambient.nether wastes.additions",
+    "category": "events",
+    "events": [
+      "ambient.nether_wastes.additions"
+    ],
+    "pitch": [
+      1,
+      1.1
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.nether_wastes.loop",
+    "name": "ambient.nether wastes.loop",
+    "category": "events",
+    "events": [
+      "ambient.nether_wastes.loop"
+    ],
+    "pitch": 1,
+    "volume": 0.9,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.nether_wastes.mood",
+    "name": "ambient.nether wastes.mood",
+    "category": "events",
+    "events": [
+      "ambient.nether_wastes.mood"
+    ],
+    "pitch": [
+      0.5,
+      1.2
+    ],
+    "volume": 0.8,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.soulsand_valley.additions",
+    "name": "ambient.soulsand valley.additions",
+    "category": "events",
+    "events": [
+      "ambient.soulsand_valley.additions"
+    ],
+    "pitch": [
+      1,
+      1.1
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.soulsand_valley.loop",
+    "name": "ambient.soulsand valley.loop",
+    "category": "events",
+    "events": [
+      "ambient.soulsand_valley.loop"
+    ],
+    "pitch": 1,
+    "volume": 0.95,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.soulsand_valley.mood",
+    "name": "ambient.soulsand valley.mood",
+    "category": "events",
+    "events": [
+      "ambient.soulsand_valley.mood"
+    ],
+    "pitch": [
+      0.5,
+      1.2
+    ],
+    "volume": 0.8,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.underwater.enter",
+    "name": "ambient.underwater.enter",
+    "category": "events",
+    "events": [
+      "ambient.underwater.enter"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.underwater.exit",
+    "name": "ambient.underwater.exit",
+    "category": "events",
+    "events": [
+      "ambient.underwater.exit"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.warped_forest.additions",
+    "name": "ambient.warped forest.additions",
+    "category": "events",
+    "events": [
+      "ambient.warped_forest.additions"
+    ],
+    "pitch": [
+      1,
+      1.1
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.warped_forest.loop",
+    "name": "ambient.warped forest.loop",
+    "category": "events",
+    "events": [
+      "ambient.warped_forest.loop"
+    ],
+    "pitch": 1,
+    "volume": 0.9,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.warped_forest.mood",
+    "name": "ambient.warped forest.mood",
+    "category": "events",
+    "events": [
+      "ambient.warped_forest.mood"
+    ],
+    "pitch": [
+      0.5,
+      1.2
+    ],
+    "volume": 0.8,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ambient.weather.the_end_light_flash",
+    "name": "ambient.weather.the end light flash",
+    "category": "events",
+    "events": [
+      "ambient.weather.the_end_light_flash"
+    ],
+    "pitch": [
+      0.8,
+      1
+    ],
+    "volume": 6.25,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.apply_effect.bad_omen",
+    "name": "apply effect.bad omen",
+    "category": "events",
+    "events": [
+      "apply_effect.bad_omen"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.apply_effect.raid_omen",
+    "name": "apply effect.raid omen",
+    "category": "events",
+    "events": [
+      "apply_effect.raid_omen"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.apply_effect.trial_omen",
+    "name": "apply effect.trial omen",
+    "category": "events",
+    "events": [
+      "apply_effect.trial_omen"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.armor.break_wolf",
+    "name": "armor.break wolf",
+    "category": "events",
+    "events": [
+      "armor.break_wolf"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.armor.crack_wolf",
+    "name": "armor.crack wolf",
+    "category": "events",
+    "events": [
+      "armor.crack_wolf"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.armor.equip_chain",
+    "name": "armor.equip chain",
+    "category": "events",
+    "events": [
+      "armor.equip_chain"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.armor.equip_copper",
+    "name": "armor.equip copper",
+    "category": "events",
+    "events": [
+      "armor.equip_copper"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.armor.equip_diamond",
+    "name": "armor.equip diamond",
+    "category": "events",
+    "events": [
+      "armor.equip_diamond"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.armor.equip_elytra",
+    "name": "armor.equip elytra",
+    "category": "events",
+    "events": [
+      "armor.equip_elytra"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.armor.equip_generic",
+    "name": "armor.equip generic",
+    "category": "events",
+    "events": [
+      "armor.equip_generic"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.armor.equip_gold",
+    "name": "armor.equip gold",
+    "category": "events",
+    "events": [
+      "armor.equip_gold"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.armor.equip_iron",
+    "name": "armor.equip iron",
+    "category": "events",
+    "events": [
+      "armor.equip_iron"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.armor.equip_leather",
+    "name": "armor.equip leather",
+    "category": "events",
+    "events": [
+      "armor.equip_leather"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.armor.equip_netherite",
+    "name": "armor.equip netherite",
+    "category": "events",
+    "events": [
+      "armor.equip_netherite"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.armor.equip_wolf",
+    "name": "armor.equip wolf",
+    "category": "events",
+    "events": [
+      "armor.equip_wolf"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.armor.repair_wolf",
+    "name": "armor.repair wolf",
+    "category": "events",
+    "events": [
+      "armor.repair_wolf"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.armor.unequip_wolf",
+    "name": "armor.unequip wolf",
+    "category": "events",
+    "events": [
+      "armor.unequip_wolf"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.attach",
+    "name": "attach",
+    "category": "events",
+    "events": [
+      "attach"
+    ],
+    "pitch": 0.7,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.beacon.activate",
+    "name": "beacon.activate",
+    "category": "events",
+    "events": [
+      "beacon.activate"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.beacon.ambient",
+    "name": "beacon.ambient",
+    "category": "events",
+    "events": [
+      "beacon.ambient"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.beacon.deactivate",
+    "name": "beacon.deactivate",
+    "category": "events",
+    "events": [
+      "beacon.deactivate"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.beacon.power",
+    "name": "beacon.power",
+    "category": "events",
+    "events": [
+      "beacon.power"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.blast",
+    "name": "blast",
+    "category": "events",
+    "events": [
+      "blast"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.bamboo_sapling.place",
+    "name": "block.bamboo sapling.place",
+    "category": "events",
+    "events": [
+      "block.bamboo_sapling.place"
+    ],
+    "pitch": 0.8,
+    "volume": 0.8,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.barrel.close",
+    "name": "block.barrel.close",
+    "category": "events",
+    "events": [
+      "block.barrel.close"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.barrel.open",
+    "name": "block.barrel.open",
+    "category": "events",
+    "events": [
+      "block.barrel.open"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.beehive.drip",
+    "name": "block.beehive.drip",
+    "category": "events",
+    "events": [
+      "block.beehive.drip"
+    ],
+    "pitch": [
+      0.7,
+      0.9
+    ],
+    "volume": 0.3,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.beehive.enter",
+    "name": "block.beehive.enter",
+    "category": "events",
+    "events": [
+      "block.beehive.enter"
+    ],
+    "pitch": [
+      0.7,
+      0.8
+    ],
+    "volume": 0.75,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.beehive.exit",
+    "name": "block.beehive.exit",
+    "category": "events",
+    "events": [
+      "block.beehive.exit"
+    ],
+    "pitch": [
+      0.9,
+      1.1
+    ],
+    "volume": 0.75,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.beehive.shear",
+    "name": "block.beehive.shear",
+    "category": "events",
+    "events": [
+      "block.beehive.shear"
+    ],
+    "pitch": [
+      0.8,
+      1
+    ],
+    "volume": 0.8,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.beehive.work",
+    "name": "block.beehive.work",
+    "category": "events",
+    "events": [
+      "block.beehive.work"
+    ],
+    "pitch": 1,
+    "volume": 0.6,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.bell.hit",
+    "name": "block.bell.hit",
+    "category": "events",
+    "events": [
+      "block.bell.hit"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.blastfurnace.fire_crackle",
+    "name": "block.blastfurnace.fire crackle",
+    "category": "events",
+    "events": [
+      "block.blastfurnace.fire_crackle"
+    ],
+    "pitch": 0.6,
+    "volume": 3,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.campfire.crackle",
+    "name": "block.campfire.crackle",
+    "category": "events",
+    "events": [
+      "block.campfire.crackle"
+    ],
+    "pitch": [
+      0.6,
+      1.3
+    ],
+    "volume": [
+      0.5,
+      1.5
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.cartography_table.use",
+    "name": "block.cartography table.use",
+    "category": "events",
+    "events": [
+      "block.cartography_table.use"
+    ],
+    "pitch": 1,
+    "volume": 0.8,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.click",
+    "name": "block.click",
+    "category": "events",
+    "events": [
+      "block.click"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.click.fail",
+    "name": "block.click.fail",
+    "category": "events",
+    "events": [
+      "block.click.fail"
+    ],
+    "pitch": 1.2,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.composter.empty",
+    "name": "block.composter.empty",
+    "category": "events",
+    "events": [
+      "block.composter.empty"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.composter.fill",
+    "name": "block.composter.fill",
+    "category": "events",
+    "events": [
+      "block.composter.fill"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.composter.fill_success",
+    "name": "block.composter.fill success",
+    "category": "events",
+    "events": [
+      "block.composter.fill_success"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.composter.ready",
+    "name": "block.composter.ready",
+    "category": "events",
+    "events": [
+      "block.composter.ready"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.copper_bulb.turn_off",
+    "name": "block.copper bulb.turn off",
+    "category": "events",
+    "events": [
+      "block.copper_bulb.turn_off"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.copper_bulb.turn_on",
+    "name": "block.copper bulb.turn on",
+    "category": "events",
+    "events": [
+      "block.copper_bulb.turn_on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.creaking_heart.trail",
+    "name": "block.creaking heart.trail",
+    "category": "events",
+    "events": [
+      "block.creaking_heart.trail"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.decorated_pot.insert",
+    "name": "block.decorated pot.insert",
+    "category": "events",
+    "events": [
+      "block.decorated_pot.insert"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.decorated_pot.insert_fail",
+    "name": "block.decorated pot.insert fail",
+    "category": "events",
+    "events": [
+      "block.decorated_pot.insert_fail"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.enchanting_table.use",
+    "name": "block.enchanting table.use",
+    "category": "events",
+    "events": [
+      "block.enchanting_table.use"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.end_portal.spawn",
+    "name": "block.end portal.spawn",
+    "category": "events",
+    "events": [
+      "block.end_portal.spawn"
+    ],
+    "pitch": 1,
+    "volume": 0.7,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.end_portal_frame.fill",
+    "name": "block.end portal frame.fill",
+    "category": "events",
+    "events": [
+      "block.end_portal_frame.fill"
+    ],
+    "pitch": 1,
+    "volume": 0.3,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.fletching_table.use",
+    "name": "block.fletching table.use",
+    "category": "events",
+    "events": [
+      "block.fletching_table.use"
+    ],
+    "pitch": 1,
+    "volume": 12,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.frog_spawn.break",
+    "name": "block.frog spawn.break",
+    "category": "events",
+    "events": [
+      "block.frog_spawn.break"
+    ],
+    "pitch": 0.9,
+    "volume": 0.3,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.frog_spawn.hatch",
+    "name": "block.frog spawn.hatch",
+    "category": "events",
+    "events": [
+      "block.frog_spawn.hatch"
+    ],
+    "pitch": 0.6,
+    "volume": 1.2,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.furnace.lit",
+    "name": "block.furnace.lit",
+    "category": "events",
+    "events": [
+      "block.furnace.lit"
+    ],
+    "pitch": 1,
+    "volume": 3,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.grindstone.use",
+    "name": "block.grindstone.use",
+    "category": "events",
+    "events": [
+      "block.grindstone.use"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.loom.use",
+    "name": "block.loom.use",
+    "category": "events",
+    "events": [
+      "block.loom.use"
+    ],
+    "pitch": 1,
+    "volume": 0.75,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.scaffolding.climb",
+    "name": "block.scaffolding.climb",
+    "category": "events",
+    "events": [
+      "block.scaffolding.climb"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.sculk.spread",
+    "name": "block.sculk.spread",
+    "category": "events",
+    "events": [
+      "block.sculk.spread"
+    ],
+    "pitch": 0.9,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.sculk_catalyst.bloom",
+    "name": "block.sculk catalyst.bloom",
+    "category": "events",
+    "events": [
+      "block.sculk_catalyst.bloom"
+    ],
+    "pitch": [
+      0.6,
+      1
+    ],
+    "volume": 2,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.sculk_sensor.place",
+    "name": "block.sculk sensor.place",
+    "category": "events",
+    "events": [
+      "block.sculk_sensor.place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.sculk_shrieker.place",
+    "name": "block.sculk shrieker.place",
+    "category": "events",
+    "events": [
+      "block.sculk_shrieker.place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.sculk_shrieker.shriek",
+    "name": "block.sculk shrieker.shriek",
+    "category": "events",
+    "events": [
+      "block.sculk_shrieker.shriek"
+    ],
+    "pitch": [
+      0.6,
+      1
+    ],
+    "volume": 2,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.sign.waxed_interact_fail",
+    "name": "block.sign.waxed interact fail",
+    "category": "events",
+    "events": [
+      "block.sign.waxed_interact_fail"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.smithing_table.use",
+    "name": "block.smithing table.use",
+    "category": "events",
+    "events": [
+      "block.smithing_table.use"
+    ],
+    "pitch": 1,
+    "volume": 0.25,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.smoker.smoke",
+    "name": "block.smoker.smoke",
+    "category": "events",
+    "events": [
+      "block.smoker.smoke"
+    ],
+    "pitch": 1,
+    "volume": 3,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.sniffer_egg.crack",
+    "name": "block.sniffer egg.crack",
+    "category": "events",
+    "events": [
+      "block.sniffer_egg.crack"
+    ],
+    "pitch": 0.8,
+    "volume": 0.85,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.sniffer_egg.hatch",
+    "name": "block.sniffer egg.hatch",
+    "category": "events",
+    "events": [
+      "block.sniffer_egg.hatch"
+    ],
+    "pitch": 0.8,
+    "volume": 0.85,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.stonecutter.use",
+    "name": "block.stonecutter.use",
+    "category": "events",
+    "events": [
+      "block.stonecutter.use"
+    ],
+    "pitch": 1,
+    "volume": 0.7,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.sweet_berry_bush.hurt",
+    "name": "block.sweet berry bush.hurt",
+    "category": "events",
+    "events": [
+      "block.sweet_berry_bush.hurt"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.sweet_berry_bush.pick",
+    "name": "block.sweet berry bush.pick",
+    "category": "events",
+    "events": [
+      "block.sweet_berry_bush.pick"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.turtle_egg.attack",
+    "name": "block.turtle egg.attack",
+    "category": "events",
+    "events": [
+      "block.turtle_egg.attack"
+    ],
+    "pitch": [
+      0.9,
+      1
+    ],
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.turtle_egg.break",
+    "name": "block.turtle egg.break",
+    "category": "events",
+    "events": [
+      "block.turtle_egg.break"
+    ],
+    "pitch": 0.9,
+    "volume": 0.85,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.turtle_egg.crack",
+    "name": "block.turtle egg.crack",
+    "category": "events",
+    "events": [
+      "block.turtle_egg.crack"
+    ],
+    "pitch": 0.9,
+    "volume": 0.85,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.block.turtle_egg.hatch",
+    "name": "block.turtle egg.hatch",
+    "category": "events",
+    "events": [
+      "block.turtle_egg.hatch"
+    ],
+    "pitch": 0.9,
+    "volume": 0.85,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bottle.dragonbreath",
+    "name": "bottle.dragonbreath",
+    "category": "events",
+    "events": [
+      "bottle.dragonbreath"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bottle.empty",
+    "name": "bottle.empty",
+    "category": "events",
+    "events": [
+      "bottle.empty"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bottle.fill",
+    "name": "bottle.fill",
+    "category": "events",
+    "events": [
+      "bottle.fill"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bow",
+    "name": "bow",
+    "category": "events",
+    "events": [
+      "bow"
+    ],
+    "pitch": [
+      0.83,
+      1.25
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bow.hit",
+    "name": "bow.hit",
+    "category": "events",
+    "events": [
+      "bow.hit"
+    ],
+    "pitch": [
+      1.09,
+      1.3
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.break",
+    "name": "break",
+    "category": "events",
+    "events": [
+      "break"
+    ],
+    "pitch": 0.9,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.breeze_wind_charge.burst",
+    "name": "breeze wind charge.burst",
+    "category": "events",
+    "events": [
+      "breeze_wind_charge.burst"
+    ],
+    "pitch": 1.2,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bubble.down",
+    "name": "bubble.down",
+    "category": "events",
+    "events": [
+      "bubble.down"
+    ],
+    "pitch": [
+      0.9,
+      1.05
+    ],
+    "volume": [
+      0.4,
+      0.6
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bubble.downinside",
+    "name": "bubble.downinside",
+    "category": "events",
+    "events": [
+      "bubble.downinside"
+    ],
+    "pitch": [
+      0.9,
+      1.05
+    ],
+    "volume": [
+      1,
+      1.5
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bubble.pop",
+    "name": "bubble.pop",
+    "category": "events",
+    "events": [
+      "bubble.pop"
+    ],
+    "pitch": [
+      0.9,
+      1.05
+    ],
+    "volume": [
+      0.4,
+      0.6
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bubble.up",
+    "name": "bubble.up",
+    "category": "events",
+    "events": [
+      "bubble.up"
+    ],
+    "pitch": [
+      0.9,
+      1.05
+    ],
+    "volume": [
+      0.4,
+      0.6
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bubble.upinside",
+    "name": "bubble.upinside",
+    "category": "events",
+    "events": [
+      "bubble.upinside"
+    ],
+    "pitch": [
+      0.9,
+      1.05
+    ],
+    "volume": [
+      1,
+      1.5
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bucket.empty.fish",
+    "name": "bucket.empty.fish",
+    "category": "events",
+    "events": [
+      "bucket.empty.fish"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bucket.empty.land_animal",
+    "name": "bucket.empty.land animal",
+    "category": "events",
+    "events": [
+      "bucket.empty.land_animal"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bucket.empty.lava",
+    "name": "bucket.empty.lava",
+    "category": "events",
+    "events": [
+      "bucket.empty.lava"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bucket.empty.powder_snow",
+    "name": "bucket.empty.powder snow",
+    "category": "events",
+    "events": [
+      "bucket.empty.powder_snow"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bucket.empty.water",
+    "name": "bucket.empty.water",
+    "category": "events",
+    "events": [
+      "bucket.empty.water"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bucket.fill.fish",
+    "name": "bucket.fill.fish",
+    "category": "events",
+    "events": [
+      "bucket.fill.fish"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bucket.fill.land_animal",
+    "name": "bucket.fill.land animal",
+    "category": "events",
+    "events": [
+      "bucket.fill.land_animal"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bucket.fill.lava",
+    "name": "bucket.fill.lava",
+    "category": "events",
+    "events": [
+      "bucket.fill.lava"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bucket.fill.powder_snow",
+    "name": "bucket.fill.powder snow",
+    "category": "events",
+    "events": [
+      "bucket.fill.powder_snow"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bucket.fill.water",
+    "name": "bucket.fill.water",
+    "category": "events",
+    "events": [
+      "bucket.fill.water"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bullet.hit",
+    "name": "bullet.hit",
+    "category": "events",
+    "events": [
+      "bullet.hit"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bundle.drop_contents",
+    "name": "bundle.drop contents",
+    "category": "events",
+    "events": [
+      "bundle.drop_contents"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bundle.insert",
+    "name": "bundle.insert",
+    "category": "events",
+    "events": [
+      "bundle.insert"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bundle.insert_fail",
+    "name": "bundle.insert fail",
+    "category": "events",
+    "events": [
+      "bundle.insert_fail"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.bundle.remove_one",
+    "name": "bundle.remove one",
+    "category": "events",
+    "events": [
+      "bundle.remove_one"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.burp",
+    "name": "burp",
+    "category": "events",
+    "events": [
+      "burp"
+    ],
+    "pitch": [
+      0.9,
+      1
+    ],
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.cake.add_candle",
+    "name": "cake.add candle",
+    "category": "events",
+    "events": [
+      "cake.add_candle"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.camera.take_picture",
+    "name": "camera.take picture",
+    "category": "events",
+    "events": [
+      "camera.take_picture"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.cauldron_drip.lava.pointed_dripstone",
+    "name": "cauldron drip.lava.pointed dripstone",
+    "category": "events",
+    "events": [
+      "cauldron_drip.lava.pointed_dripstone"
+    ],
+    "pitch": [
+      0.9,
+      1
+    ],
+    "volume": 2,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.cauldron_drip.water.pointed_dripstone",
+    "name": "cauldron drip.water.pointed dripstone",
+    "category": "events",
+    "events": [
+      "cauldron_drip.water.pointed_dripstone"
+    ],
+    "pitch": [
+      0.9,
+      1
+    ],
+    "volume": 2,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.charge.sculk",
+    "name": "charge.sculk",
+    "category": "events",
+    "events": [
+      "charge.sculk"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.chest.closed",
+    "name": "chest.closed",
+    "category": "events",
+    "events": [
+      "chest.closed"
+    ],
+    "pitch": [
+      0.9,
+      1
+    ],
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.chest.open",
+    "name": "chest.open",
+    "category": "events",
+    "events": [
+      "chest.open"
+    ],
+    "pitch": [
+      0.9,
+      1
+    ],
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.chime.amethyst_block",
+    "name": "chime.amethyst block",
+    "category": "events",
+    "events": [
+      "chime.amethyst_block"
+    ],
+    "pitch": [
+      0.5,
+      1.7
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.chorusdeath",
+    "name": "chorusdeath",
+    "category": "events",
+    "events": [
+      "chorusdeath"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.chorusgrow",
+    "name": "chorusgrow",
+    "category": "events",
+    "events": [
+      "chorusgrow"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.conduit.activate",
+    "name": "conduit.activate",
+    "category": "events",
+    "events": [
+      "conduit.activate"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.conduit.ambient",
+    "name": "conduit.ambient",
+    "category": "events",
+    "events": [
+      "conduit.ambient"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.conduit.attack",
+    "name": "conduit.attack",
+    "category": "events",
+    "events": [
+      "conduit.attack"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.conduit.deactivate",
+    "name": "conduit.deactivate",
+    "category": "events",
+    "events": [
+      "conduit.deactivate"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.conduit.short",
+    "name": "conduit.short",
+    "category": "events",
+    "events": [
+      "conduit.short"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.convert_mooshroom",
+    "name": "convert mooshroom",
+    "category": "events",
+    "events": [
+      "convert_mooshroom"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.convert_to_drowned",
+    "name": "convert to drowned",
+    "category": "events",
+    "events": [
+      "convert_to_drowned"
+    ],
+    "pitch": [
+      0.3,
+      1
+    ],
+    "volume": [
+      1,
+      2
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.convert_to_frog",
+    "name": "convert to frog",
+    "category": "events",
+    "events": [
+      "convert_to_frog"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.convert_to_stray",
+    "name": "convert to stray",
+    "category": "events",
+    "events": [
+      "convert_to_stray"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.converted_to_zombified",
+    "name": "converted to zombified",
+    "category": "events",
+    "events": [
+      "converted_to_zombified"
+    ],
+    "pitch": [
+      0.9,
+      1.1
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.copper.wax.off",
+    "name": "copper.wax.off",
+    "category": "events",
+    "events": [
+      "copper.wax.off"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.copper.wax.on",
+    "name": "copper.wax.on",
+    "category": "events",
+    "events": [
+      "copper.wax.on"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.crafter.craft",
+    "name": "crafter.craft",
+    "category": "events",
+    "events": [
+      "crafter.craft"
+    ],
+    "pitch": [
+      0.96,
+      1.04
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.crafter.disable_slot",
+    "name": "crafter.disable slot",
+    "category": "events",
+    "events": [
+      "crafter.disable_slot"
+    ],
+    "pitch": 0.75,
+    "volume": 0.4,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.crafter.fail",
+    "name": "crafter.fail",
+    "category": "events",
+    "events": [
+      "crafter.fail"
+    ],
+    "pitch": [
+      0.96,
+      1.04
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.crossbow.loading.end",
+    "name": "crossbow.loading.end",
+    "category": "events",
+    "events": [
+      "crossbow.loading.end"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.crossbow.loading.middle",
+    "name": "crossbow.loading.middle",
+    "category": "events",
+    "events": [
+      "crossbow.loading.middle"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.crossbow.loading.start",
+    "name": "crossbow.loading.start",
+    "category": "events",
+    "events": [
+      "crossbow.loading.start"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.crossbow.quick_charge.end",
+    "name": "crossbow.quick charge.end",
+    "category": "events",
+    "events": [
+      "crossbow.quick_charge.end"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.crossbow.quick_charge.middle",
+    "name": "crossbow.quick charge.middle",
+    "category": "events",
+    "events": [
+      "crossbow.quick_charge.middle"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.crossbow.quick_charge.start",
+    "name": "crossbow.quick charge.start",
+    "category": "events",
+    "events": [
+      "crossbow.quick_charge.start"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.crossbow.shoot",
+    "name": "crossbow.shoot",
+    "category": "events",
+    "events": [
+      "crossbow.shoot"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.dash_ready",
+    "name": "dash ready",
+    "category": "events",
+    "events": [
+      "dash_ready"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.deny",
+    "name": "deny",
+    "category": "events",
+    "events": [
+      "deny"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 0.8,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.detach",
+    "name": "detach",
+    "category": "events",
+    "events": [
+      "detach"
+    ],
+    "pitch": [
+      1.1,
+      1.33
+    ],
+    "volume": 0.4,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.drip.lava.pointed_dripstone",
+    "name": "drip.lava.pointed dripstone",
+    "category": "events",
+    "events": [
+      "drip.lava.pointed_dripstone"
+    ],
+    "pitch": 1,
+    "volume": [
+      0.3,
+      1
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.drip.water.pointed_dripstone",
+    "name": "drip.water.pointed dripstone",
+    "category": "events",
+    "events": [
+      "drip.water.pointed_dripstone"
+    ],
+    "pitch": 1,
+    "volume": [
+      0.3,
+      1
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.drop.slot",
+    "name": "drop.slot",
+    "category": "events",
+    "events": [
+      "drop.slot"
+    ],
+    "pitch": [
+      0.55,
+      0.75
+    ],
+    "volume": 0.3,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.enderchest.closed",
+    "name": "enderchest.closed",
+    "category": "events",
+    "events": [
+      "enderchest.closed"
+    ],
+    "pitch": [
+      0.9,
+      1
+    ],
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.enderchest.open",
+    "name": "enderchest.open",
+    "category": "events",
+    "events": [
+      "enderchest.open"
+    ],
+    "pitch": [
+      0.9,
+      1
+    ],
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.explode",
+    "name": "explode",
+    "category": "events",
+    "events": [
+      "explode"
+    ],
+    "pitch": 1,
+    "volume": 4,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.extinguish.candle",
+    "name": "extinguish.candle",
+    "category": "events",
+    "events": [
+      "extinguish.candle"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.extinguish.fire",
+    "name": "extinguish.fire",
+    "category": "events",
+    "events": [
+      "extinguish.fire"
+    ],
+    "pitch": [
+      1.8,
+      2.4
+    ],
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.fire",
+    "name": "fire",
+    "category": "events",
+    "events": [
+      "fire"
+    ],
+    "pitch": [
+      0.3,
+      1
+    ],
+    "volume": [
+      1,
+      2
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.fizz",
+    "name": "fizz",
+    "category": "events",
+    "events": [
+      "fizz"
+    ],
+    "pitch": [
+      1.8,
+      2.4
+    ],
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.geyser_continuous_eruption_active",
+    "name": "geyser continuous eruption active",
+    "category": "events",
+    "events": [
+      "geyser_continuous_eruption_active"
+    ],
+    "pitch": 1,
+    "volume": 2,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.geyser_continuous_eruption_start",
+    "name": "geyser continuous eruption start",
+    "category": "events",
+    "events": [
+      "geyser_continuous_eruption_start"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.geyser_eruption_active",
+    "name": "geyser eruption active",
+    "category": "events",
+    "events": [
+      "geyser_eruption_active"
+    ],
+    "pitch": 1,
+    "volume": 2,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.geyser_eruption_start",
+    "name": "geyser eruption start",
+    "category": "events",
+    "events": [
+      "geyser_eruption_start"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.glass",
+    "name": "glass",
+    "category": "events",
+    "events": [
+      "glass"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.glow_squid.ink_squirt",
+    "name": "glow squid.ink squirt",
+    "category": "events",
+    "events": [
+      "glow_squid.ink_squirt"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.horn_break",
+    "name": "horn break",
+    "category": "events",
+    "events": [
+      "horn_break"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.horn_call0",
+    "name": "horn call0",
+    "category": "events",
+    "events": [
+      "horn_call0"
+    ],
+    "pitch": 1,
+    "volume": 16,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.horn_call1",
+    "name": "horn call1",
+    "category": "events",
+    "events": [
+      "horn_call1"
+    ],
+    "pitch": 1,
+    "volume": 16,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.horn_call2",
+    "name": "horn call2",
+    "category": "events",
+    "events": [
+      "horn_call2"
+    ],
+    "pitch": 1,
+    "volume": 16,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.horn_call3",
+    "name": "horn call3",
+    "category": "events",
+    "events": [
+      "horn_call3"
+    ],
+    "pitch": 1,
+    "volume": 16,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.horn_call4",
+    "name": "horn call4",
+    "category": "events",
+    "events": [
+      "horn_call4"
+    ],
+    "pitch": 1,
+    "volume": 16,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.horn_call5",
+    "name": "horn call5",
+    "category": "events",
+    "events": [
+      "horn_call5"
+    ],
+    "pitch": 1,
+    "volume": 16,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.horn_call6",
+    "name": "horn call6",
+    "category": "events",
+    "events": [
+      "horn_call6"
+    ],
+    "pitch": 1,
+    "volume": 16,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.horn_call7",
+    "name": "horn call7",
+    "category": "events",
+    "events": [
+      "horn_call7"
+    ],
+    "pitch": 1,
+    "volume": 16,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ignite",
+    "name": "ignite",
+    "category": "events",
+    "events": [
+      "ignite"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.book.put",
+    "name": "item.book.put",
+    "category": "events",
+    "events": [
+      "item.book.put"
+    ],
+    "pitch": 1,
+    "volume": 1.2,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.copper_spear.attack_hit",
+    "name": "item.copper spear.attack hit",
+    "category": "events",
+    "events": [
+      "item.copper_spear.attack_hit"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.copper_spear.attack_miss",
+    "name": "item.copper spear.attack miss",
+    "category": "events",
+    "events": [
+      "item.copper_spear.attack_miss"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.copper_spear.use",
+    "name": "item.copper spear.use",
+    "category": "events",
+    "events": [
+      "item.copper_spear.use"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.diamond_spear.attack_hit",
+    "name": "item.diamond spear.attack hit",
+    "category": "events",
+    "events": [
+      "item.diamond_spear.attack_hit"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.diamond_spear.attack_miss",
+    "name": "item.diamond spear.attack miss",
+    "category": "events",
+    "events": [
+      "item.diamond_spear.attack_miss"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.diamond_spear.use",
+    "name": "item.diamond spear.use",
+    "category": "events",
+    "events": [
+      "item.diamond_spear.use"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.enchant.lunge1",
+    "name": "item.enchant.lunge1",
+    "category": "events",
+    "events": [
+      "item.enchant.lunge1"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.enchant.lunge2",
+    "name": "item.enchant.lunge2",
+    "category": "events",
+    "events": [
+      "item.enchant.lunge2"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.enchant.lunge3",
+    "name": "item.enchant.lunge3",
+    "category": "events",
+    "events": [
+      "item.enchant.lunge3"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.golden_spear.attack_hit",
+    "name": "item.golden spear.attack hit",
+    "category": "events",
+    "events": [
+      "item.golden_spear.attack_hit"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.golden_spear.attack_miss",
+    "name": "item.golden spear.attack miss",
+    "category": "events",
+    "events": [
+      "item.golden_spear.attack_miss"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.golden_spear.use",
+    "name": "item.golden spear.use",
+    "category": "events",
+    "events": [
+      "item.golden_spear.use"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.iron_spear.attack_hit",
+    "name": "item.iron spear.attack hit",
+    "category": "events",
+    "events": [
+      "item.iron_spear.attack_hit"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.iron_spear.attack_miss",
+    "name": "item.iron spear.attack miss",
+    "category": "events",
+    "events": [
+      "item.iron_spear.attack_miss"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.iron_spear.use",
+    "name": "item.iron spear.use",
+    "category": "events",
+    "events": [
+      "item.iron_spear.use"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.netherite_spear.attack_hit",
+    "name": "item.netherite spear.attack hit",
+    "category": "events",
+    "events": [
+      "item.netherite_spear.attack_hit"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.netherite_spear.attack_miss",
+    "name": "item.netherite spear.attack miss",
+    "category": "events",
+    "events": [
+      "item.netherite_spear.attack_miss"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.netherite_spear.use",
+    "name": "item.netherite spear.use",
+    "category": "events",
+    "events": [
+      "item.netherite_spear.use"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.shield.block",
+    "name": "item.shield.block",
+    "category": "events",
+    "events": [
+      "item.shield.block"
+    ],
+    "pitch": 1,
+    "volume": 0.7,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.spear.attack_hit",
+    "name": "item.spear.attack hit",
+    "category": "events",
+    "events": [
+      "item.spear.attack_hit"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.spear.attack_miss",
+    "name": "item.spear.attack miss",
+    "category": "events",
+    "events": [
+      "item.spear.attack_miss"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.spear.use",
+    "name": "item.spear.use",
+    "category": "events",
+    "events": [
+      "item.spear.use"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.spyglass.stop_using",
+    "name": "item.spyglass.stop using",
+    "category": "events",
+    "events": [
+      "item.spyglass.stop_using"
+    ],
+    "pitch": [
+      0.8,
+      1
+    ],
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.spyglass.use",
+    "name": "item.spyglass.use",
+    "category": "events",
+    "events": [
+      "item.spyglass.use"
+    ],
+    "pitch": [
+      1.15,
+      1.55
+    ],
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.stone_spear.attack_hit",
+    "name": "item.stone spear.attack hit",
+    "category": "events",
+    "events": [
+      "item.stone_spear.attack_hit"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.stone_spear.attack_miss",
+    "name": "item.stone spear.attack miss",
+    "category": "events",
+    "events": [
+      "item.stone_spear.attack_miss"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.stone_spear.use",
+    "name": "item.stone spear.use",
+    "category": "events",
+    "events": [
+      "item.stone_spear.use"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.trident.hit",
+    "name": "item.trident.hit",
+    "category": "events",
+    "events": [
+      "item.trident.hit"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.trident.hit_ground",
+    "name": "item.trident.hit ground",
+    "category": "events",
+    "events": [
+      "item.trident.hit_ground"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.trident.return",
+    "name": "item.trident.return",
+    "category": "events",
+    "events": [
+      "item.trident.return"
+    ],
+    "pitch": 1,
+    "volume": 10,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.trident.riptide_1",
+    "name": "item.trident.riptide 1",
+    "category": "events",
+    "events": [
+      "item.trident.riptide_1"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.trident.riptide_2",
+    "name": "item.trident.riptide 2",
+    "category": "events",
+    "events": [
+      "item.trident.riptide_2"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.trident.riptide_3",
+    "name": "item.trident.riptide 3",
+    "category": "events",
+    "events": [
+      "item.trident.riptide_3"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.trident.throw",
+    "name": "item.trident.throw",
+    "category": "events",
+    "events": [
+      "item.trident.throw"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.trident.thunder",
+    "name": "item.trident.thunder",
+    "category": "events",
+    "events": [
+      "item.trident.thunder"
+    ],
+    "pitch": 1,
+    "volume": 5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.wooden_spear.attack_hit",
+    "name": "item.wooden spear.attack hit",
+    "category": "events",
+    "events": [
+      "item.wooden_spear.attack_hit"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.wooden_spear.attack_miss",
+    "name": "item.wooden spear.attack miss",
+    "category": "events",
+    "events": [
+      "item.wooden_spear.attack_miss"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item.wooden_spear.use",
+    "name": "item.wooden spear.use",
+    "category": "events",
+    "events": [
+      "item.wooden_spear.use"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item_given",
+    "name": "item given",
+    "category": "events",
+    "events": [
+      "item_given"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item_taken",
+    "name": "item taken",
+    "category": "events",
+    "events": [
+      "item_taken"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.item_thrown",
+    "name": "item thrown",
+    "category": "events",
+    "events": [
+      "item_thrown"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.jump_to_block",
+    "name": "jump to block",
+    "category": "events",
+    "events": [
+      "jump_to_block"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.large.blast",
+    "name": "large.blast",
+    "category": "events",
+    "events": [
+      "large.blast"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.launch",
+    "name": "launch",
+    "category": "events",
+    "events": [
+      "launch"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.lava",
+    "name": "lava",
+    "category": "events",
+    "events": [
+      "lava"
+    ],
+    "pitch": [
+      0.9,
+      1.05
+    ],
+    "volume": [
+      0.4,
+      0.6
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.lava.pop",
+    "name": "lava.pop",
+    "category": "events",
+    "events": [
+      "lava.pop"
+    ],
+    "pitch": [
+      0.9,
+      1.05
+    ],
+    "volume": [
+      0.4,
+      0.6
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.lay_egg",
+    "name": "lay egg",
+    "category": "events",
+    "events": [
+      "lay_egg"
+    ],
+    "pitch": 0.9,
+    "volume": 0.3,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.lay_spawn",
+    "name": "lay spawn",
+    "category": "events",
+    "events": [
+      "lay_spawn"
+    ],
+    "pitch": 0.9,
+    "volume": 0.3,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.lead.break",
+    "name": "lead.break",
+    "category": "events",
+    "events": [
+      "lead.break"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.lead.leash",
+    "name": "lead.leash",
+    "category": "events",
+    "events": [
+      "lead.leash"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.lead.unleash",
+    "name": "lead.unleash",
+    "category": "events",
+    "events": [
+      "lead.unleash"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.leashknot.break",
+    "name": "leashknot.break",
+    "category": "events",
+    "events": [
+      "leashknot.break"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.leashknot.place",
+    "name": "leashknot.place",
+    "category": "events",
+    "events": [
+      "leashknot.place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.levelup",
+    "name": "levelup",
+    "category": "events",
+    "events": [
+      "levelup"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.lodestone_compass.link_compass_to_lodestone",
+    "name": "lodestone compass.link compass to lodestone",
+    "category": "events",
+    "events": [
+      "lodestone_compass.link_compass_to_lodestone"
+    ],
+    "pitch": [
+      0.85,
+      0.95
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.mace.heavy_smash_ground",
+    "name": "mace.heavy smash ground",
+    "category": "events",
+    "events": [
+      "mace.heavy_smash_ground"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.mace.smash_air",
+    "name": "mace.smash air",
+    "category": "events",
+    "events": [
+      "mace.smash_air"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.mace.smash_ground",
+    "name": "mace.smash ground",
+    "category": "events",
+    "events": [
+      "mace.smash_ground"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.milk",
+    "name": "milk",
+    "category": "events",
+    "events": [
+      "milk"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.milk.screamer",
+    "name": "milk.screamer",
+    "category": "events",
+    "events": [
+      "milk.screamer"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.milk_suspiciously",
+    "name": "milk suspiciously",
+    "category": "events",
+    "events": [
+      "milk_suspiciously"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.mob.armadillo.brush",
+    "name": "mob.armadillo.brush",
+    "category": "events",
+    "events": [
+      "mob.armadillo.brush"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.mob.armadillo.scute_drop",
+    "name": "mob.armadillo.scute drop",
+    "category": "events",
+    "events": [
+      "mob.armadillo.scute_drop"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.mob.armor_stand.place",
+    "name": "mob.armor stand.place",
+    "category": "events",
+    "events": [
+      "mob.armor_stand.place"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.mob.hoglin.converted_to_zombified",
+    "name": "mob.hoglin.converted to zombified",
+    "category": "events",
+    "events": [
+      "mob.hoglin.converted_to_zombified"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.mob.husk.convert_to_zombie",
+    "name": "mob.husk.convert to zombie",
+    "category": "events",
+    "events": [
+      "mob.husk.convert_to_zombie"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.mob.pig.death",
+    "name": "mob.pig.death",
+    "category": "events",
+    "events": [
+      "mob.pig.death"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.mob.player.hurt_drown",
+    "name": "mob.player.hurt drown",
+    "category": "events",
+    "events": [
+      "mob.player.hurt_drown"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.mob.player.hurt_freeze",
+    "name": "mob.player.hurt freeze",
+    "category": "events",
+    "events": [
+      "mob.player.hurt_freeze"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.mob.player.hurt_on_fire",
+    "name": "mob.player.hurt on fire",
+    "category": "events",
+    "events": [
+      "mob.player.hurt_on_fire"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.nearby_close",
+    "name": "nearby close",
+    "category": "events",
+    "events": [
+      "nearby_close"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.nearby_closer",
+    "name": "nearby closer",
+    "category": "events",
+    "events": [
+      "nearby_closer"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.nearby_closest",
+    "name": "nearby closest",
+    "category": "events",
+    "events": [
+      "nearby_closest"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.note",
+    "name": "note",
+    "category": "events",
+    "events": [
+      "note"
+    ],
+    "pitch": 1,
+    "volume": 3,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.note.bass",
+    "name": "note.bass",
+    "category": "events",
+    "events": [
+      "note.bass"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ominous_bottle.end_use",
+    "name": "ominous bottle.end use",
+    "category": "events",
+    "events": [
+      "ominous_bottle.end_use"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ominous_item_spawner.about_to_spawn_item",
+    "name": "ominous item spawner.about to spawn item",
+    "category": "events",
+    "events": [
+      "ominous_item_spawner.about_to_spawn_item"
+    ],
+    "pitch": [
+      0.8,
+      1.1
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ominous_item_spawner.spawn_item",
+    "name": "ominous item spawner.spawn item",
+    "category": "events",
+    "events": [
+      "ominous_item_spawner.spawn_item"
+    ],
+    "pitch": [
+      0.8,
+      1.1
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ominous_item_spawner.spawn_item_begin",
+    "name": "ominous item spawner.spawn item begin",
+    "category": "events",
+    "events": [
+      "ominous_item_spawner.spawn_item_begin"
+    ],
+    "pitch": [
+      0.8,
+      1.1
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.particle.soul_escape.loud",
+    "name": "particle.soul escape.loud",
+    "category": "events",
+    "events": [
+      "particle.soul_escape.loud"
+    ],
+    "pitch": [
+      0.6,
+      1
+    ],
+    "volume": [
+      1,
+      3
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.particle.soul_escape.quiet",
+    "name": "particle.soul escape.quiet",
+    "category": "events",
+    "events": [
+      "particle.soul_escape.quiet"
+    ],
+    "pitch": [
+      0.6,
+      1
+    ],
+    "volume": [
+      0,
+      0.4
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.pause_growth",
+    "name": "pause growth",
+    "category": "events",
+    "events": [
+      "pause_growth"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.pick_berries.cave_vines",
+    "name": "pick berries.cave vines",
+    "category": "events",
+    "events": [
+      "pick_berries.cave_vines"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.piston.in",
+    "name": "piston.in",
+    "category": "events",
+    "events": [
+      "piston.in"
+    ],
+    "pitch": [
+      0.6,
+      0.75
+    ],
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.piston.out",
+    "name": "piston.out",
+    "category": "events",
+    "events": [
+      "piston.out"
+    ],
+    "pitch": [
+      0.6,
+      0.75
+    ],
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.pop",
+    "name": "pop",
+    "category": "events",
+    "events": [
+      "pop"
+    ],
+    "pitch": [
+      0.6,
+      2.2
+    ],
+    "volume": 0.25,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.portal",
+    "name": "portal",
+    "category": "events",
+    "events": [
+      "portal"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 0.25,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.portal.travel",
+    "name": "portal.travel",
+    "category": "events",
+    "events": [
+      "portal.travel"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.potion.brewed",
+    "name": "potion.brewed",
+    "category": "events",
+    "events": [
+      "potion.brewed"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.power.off",
+    "name": "power.off",
+    "category": "events",
+    "events": [
+      "power.off"
+    ],
+    "pitch": 0.5,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.power.off.sculk_sensor",
+    "name": "power.off.sculk sensor",
+    "category": "events",
+    "events": [
+      "power.off.sculk_sensor"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 0.62,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.power.on",
+    "name": "power.on",
+    "category": "events",
+    "events": [
+      "power.on"
+    ],
+    "pitch": 0.6,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.power.on.sculk_sensor",
+    "name": "power.on.sculk sensor",
+    "category": "events",
+    "events": [
+      "power.on.sculk_sensor"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 0.73,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.pre_ram",
+    "name": "pre ram",
+    "category": "events",
+    "events": [
+      "pre_ram"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.pre_ram.screamer",
+    "name": "pre ram.screamer",
+    "category": "events",
+    "events": [
+      "pre_ram.screamer"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.pressure_plate.click_off",
+    "name": "pressure plate.click off",
+    "category": "events",
+    "events": [
+      "pressure_plate.click_off"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.pressure_plate.click_on",
+    "name": "pressure plate.click on",
+    "category": "events",
+    "events": [
+      "pressure_plate.click_on"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.pumpkin.carve",
+    "name": "pumpkin.carve",
+    "category": "events",
+    "events": [
+      "pumpkin.carve"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.raid.horn",
+    "name": "raid.horn",
+    "category": "events",
+    "events": [
+      "raid.horn"
+    ],
+    "pitch": 1,
+    "volume": 12,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ram_impact",
+    "name": "ram impact",
+    "category": "events",
+    "events": [
+      "ram_impact"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ram_impact.screamer",
+    "name": "ram impact.screamer",
+    "category": "events",
+    "events": [
+      "ram_impact.screamer"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.random.anvil_use",
+    "name": "random.anvil use",
+    "category": "events",
+    "events": [
+      "random.anvil_use"
+    ],
+    "pitch": 1,
+    "volume": 0.6,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.11",
+    "name": "record.11",
+    "category": "events",
+    "events": [
+      "record.11"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.13",
+    "name": "record.13",
+    "category": "events",
+    "events": [
+      "record.13"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.5",
+    "name": "record.5",
+    "category": "events",
+    "events": [
+      "record.5"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.blocks",
+    "name": "record.blocks",
+    "category": "events",
+    "events": [
+      "record.blocks"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.bounce",
+    "name": "record.bounce",
+    "category": "events",
+    "events": [
+      "record.bounce"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.cat",
+    "name": "record.cat",
+    "category": "events",
+    "events": [
+      "record.cat"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.chirp",
+    "name": "record.chirp",
+    "category": "events",
+    "events": [
+      "record.chirp"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.creator",
+    "name": "record.creator",
+    "category": "events",
+    "events": [
+      "record.creator"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.creator_music_box",
+    "name": "record.creator music box",
+    "category": "events",
+    "events": [
+      "record.creator_music_box"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.far",
+    "name": "record.far",
+    "category": "events",
+    "events": [
+      "record.far"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.lava_chicken",
+    "name": "record.lava chicken",
+    "category": "events",
+    "events": [
+      "record.lava_chicken"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.mall",
+    "name": "record.mall",
+    "category": "events",
+    "events": [
+      "record.mall"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.mellohi",
+    "name": "record.mellohi",
+    "category": "events",
+    "events": [
+      "record.mellohi"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.otherside",
+    "name": "record.otherside",
+    "category": "events",
+    "events": [
+      "record.otherside"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.pigstep",
+    "name": "record.pigstep",
+    "category": "events",
+    "events": [
+      "record.pigstep"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.precipice",
+    "name": "record.precipice",
+    "category": "events",
+    "events": [
+      "record.precipice"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.relic",
+    "name": "record.relic",
+    "category": "events",
+    "events": [
+      "record.relic"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.stal",
+    "name": "record.stal",
+    "category": "events",
+    "events": [
+      "record.stal"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.strad",
+    "name": "record.strad",
+    "category": "events",
+    "events": [
+      "record.strad"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.tears",
+    "name": "record.tears",
+    "category": "events",
+    "events": [
+      "record.tears"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.wait",
+    "name": "record.wait",
+    "category": "events",
+    "events": [
+      "record.wait"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.record.ward",
+    "name": "record.ward",
+    "category": "events",
+    "events": [
+      "record.ward"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.remedy",
+    "name": "remedy",
+    "category": "events",
+    "events": [
+      "remedy"
+    ],
+    "pitch": [
+      0.3,
+      1
+    ],
+    "volume": [
+      1,
+      2
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.reset_growth",
+    "name": "reset growth",
+    "category": "events",
+    "events": [
+      "reset_growth"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.respawn_anchor.ambient",
+    "name": "respawn anchor.ambient",
+    "category": "events",
+    "events": [
+      "respawn_anchor.ambient"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.respawn_anchor.charge",
+    "name": "respawn anchor.charge",
+    "category": "events",
+    "events": [
+      "respawn_anchor.charge"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.respawn_anchor.deplete",
+    "name": "respawn anchor.deplete",
+    "category": "events",
+    "events": [
+      "respawn_anchor.deplete"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.respawn_anchor.set_spawn",
+    "name": "respawn anchor.set spawn",
+    "category": "events",
+    "events": [
+      "respawn_anchor.set_spawn"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.saddle",
+    "name": "saddle",
+    "category": "events",
+    "events": [
+      "saddle"
+    ],
+    "pitch": 1,
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.scrape",
+    "name": "scrape",
+    "category": "events",
+    "events": [
+      "scrape"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.shear",
+    "name": "shear",
+    "category": "events",
+    "events": [
+      "shear"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.shulkerbox.closed",
+    "name": "shulkerbox.closed",
+    "category": "events",
+    "events": [
+      "shulkerbox.closed"
+    ],
+    "pitch": [
+      0.9,
+      1
+    ],
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.shulkerbox.open",
+    "name": "shulkerbox.open",
+    "category": "events",
+    "events": [
+      "shulkerbox.open"
+    ],
+    "pitch": [
+      0.9,
+      1
+    ],
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.smithing_table.use",
+    "name": "smithing table.use",
+    "category": "events",
+    "events": [
+      "smithing_table.use"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.sonic_boom",
+    "name": "sonic boom",
+    "category": "events",
+    "events": [
+      "sonic_boom"
+    ],
+    "pitch": 1,
+    "volume": 3,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.sonic_charge",
+    "name": "sonic charge",
+    "category": "events",
+    "events": [
+      "sonic_charge"
+    ],
+    "pitch": 1,
+    "volume": 3,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.splash",
+    "name": "splash",
+    "category": "events",
+    "events": [
+      "splash"
+    ],
+    "pitch": [
+      0.6,
+      1.4
+    ],
+    "volume": 0.25,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.sponge.absorb",
+    "name": "sponge.absorb",
+    "category": "events",
+    "events": [
+      "sponge.absorb"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.squid.ink_squirt",
+    "name": "squid.ink squirt",
+    "category": "events",
+    "events": [
+      "squid.ink_squirt"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.teleport",
+    "name": "teleport",
+    "category": "events",
+    "events": [
+      "teleport"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.thorns",
+    "name": "thorns",
+    "category": "events",
+    "events": [
+      "thorns"
+    ],
+    "pitch": 1,
+    "volume": 0.5,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.tilt_down.big_dripleaf",
+    "name": "tilt down.big dripleaf",
+    "category": "events",
+    "events": [
+      "tilt_down.big_dripleaf"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.tilt_up.big_dripleaf",
+    "name": "tilt up.big dripleaf",
+    "category": "events",
+    "events": [
+      "tilt_up.big_dripleaf"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.tongue",
+    "name": "tongue",
+    "category": "events",
+    "events": [
+      "tongue"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.trial_spawner.ambient",
+    "name": "trial spawner.ambient",
+    "category": "events",
+    "events": [
+      "trial_spawner.ambient"
+    ],
+    "pitch": [
+      0.5,
+      1.5
+    ],
+    "volume": [
+      0.75,
+      1
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.trial_spawner.ambient_ominous",
+    "name": "trial spawner.ambient ominous",
+    "category": "events",
+    "events": [
+      "trial_spawner.ambient_ominous"
+    ],
+    "pitch": [
+      0.5,
+      1.5
+    ],
+    "volume": [
+      0.75,
+      1
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.trial_spawner.charge_activate",
+    "name": "trial spawner.charge activate",
+    "category": "events",
+    "events": [
+      "trial_spawner.charge_activate"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.trial_spawner.close_shutter",
+    "name": "trial spawner.close shutter",
+    "category": "events",
+    "events": [
+      "trial_spawner.close_shutter"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.trial_spawner.detect_player",
+    "name": "trial spawner.detect player",
+    "category": "events",
+    "events": [
+      "trial_spawner.detect_player"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.trial_spawner.eject_item",
+    "name": "trial spawner.eject item",
+    "category": "events",
+    "events": [
+      "trial_spawner.eject_item"
+    ],
+    "pitch": [
+      0.8,
+      1.1
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.trial_spawner.open_shutter",
+    "name": "trial spawner.open shutter",
+    "category": "events",
+    "events": [
+      "trial_spawner.open_shutter"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.trial_spawner.spawn_mob",
+    "name": "trial spawner.spawn mob",
+    "category": "events",
+    "events": [
+      "trial_spawner.spawn_mob"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.tripod",
+    "name": "tripod",
+    "category": "events",
+    "events": [
+      "tripod"
+    ],
+    "pitch": [
+      0.9,
+      1.1
+    ],
+    "volume": 2,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.twinkle",
+    "name": "twinkle",
+    "category": "events",
+    "events": [
+      "twinkle"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ui.cartography_table.take_result",
+    "name": "ui.cartography table.take result",
+    "category": "events",
+    "events": [
+      "ui.cartography_table.take_result"
+    ],
+    "pitch": 1,
+    "volume": 0.8,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ui.loom.take_result",
+    "name": "ui.loom.take result",
+    "category": "events",
+    "events": [
+      "ui.loom.take_result"
+    ],
+    "pitch": 1,
+    "volume": 0.65,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.ui.stonecutter.take_result",
+    "name": "ui.stonecutter.take result",
+    "category": "events",
+    "events": [
+      "ui.stonecutter.take_result"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.unfect",
+    "name": "unfect",
+    "category": "events",
+    "events": [
+      "unfect"
+    ],
+    "pitch": [
+      0.3,
+      1
+    ],
+    "volume": [
+      1,
+      2
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.vault.activate",
+    "name": "vault.activate",
+    "category": "events",
+    "events": [
+      "vault.activate"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.vault.ambient",
+    "name": "vault.ambient",
+    "category": "events",
+    "events": [
+      "vault.ambient"
+    ],
+    "pitch": [
+      0.5,
+      1.5
+    ],
+    "volume": [
+      0.75,
+      1
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.vault.close_shutter",
+    "name": "vault.close shutter",
+    "category": "events",
+    "events": [
+      "vault.close_shutter"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.vault.deactivate",
+    "name": "vault.deactivate",
+    "category": "events",
+    "events": [
+      "vault.deactivate"
+    ],
+    "pitch": [
+      0.8,
+      1.2
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.vault.eject_item",
+    "name": "vault.eject item",
+    "category": "events",
+    "events": [
+      "vault.eject_item"
+    ],
+    "pitch": [
+      0.8,
+      1.1
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.vault.insert_item",
+    "name": "vault.insert item",
+    "category": "events",
+    "events": [
+      "vault.insert_item"
+    ],
+    "pitch": [
+      0.8,
+      1.1
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.vault.insert_item_fail",
+    "name": "vault.insert item fail",
+    "category": "events",
+    "events": [
+      "vault.insert_item_fail"
+    ],
+    "pitch": [
+      0.8,
+      1.1
+    ],
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.vault.open_shutter",
+    "name": "vault.open shutter",
+    "category": "events",
+    "events": [
+      "vault.open_shutter"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.vault.reject_rewarded_player",
+    "name": "vault.reject rewarded player",
+    "category": "events",
+    "events": [
+      "vault.reject_rewarded_player"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.water",
+    "name": "water",
+    "category": "events",
+    "events": [
+      "water"
+    ],
+    "pitch": [
+      0.5,
+      1.5
+    ],
+    "volume": [
+      0.75,
+      1
+    ],
+    "path": "sounds.json"
+  },
+  {
+    "id": "event.wind_charge.burst",
+    "name": "wind charge.burst",
+    "category": "events",
+    "events": [
+      "wind_charge.burst"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "interactive.block_sounds",
+    "name": "block sounds",
+    "category": "interactive",
+    "events": [
+      "amethyst_block",
+      "amethyst_cluster",
+      "ancient_debris",
+      "anvil",
+      "azalea",
+      "azalea_leaves",
+      "bamboo",
+      "bamboo_wood",
+      "bamboo_wood_hanging_sign",
+      "basalt",
+      "big_dripleaf",
+      "bone_block",
+      "calcite",
+      "candle",
+      "cave_vines",
+      "chain",
+      "cherry_leaves",
+      "cherry_wood",
+      "cherry_wood_hanging_sign",
+      "chiseled_bookshelf",
+      "cinnabar",
+      "cloth",
+      "copper",
+      "copper_bulb",
+      "copper_chest",
+      "copper_chest_oxidized",
+      "copper_chest_weathered",
+      "copper_golem_statue",
+      "copper_grate",
+      "coral",
+      "creaking_heart",
+      "decorated_pot",
+      "deepslate",
+      "deepslate_bricks",
+      "dirt_with_roots",
+      "dried_ghast",
+      "dripstone_block",
+      "frog_spawn",
+      "froglight",
+      "fungus",
+      "glass",
+      "glow_lichen",
+      "grass",
+      "gravel",
+      "hanging_roots",
+      "hanging_sign",
+      "heavy_core",
+      "honey_block",
+      "iron",
+      "ladder",
+      "lantern",
+      "large_amethyst_bud",
+      "leaf_litter",
+      "lodestone",
+      "mangrove_roots",
+      "medium_amethyst_bud",
+      "metal",
+      "mob_spawner",
+      "moss_block",
+      "moss_carpet",
+      "mud",
+      "mud_bricks",
+      "muddy_mangrove_roots",
+      "nether_brick",
+      "nether_gold_ore",
+      "nether_sprouts",
+      "nether_wart",
+      "nether_wood",
+      "nether_wood_hanging_sign",
+      "netherite",
+      "netherrack",
+      "normal",
+      "nylium",
+      "packed_mud",
+      "pink_petals",
+      "pointed_dripstone",
+      "polished_tuff",
+      "poplar_leaves",
+      "potent_sulfur",
+      "powder_snow",
+      "resin",
+      "resin_brick",
+      "roots",
+      "sand",
+      "scaffolding",
+      "sculk",
+      "sculk_catalyst",
+      "sculk_sensor",
+      "sculk_shrieker",
+      "sculk_vein",
+      "shelf",
+      "shelf_mushroom",
+      "shroomlight",
+      "slime",
+      "small_amethyst_bud",
+      "snow",
+      "soul_sand",
+      "soul_soil",
+      "sponge",
+      "spore_blossom",
+      "stem",
+      "stone",
+      "straw_bed",
+      "sulfur",
+      "sulfur_spike",
+      "suspicious_gravel",
+      "suspicious_sand",
+      "trial_spawner",
+      "tuff",
+      "tuff_bricks",
+      "turtle_egg",
+      "vault",
+      "vines",
+      "web",
+      "weeping_vines",
+      "wet_sponge",
+      "wood"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "interactive.entities",
+    "name": "entities",
+    "category": "interactive",
+    "events": [],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  },
+  {
+    "id": "interactive.entity_sounds",
+    "name": "entity sounds",
+    "category": "interactive",
+    "events": [
+      "defaults",
+      "entities"
+    ],
+    "pitch": 1,
+    "volume": 1,
+    "path": "sounds.json"
+  }
+]
