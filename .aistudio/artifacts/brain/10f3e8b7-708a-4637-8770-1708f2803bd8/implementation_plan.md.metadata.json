@@ -1,0 +1,6 @@
+{
+  "summary":  "Implementation plan for Bedrock / MCPE v1.26.52.3 texture manager improvements:\n1. Vanilla Reference Texture Viewer & Selective .mcpack Packaging (shows all game textures with search, lets users view/compare vanilla reference sprites, and guarantees ONLY customized textures are packaged into the .mcpack download).\n2. Ultra-Fast Async Connection Tree Optimization (memoized link extraction, virtualization/lazy branch expansion to eliminate any UI freeze/lag).\n3. 'New Custom JSON / Texture Definition' Wizard Modal (button on Connection Tree that displays Bedrock v1.26.52.3 requirements, schema rules, and scaffolds corresponding JSON definitions and PNG slots).\n4. Bedrock 1.26.52.3 Format & Code Reference Guide (detailed specifications for PNG RGBA, TGA 32-bit alpha, flipbook_textures.json, terrain/item texture atlases, entity geometry/texture linkage, and sound definitions).",
+  "updatedAt":  "2026-10-11T13:35:32.228545086Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}
