@@ -64,13 +64,13 @@ jobs:
         run: |
           mkdir -p dist
           if [ ! -d "android" ]; then
-            npx cap add android || true
+            npx cap add android
           fi
-          npx cap sync android || true
+          npx cap sync android
 
       - name: Grant Execute Permissions for Gradle
         run: |
-          if [ -f "android/gradlew" ]; then
+          if [ -d "android" ] && [ -f "android/gradlew" ]; then
             chmod +x android/gradlew
           fi
 

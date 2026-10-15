@@ -1,0 +1,8 @@
+{
+	"appId": "com.bedrock.texture.studio",
+	"appName": "Bedrock Studio",
+	"webDir": "dist",
+	"server": {
+		"androidScheme": "https"
+	}
+}
