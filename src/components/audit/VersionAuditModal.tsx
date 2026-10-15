@@ -36,7 +36,7 @@ export const VersionAuditModal: React.FC<VersionAuditModalProps> = ({
   onScaffoldFolders,
   onSelectSlotFromAudit,
 }) => {
-  const [selectedVersionId, setSelectedVersionId] = useState<string>('1.21.0');
+  const [selectedVersionId, setSelectedVersionId] = useState<string>('1.26.52.3');
   const [activeTab, setActiveTab] = useState<'audit' | 'changelog'>('audit');
 
   if (!isOpen) return null;

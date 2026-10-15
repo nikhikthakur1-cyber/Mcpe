@@ -1,5 +1,5 @@
 import React, { useMemo, useState, useEffect } from 'react';
-import { Search, Filter, Sparkles, CheckCircle2, ChevronUp, X, Eye, SlidersHorizontal } from 'lucide-react';
+import { Search, Filter, Sparkles, CheckCircle2, ChevronUp, X, Eye, SlidersHorizontal, RefreshCw } from 'lucide-react';
 import { TextureSlot, TextureCategory, ProjectFile } from '../../types';
 import { TEXTURE_CATALOG, CATEGORY_LABELS } from '../../data/textureCatalog';
 import { TextureCard } from './TextureCard';
@@ -15,6 +15,7 @@ interface TextureBrowserProps {
   onUploadTexture: (slot: TextureSlot, file: File) => Promise<void>;
   onRemoveCustomTexture: (slot: TextureSlot) => void;
   onJumpToExplorer?: (path: string) => void;
+  onOpenZipModal?: () => void;
 }
 
 const PAGE_CHUNK = 36;
@@ -27,6 +28,7 @@ export const TextureBrowser: React.FC<TextureBrowserProps> = ({
   onUploadTexture,
   onRemoveCustomTexture,
   onJumpToExplorer,
+  onOpenZipModal,
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -189,6 +191,18 @@ export const TextureBrowser: React.FC<TextureBrowserProps> = ({
                 <span>Custom ({customizedCount})</span>
               </button>
             </div>
+
+            {onOpenZipModal && (
+              <button
+                onClick={onOpenZipModal}
+                className="flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-emerald-600/30 to-teal-600/20 hover:from-emerald-600/40 hover:to-teal-600/30 border border-emerald-500/40 text-emerald-300 text-xs font-semibold rounded-xl transition-all whitespace-nowrap min-h-[30px] shadow-sm"
+                title="Download missing textures or sync official vanilla pack"
+              >
+                <RefreshCw className="w-3.5 h-3.5 text-emerald-400" />
+                <span className="hidden sm:inline">Sync Vanilla Pack</span>
+                <span className="sm:hidden">Sync</span>
+              </button>
+            )}
           </div>
         </div>
 

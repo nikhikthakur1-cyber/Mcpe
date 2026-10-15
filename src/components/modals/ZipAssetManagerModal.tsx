@@ -12,6 +12,8 @@ import {
   Image as ImageIcon,
   FileText,
   Layers,
+  Globe,
+  Sparkles,
 } from 'lucide-react';
 import { zipAssetService, ZipAssetLoaderState, ZipAssetEntry } from '../../services/zipAssetService';
 
@@ -30,6 +32,9 @@ export const ZipAssetManagerModal: React.FC<ZipAssetManagerModalProps> = ({
   const [search, setSearch] = useState('');
   const [activeTab, setActiveTab] = useState<'all' | 'textures' | 'sounds'>('all');
   const [isReloading, setIsReloading] = useState(false);
+  const [syncProgress, setSyncProgress] = useState(0);
+  const [syncStatus, setSyncStatus] = useState('');
+  const [isSyncing, setIsSyncing] = useState(false);
 
   useEffect(() => {
     const unsubscribe = zipAssetService.subscribe((s) => {
@@ -43,12 +48,34 @@ export const ZipAssetManagerModal: React.FC<ZipAssetManagerModalProps> = ({
   }, [zipState, activeTab]);
 
   const filteredEntries = useMemo(() => {
-    if (!search.trim()) return entries.slice(0, 200); // Limit rendered list for fast DOM performance
+    if (!search.trim()) return entries.slice(0, 200);
     const q = search.toLowerCase().trim();
     return entries.filter((e) => e.path.toLowerCase().includes(q) || e.name.toLowerCase().includes(q)).slice(0, 300);
   }, [entries, search]);
 
   if (!isOpen) return null;
+
+  const handleSyncOfficial = async () => {
+    setIsSyncing(true);
+    setSyncProgress(10);
+    setSyncStatus('Connecting to official Mojang repository...');
+    try {
+      const res = await zipAssetService.syncOfficialVanillaPack((pct, status) => {
+        setSyncProgress(pct);
+        setSyncStatus(status);
+      });
+      if (res.success) {
+        onShowToast(`Synced ${res.count} vanilla textures from official repository!`);
+      } else {
+        onShowToast(`Sync failed: ${res.error || 'Unknown error'}`);
+      }
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : 'Sync failed';
+      onShowToast(`Error: ${msg}`);
+    } finally {
+      setIsSyncing(false);
+    }
+  };
 
   const handleReloadZip = async () => {
     setIsReloading(true);
@@ -92,13 +119,13 @@ export const ZipAssetManagerModal: React.FC<ZipAssetManagerModalProps> = ({
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h3 className="text-sm font-bold text-slate-100">ZIP Asset Loader & Reader</h3>
+                <h3 className="text-sm font-bold text-slate-100">Vanilla Asset Pack & Repository Sync</h3>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">
                   {zipState.zipName}
                 </span>
               </div>
               <p className="text-xs text-slate-400">
-                Reads public/textures and public/vanilla_sounds directly from compressed ZIP archives at app runtime or install
+                Streaming textures directly from compressed ZIP with automatic official Mojang GitHub fallback
               </p>
             </div>
           </div>
@@ -111,6 +138,25 @@ export const ZipAssetManagerModal: React.FC<ZipAssetManagerModalProps> = ({
           </button>
         </div>
 
+        {/* Live Sync Banner */}
+        {isSyncing && (
+          <div className="p-3 bg-emerald-950/40 border-b border-emerald-500/30 flex flex-col gap-2">
+            <div className="flex items-center justify-between text-xs text-emerald-300 font-mono">
+              <span className="flex items-center gap-2">
+                <RefreshCw className="w-3.5 h-3.5 animate-spin text-emerald-400" />
+                <span>{syncStatus || 'Downloading official vanilla pack...'}</span>
+              </span>
+              <span>{syncProgress}%</span>
+            </div>
+            <div className="w-full h-2 bg-slate-900 rounded-full overflow-hidden border border-emerald-500/20">
+              <div
+                className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 transition-all duration-300"
+                style={{ width: `${syncProgress}%` }}
+              />
+            </div>
+          </div>
+        )}
+
         {/* Status Dashboard Banner */}
         <div className="p-4 bg-[#090D14] border-b border-[#1E293B] grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
           <div className="bg-[#121926] p-3 rounded-xl border border-[#1C2738] flex flex-col justify-between">
@@ -119,7 +165,7 @@ export const ZipAssetManagerModal: React.FC<ZipAssetManagerModalProps> = ({
               {zipState.isLoading || isReloading ? (
                 <>
                   <RefreshCw className="w-3.5 h-3.5 text-amber-400 animate-spin" />
-                  <span className="text-amber-400">Unpacking ZIP...</span>
+                  <span className="text-amber-400">Indexing ZIP...</span>
                 </>
               ) : zipState.isLoaded ? (
                 <>
@@ -152,9 +198,10 @@ export const ZipAssetManagerModal: React.FC<ZipAssetManagerModalProps> = ({
           </div>
 
           <div className="bg-[#121926] p-3 rounded-xl border border-[#1C2738] flex flex-col justify-between">
-            <span className="text-[10px] text-slate-500 uppercase font-mono">Archive Size</span>
-            <span className="text-sm font-extrabold text-amber-400 font-mono mt-1">
-              {(zipState.totalSizeBytes / (1024 * 1024)).toFixed(2)} MB
+            <span className="text-[10px] text-slate-500 uppercase font-mono">Auto-Download Status</span>
+            <span className="text-xs font-semibold text-emerald-400 flex items-center gap-1 mt-1">
+              <Globe className="w-3.5 h-3.5" />
+              <span>Mojang GitHub Sync ON</span>
             </span>
           </div>
         </div>
@@ -186,12 +233,23 @@ export const ZipAssetManagerModal: React.FC<ZipAssetManagerModalProps> = ({
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="Filter ZIP contents (e.g. acacia, click, .ogg, .png)..."
+              placeholder="Filter ZIP contents (e.g. acacia, stone, .png)..."
               className="w-full pl-9 pr-3 py-1.5 bg-[#070A0F] border border-[#1E293B] rounded-lg text-slate-200 placeholder:text-slate-600 outline-none focus:border-emerald-400 font-mono text-xs"
             />
           </div>
 
           <div className="flex items-center gap-2">
+            {/* Sync Official Mojang Pack */}
+            <button
+              onClick={handleSyncOfficial}
+              disabled={isSyncing}
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold rounded-lg transition-all shadow-md shadow-emerald-950/40"
+              title="Download full official vanilla asset pack from Mojang repository"
+            >
+              <RefreshCw className={`w-3.5 h-3.5 ${isSyncing ? 'animate-spin' : ''}`} />
+              <span>Sync Official Pack</span>
+            </button>
+
             <label className="flex items-center gap-1.5 px-3 py-1.5 bg-[#16212E] hover:bg-[#1C2A3B] border border-[#1E293B] text-sky-300 rounded-lg cursor-pointer transition-colors font-medium">
               <Upload className="w-3.5 h-3.5" />
               <span>Import ZIP</span>
@@ -204,20 +262,11 @@ export const ZipAssetManagerModal: React.FC<ZipAssetManagerModalProps> = ({
             </label>
 
             <button
-              onClick={handleReloadZip}
-              disabled={isReloading}
-              className="flex items-center gap-1.5 px-3 py-1.5 bg-[#16212E] hover:bg-[#1C2A3B] border border-[#1E293B] text-slate-200 rounded-lg transition-colors font-medium"
-            >
-              <RefreshCw className={`w-3.5 h-3.5 text-emerald-400 ${isReloading ? 'animate-spin' : ''}`} />
-              <span>Re-sync ZIP</span>
-            </button>
-
-            <button
               onClick={handleDownloadZip}
               className="flex items-center gap-1.5 px-3 py-1.5 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 rounded-lg transition-colors font-medium"
             >
               <Download className="w-3.5 h-3.5" />
-              <span>Download ZIP</span>
+              <span>Export ZIP</span>
             </button>
           </div>
         </div>
@@ -276,7 +325,7 @@ export const ZipAssetManagerModal: React.FC<ZipAssetManagerModalProps> = ({
         {/* Footer */}
         <div className="p-3 bg-[#111822] border-t border-[#1E293B] flex items-center justify-between text-xs text-slate-400 font-mono">
           <span>
-            Displaying {filteredEntries.length} of {entries.length} extracted files
+            Displaying {filteredEntries.length} of {entries.length} indexed files
           </span>
           <button
             onClick={onClose}

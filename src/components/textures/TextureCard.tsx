@@ -1,13 +1,10 @@
-import React, { useEffect, useState, useMemo } from 'react';
-import { Check, Box, Sword, Sparkles, Layout, Cloud, Eye } from 'lucide-react';
+import React, { useEffect, useState, useMemo, useRef } from 'react';
+import { Check, Box, Sword, Sparkles, Layout, Cloud, Eye, RotateCw } from 'lucide-react';
 import { TextureSlot } from '../../types';
 import { textureUrlCache } from '../../utils/lruCache';
 import {
-  getVanillaTextureUrl,
-  getVanillaTextureFallbackUrl,
   getProceduralVanillaReferenceUrl,
 } from '../../utils/vanillaTextureGenerator';
-
 import { zipAssetService } from '../../services/zipAssetService';
 
 interface TextureCardProps {
@@ -29,6 +26,11 @@ export const TextureCard: React.FC<TextureCardProps> = ({
 }) => {
   const [thumbUrl, setThumbUrl] = useState<string | null>(null);
   const [imgSrc, setImgSrc] = useState<string | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [hasError, setHasError] = useState(false);
+  const [retryCount, setRetryCount] = useState(0);
+  const cardRef = useRef<HTMLDivElement | null>(null);
 
   // Fallback procedural vanilla reference url
   const referenceUrl = useMemo(() => {
@@ -40,66 +42,98 @@ export const TextureCard: React.FC<TextureCardProps> = ({
     );
   }, [slot.id, slot.sampleColor, slot.recommendedWidth, slot.recommendedHeight]);
 
+  // Viewport-based lazy loading with IntersectionObserver
   useEffect(() => {
+    const node = cardRef.current;
+    if (!node) return;
+
+    if (typeof IntersectionObserver === 'undefined') {
+      setIsVisible(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      {
+        rootMargin: '160px',
+        threshold: 0.01,
+      }
+    );
+
+    observer.observe(node);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  // Fetch / extract texture on-demand ONLY when visible in viewport
+  useEffect(() => {
+    if (!isVisible) return;
+
     let isCancelled = false;
 
     const loadTextureSrc = async () => {
+      setHasError(false);
+
+      // 1. Customized user texture
       if (isCustomized && customImageData && customImageData.length > 0) {
         const cachedUrl = textureUrlCache.set(slot.path, customImageData);
-        setThumbUrl(cachedUrl);
+        if (!isCancelled) setThumbUrl(cachedUrl);
         return;
       }
       setThumbUrl(null);
 
-      // 1. Multi-candidate lookup from zipAssetService
-      const candidates = [slot.path, slot.id, slot.name].filter(Boolean);
-      let foundUrl: string | null = null;
-
-      for (const cand of candidates) {
-        const syncUrl = zipAssetService.getTextureObjectUrlSync(cand);
-        if (syncUrl) {
-          foundUrl = syncUrl;
-          break;
-        }
+      // 2. Synchronous in-memory cache check (<1ms)
+      const syncUrl = zipAssetService.getTextureObjectUrlSync(slot.path);
+      if (syncUrl) {
+        if (!isCancelled) setImgSrc(syncUrl);
+        return;
       }
 
-      if (!foundUrl) {
-        for (const cand of candidates) {
-          const asyncUrl = await zipAssetService.getTextureObjectUrl(cand);
-          if (asyncUrl) {
-            foundUrl = asyncUrl;
-            break;
-          }
+      // 3. Asynchronous on-demand extraction from local ZIP or Mojang fallback
+      setIsLoading(true);
+      try {
+        const asyncUrl = await zipAssetService.getTextureObjectUrl(slot.path);
+        if (isCancelled) return;
+        if (asyncUrl) {
+          setImgSrc(asyncUrl);
+        } else {
+          setImgSrc(referenceUrl);
         }
-      }
-
-      if (isCancelled) return;
-      if (foundUrl) {
-        setImgSrc(foundUrl);
-      } else {
-        setImgSrc(referenceUrl);
+      } catch {
+        if (!isCancelled) {
+          setImgSrc(referenceUrl);
+          setHasError(true);
+        }
+      } finally {
+        if (!isCancelled) setIsLoading(false);
       }
     };
 
     loadTextureSrc();
 
-    // Subscribe to ZIP loader state so thumbnails update when ZIP finishes loading
-    const unsubscribe = zipAssetService.subscribe((state) => {
-      if (state.isLoaded && !isCustomized) {
-        loadTextureSrc();
-      }
-    });
-
     return () => {
       isCancelled = true;
-      unsubscribe();
     };
-  }, [slot.path, isCustomized, customImageData, referenceUrl]);
+  }, [isVisible, slot.path, isCustomized, customImageData, referenceUrl, retryCount]);
 
   const handleImageError = () => {
+    setHasError(true);
     if (imgSrc !== referenceUrl) {
       setImgSrc(referenceUrl);
     }
+  };
+
+  const handleRetry = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setHasError(false);
+    setIsLoading(true);
+    setRetryCount((c) => c + 1);
   };
 
   const getCategoryIcon = () => {
@@ -121,6 +155,7 @@ export const TextureCard: React.FC<TextureCardProps> = ({
 
   return (
     <div
+      ref={cardRef}
       onClick={() => onSelect(slot)}
       className={`group relative rounded-xl border cursor-pointer transition-all flex flex-col justify-between ${
         isCompact ? 'p-2' : 'p-3'
@@ -146,7 +181,16 @@ export const TextureCard: React.FC<TextureCardProps> = ({
             backgroundSize: '10px 10px',
           }}
         >
-          {thumbUrl ? (
+          {hasError ? (
+            <div
+              onClick={handleRetry}
+              title="Click to retry loading texture"
+              className="w-full h-full flex flex-col items-center justify-center bg-black/60 hover:bg-black/80 transition-colors p-1 text-center cursor-pointer group/retry"
+            >
+              <RotateCw className="w-3.5 h-3.5 text-amber-400 group-hover/retry:rotate-180 transition-transform" />
+              <span className="text-[8px] text-amber-300 font-mono mt-0.5">Retry</span>
+            </div>
+          ) : thumbUrl ? (
             <img
               src={thumbUrl}
               alt={slot.name}
@@ -163,7 +207,11 @@ export const TextureCard: React.FC<TextureCardProps> = ({
               className="w-full h-full object-contain p-1 opacity-90 group-hover:opacity-100 transition-opacity"
               style={{ imageRendering: 'pixelated' }}
             />
-          ) : referenceUrl ? (
+          ) : isLoading ? (
+            <div className="w-full h-full flex items-center justify-center bg-slate-900/60 animate-pulse">
+              <div className="w-3.5 h-3.5 border-2 border-emerald-400 border-t-transparent rounded-full animate-spin" />
+            </div>
+          ) : isVisible && referenceUrl ? (
             <img
               src={referenceUrl}
               alt={`${slot.name} reference`}
@@ -173,17 +221,17 @@ export const TextureCard: React.FC<TextureCardProps> = ({
             />
           ) : (
             <div
-              className="w-8 h-8 rounded flex items-center justify-center text-slate-300"
-              style={{ backgroundColor: `${slot.sampleColor || '#38BDF8'}25` }}
+              className="w-8 h-8 rounded flex items-center justify-center text-slate-400"
+              style={{ backgroundColor: `${slot.sampleColor || '#38BDF8'}20` }}
             >
               {getCategoryIcon()}
             </div>
           )}
 
           {/* Reference indicator icon when uncustomized */}
-          {!isCustomized && (
+          {!isCustomized && !hasError && (
             <div
-              title="Vanilla Reference"
+              title="Vanilla Reference (Mojang Official)"
               className="absolute bottom-0 right-0 bg-[#0B0F14]/90 px-0.5 py-0.2 rounded-tl text-[8px] text-slate-400 font-mono"
             >
               <Eye className="w-2.5 h-2.5 text-slate-400 inline" />

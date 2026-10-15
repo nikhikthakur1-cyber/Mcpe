@@ -75,13 +75,13 @@ export default function App() {
     return unsubscribe;
   }, []);
 
-  // Auto dismiss splash screen when extraction is 100% complete
+  // Auto dismiss splash screen as soon as ZIP index is loaded
   useEffect(() => {
-    if (zipState.isLoaded && !zipState.isPreloading && zipState.extractionProgress >= 100) {
-      const timer = setTimeout(() => setShowSplash(false), 600);
+    if (zipState.isLoaded) {
+      const timer = setTimeout(() => setShowSplash(false), 300);
       return () => clearTimeout(timer);
     }
-  }, [zipState.isLoaded, zipState.isPreloading, zipState.extractionProgress]);
+  }, [zipState.isLoaded]);
 
   // Initialize or load from IndexedDB + Load Vanilla Assets ZIP
   useEffect(() => {
@@ -713,6 +713,7 @@ export default function App() {
                 onUploadTexture={handleUploadTexture}
                 onRemoveCustomTexture={handleRemoveCustomTexture}
                 onJumpToExplorer={handleJumpToExplorer}
+                onOpenZipModal={() => setIsZipModalOpen(true)}
               />
             )}
 

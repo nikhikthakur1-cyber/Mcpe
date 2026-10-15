@@ -16,9 +16,9 @@ export interface BedrockVersionProfile {
 export const BEDROCK_VERSION_PROFILES: BedrockVersionProfile[] = [
   {
     id: '1.26.52.3',
-    name: 'Bedrock / MCPE 1.26.52.3 (Current Release)',
+    name: 'Bedrock / MCPE 1.26.52.3 (Current Play Store Release)',
     engineVersion: [1, 26, 52],
-    description: 'Latest Minecraft Bedrock & Pocket Edition release with modern render pipeline, updated item frames, and expanded entity models.',
+    description: 'Current active Minecraft Bedrock Edition release on Google Play Store with modern render pipeline, updated item frames, and expanded entity models.',
     majorAdditions: [
       {
         category: 'blocks',
@@ -79,112 +79,6 @@ export const BEDROCK_VERSION_PROFILES: BedrockVersionProfile[] = [
         name: 'Armadillo',
         path: 'textures/entity/armadillo/armadillo.png',
         note: 'Savanna mob shedding scutes for wolf armor crafting.',
-      },
-    ],
-  },
-  {
-    id: '1.21.0',
-    name: 'Bedrock 1.21.0 (Tricky Trials)',
-    engineVersion: [1, 21, 0],
-    description: 'Current major update introducing Trial Chambers, Mace combat, Crafter, and the Breeze mob.',
-    majorAdditions: [
-      {
-        category: 'blocks',
-        name: 'Crafter (Top & Side)',
-        path: 'textures/blocks/crafter_top.png',
-        note: 'Automated Redstone crafting block with animated powered states.',
-      },
-      {
-        category: 'blocks',
-        name: 'Heavy Core',
-        path: 'textures/blocks/heavy_core.png',
-        note: 'Rare Trial Chamber block used to craft the Mace weapon.',
-      },
-      {
-        category: 'blocks',
-        name: 'Trial Spawner',
-        path: 'textures/blocks/trial_spawner_side.png',
-        note: 'Dynamic battle spawner in Trial Chambers.',
-      },
-      {
-        category: 'blocks',
-        name: 'Vault',
-        path: 'textures/blocks/vault_top.png',
-        note: 'Loot container unlocked by Trial Keys.',
-      },
-      {
-        category: 'blocks',
-        name: 'Copper Bulb',
-        path: 'textures/blocks/copper_bulb_lit.png',
-        note: 'Toggling light source with oxidation stages.',
-      },
-      {
-        category: 'items',
-        name: 'Mace',
-        path: 'textures/items/mace.png',
-        note: 'Heavy smash weapon dealing fall-distance scaling damage.',
-      },
-      {
-        category: 'items',
-        name: 'Wind Charge',
-        path: 'textures/items/wind_charge.png',
-        note: 'Burst projectile dropped by defeated Breeze mobs.',
-      },
-      {
-        category: 'items',
-        name: 'Wolf Armor',
-        path: 'textures/items/wolf_armor.png',
-        note: 'Protective armadillo scute pet armor.',
-      },
-      {
-        category: 'entity',
-        name: 'Breeze',
-        path: 'textures/entity/breeze/breeze.png',
-        note: 'Hostile whirlwind mob found in Trial Chambers.',
-      },
-      {
-        category: 'entity',
-        name: 'Armadillo',
-        path: 'textures/entity/armadillo/armadillo.png',
-        note: 'Savanna mob shedding scutes for wolf armor crafting.',
-      },
-    ],
-  },
-  {
-    id: '1.20.0',
-    name: 'Bedrock 1.20.0 (Trails & Tales)',
-    engineVersion: [1, 20, 0],
-    description: 'Update featuring Archaeology, Cherry Grove biomes, Sniffers, and Armor Trims.',
-    majorAdditions: [
-      {
-        category: 'blocks',
-        name: 'Cherry Planks & Wood',
-        path: 'textures/blocks/planks_cherry.png',
-        note: 'Pink floral blossom wood set.',
-      },
-      {
-        category: 'blocks',
-        name: 'Suspicious Sand & Gravel',
-        path: 'textures/blocks/suspicious_sand_0.png',
-        note: 'Archaeological brushable excavation blocks.',
-      },
-      {
-        category: 'items',
-        name: 'Brush',
-        path: 'textures/items/brush.png',
-        note: 'Archaeological excavation tool.',
-      },
-      {
-        category: 'entity',
-        name: 'Sniffer',
-        path: 'textures/entity/sniffer/sniffer.png',
-        note: 'Ancient herbivore uncovering ancient seeds.',
-      },
-      {
-        category: 'entity',
-        name: 'Camel',
-        path: 'textures/entity/camel/camel.png',
-        note: 'Tall two-passenger desert transport mount.',
       },
     ],
   },

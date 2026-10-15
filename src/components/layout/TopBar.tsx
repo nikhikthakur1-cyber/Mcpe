@@ -59,7 +59,7 @@ export const TopBar: React.FC<TopBarProps> = ({
               Bedrock Studio
             </span>
             <span className="text-[10px] text-emerald-400 font-mono -mt-0.5 hidden sm:inline">
-              Resource Pack Engine
+              v1.26.52.3 Engine
             </span>
           </div>
         </div>

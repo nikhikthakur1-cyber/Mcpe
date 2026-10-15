@@ -29,13 +29,13 @@ export const MinecraftSplashScreen: React.FC<MinecraftSplashScreenProps> = ({
         <div className="space-y-2">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-semibold uppercase tracking-widest animate-pulse">
             <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]" />
-            <span>Minecraft Bedrock Studio v1.21</span>
+            <span>Minecraft Bedrock Studio v1.26.52.3</span>
           </div>
           <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-slate-100 via-sky-200 to-emerald-300 font-mono">
             BEDROCK ASSET ENGINE
           </h1>
           <p className="text-xs text-slate-400 max-w-sm">
-            Pre-extracting {zipState.fileCount > 0 ? zipState.fileCount : '2,680+'} vanilla textures & sounds into memory for instant zero-latency browsing.
+            Streaming {zipState.fileCount > 0 ? `${zipState.fileCount.toLocaleString()}+` : '6,800+'} vanilla textures with on-demand zero-lag viewport loading.
           </p>
         </div>
 
